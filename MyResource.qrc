@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/harbour-unitconverter.png</file>
+        <file>images/unit_icon_1.png</file>
+        <file>images/unit_icon_2.png</file>
+        <file>images/unit_icon_3.png</file>
+        <file>images/unit_icon_4.png</file>
+        <file>images/unit_icon_5.png</file>
+        <file>images/unit_icon_6.png</file>
+        <file>images/unit_icon_7.png</file>
+        <file>images/unit_icon_8.png</file>
+        <file>images/unit_icon_9.png</file>
+        <file>images/unit_icon_10.png</file>
+        <file>images/unit_icon_11.png</file>
+        <file>images/unit_icon_12.png</file>
+        <file>images/unit_icon_13.png</file>
+        <file>images/unit_icon_14.png</file>
+        <file>images/unit_icon_15.png</file>
+        <file>images/unit_icon_16.png</file>
+        <file>images/unit_icon_17.png</file>
+        <file>images/unit_icon_18.png</file>
+        <file>images/unit_icon_19.png</file>
+        <file>images/unit_icon_20.png</file>
+        <file>images/unit_icon_21.png</file>
+        <file>images/unit_icon_22.png</file>
+        <file>images/unit_icon_23.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>fonts/DS-DIGI.TTF</file>
+        <file>fonts/DS-DIGII.TTF</file>
+    </qresource>
+</RCC>

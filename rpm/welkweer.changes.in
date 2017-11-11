@@ -1,0 +1,15 @@
+# Rename this file as welkweer.changes to include changelog
+# entries in your RPM file.
+#
+# Add new changelog entries following the format below.
+# Add newest entries to the top of the list.
+# Separate entries from eachother with a blank line.
+
+# * date Author's Name <author's email> version-release
+# - Summary of changes
+
+* Sat Nov 11 2017 Arno Dekker <jack.tar@example.com> 2.4-1
+- Fixed javascript issue so it starts on more recent Sailfish OS versions
+- Incorporated Top-Ranger's pull request https://github.com/MikeL83/Unit-Converter/pull/3 for optional caching of curency rates
+- Fixed ruler for HD resolution
+- Some additional resolution fixes and more Sailish gui like elements
