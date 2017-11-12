@@ -41,8 +41,8 @@ Item {
             id: canvas
             anchors.horizontalCenter: col.horizontalCenter
             smooth: true
-            width: 75
-            height: 25
+            width: Screen.width <= 540 ? 75 : 150
+            height: Screen.width <= 540 ? 25 : 50
             onPaint: {
                 var cxt = canvas.getContext('2d')
                 var width_ = width

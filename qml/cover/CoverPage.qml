@@ -47,6 +47,7 @@ CoverBackground {
             topMargin: Theme.paddingLarge
             horizontalCenter: parent.horizontalCenter
         }
+        scale: Screen.width > 540 ? 1.7 : 1
     }
 
     Label {
@@ -89,5 +90,3 @@ CoverBackground {
         }
     }
 }
-
-

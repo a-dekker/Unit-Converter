@@ -40,6 +40,8 @@ Page {
                 //listModel.get(i).convValue = res;
             }
         }
+        HV.COVER_VALUE1 = listModel.get(0).convValue
+        HV.COVER_VALUE2 = listModel.get(1).convValue
     }
     PageHeader {
         id: pageHeader
@@ -390,6 +392,8 @@ Page {
                                       "convValue": ""});
                 }
             }
+            HV.COVER_UNIT1 = HV.UNITS[unittype][0]
+            HV.COVER_UNIT2 = HV.UNITS[unittype][1]
         } else if (status === PageStatus.Deactivating) {
             HV.COVER_UNIT1 = HV.COVER_UNIT2 = null
         }

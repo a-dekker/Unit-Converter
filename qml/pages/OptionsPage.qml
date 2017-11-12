@@ -34,6 +34,9 @@ Dialog {
             width: dialog.width
             spacing: Theme.paddingMedium
 
+            SectionHeader {
+                text: qsTr("Ruler")
+            }
             TextArea {
                 id: textarea
                 focus: true
@@ -75,6 +78,9 @@ Dialog {
                     }
                 }
             }
+            SectionHeader {
+                text: qsTr("Currency")
+            }
             TextArea {
                 focus: true
                 font.family: "Verdana"
@@ -82,7 +88,7 @@ Dialog {
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 wrapMode: TextEdit.WordWrap
-                text: qsTr("You can change the rate at which the currency rates are updated." +
+                text: qsTr("You can change the rate at which the currency rates are updated. " +
                            "If you disable the automatic update, you have to start the update process manually.")
                 readOnly: true
             }
@@ -101,8 +107,8 @@ Dialog {
                 }
             }
             Button {
+                anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Update currency cache")
-                width: parent.width
                 onClicked: currencycache.updateNow()
             }
         }

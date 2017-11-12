@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.5-1
+- Coverpage now displays first two convert results
+- Small changes in options page
 * Sat Nov 11 2017 Arno Dekker <jack.tar@example.com> 2.4-1
 - Fixed javascript issue so it starts on more recent Sailfish OS versions
 - Incorporated Top-Ranger's pull request https://github.com/MikeL83/Unit-Converter/pull/3 for optional caching of curency rates
