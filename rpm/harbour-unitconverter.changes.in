@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.6-1
+- Redesign of coverpage
+- Don't force decimal comma, as numeric keypad may have decimal dot
 * Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.5-1
 - Coverpage now displays first two convert results
 - Small changes in options page

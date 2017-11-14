@@ -59,32 +59,48 @@ CoverBackground {
 
         text: "UnitConverter"
         color: Theme.secondaryHighlightColor
-        font.pixelSize: Theme.fontSizeLarge*1.55
+        font.pixelSize: Theme.fontSizeLarge * 1.55
 
-        transform: Rotation {angle: -60}
+        transform: Rotation {
+            angle: -60
+        }
     }
 
     Resultpanel {
         id: resultpanel
-        anchors.centerIn: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: Theme.paddingLarge
         visible: false
         scale: 0.5
-        z: 2
+        // z: 2
+        unittype_text: ""
         unit1_text: ""
         unit2_text: ""
+        unit3_text: ""
+        unit4_text: ""
         unit1_value: ""
         unit2_value: ""
+        unit3_value: ""
+        unit4_value: ""
     }
 
     onActiveChanged: {
-        if (active && HV.COVER_UNIT1 !== null && HV.COVER_UNIT2 !== null) {
-            label.opacity = icon.opacity = 0.25;
+        if (active && HV.COVER_UNIT1 !== null && HV.COVER_UNIT2 !== null
+                && (HV.COVER_VALUE1 !== "0" || HV.COVER_VALUE2 !== "0")) {
+            label.opacity = icon.opacity = 0.25
             resultpanel.visible = true
+            resultpanel.unittype_text = HV.UNITTYPE
             resultpanel.unit1_text = HV.COVER_UNIT1
             resultpanel.unit2_text = HV.COVER_UNIT2
-            resultpanel.unit1_value = HV.COVER_VALUE1;
-            resultpanel.unit2_value = HV.COVER_VALUE2;
-        } else if (active && HV.COVER_UNIT1 === null && HV.COVER_UNIT2 === null)  {
+            resultpanel.unit3_text = HV.COVER_UNIT3
+            resultpanel.unit4_text = HV.COVER_UNIT4
+            resultpanel.unit1_value = HV.COVER_VALUE1
+            resultpanel.unit2_value = HV.COVER_VALUE2
+            resultpanel.unit3_value = HV.COVER_VALUE3
+            resultpanel.unit4_value = HV.COVER_VALUE4
+        } else if (active && HV.COVER_UNIT1 === null && HV.COVER_UNIT2 === null
+                   || (HV.COVER_VALUE1 === "0" && HV.COVER_VALUE2 === "0")) {
             resultpanel.visible = false
             label.opacity = icon.opacity = 1.0
         }

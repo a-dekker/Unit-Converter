@@ -221,9 +221,9 @@ Page {
             for (; i < count; i++) {
                 if (log[i].unitconverter === "CURRENCY") {
                     var res = String(converter.convert2(log[i].fromUnitAbb,
-                                                        log[i].toUnitAbb, log[i].fromValue.replace(",","."),
+                                                        log[i].toUnitAbb, log[i].fromValue,
                                                         "CURRENCY"));
-                    res = res.replace(".",",");
+                    res = res;
                     if (res !== log[i].toValue) {
                         DB.updateFavourite("CURRENCY",log[i].fromUnit, log[i].fromValue, log[i].toUnit,
                                            log[i].toValue,"CURRENCY",log[i].fromUnit, log[i].fromUnitAbb,

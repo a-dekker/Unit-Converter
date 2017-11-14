@@ -1,9 +1,14 @@
 .pragma library
 
+var UNITTYPE = null;;
 var COVER_UNIT1 = null;
 var COVER_UNIT2 = null;
-var COVER_VALUE1 = null;
-var COVER_VALUE2 = null;
+var COVER_UNIT3 = null;
+var COVER_UNIT4 = null;
+var COVER_VALUE1 = "0";
+var COVER_VALUE2 = "0";
+var COVER_VALUE3 = "0";
+var COVER_VALUE4 = "0";
 var CURRENTRATE = null;
 var NEWCURRENCYRATE = null;
 var VERSION = "";

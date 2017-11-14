@@ -26,7 +26,7 @@ Page {
         count = HV.UNITS[unittype].length
         for (; i < count; ++i) {
             if (i === idx) {
-                listModel.setProperty(i,"convValue", String(value).replace(".",","));
+                listModel.setProperty(i,"convValue", String(value));
                 continue;
             } else {
                 var res;
@@ -35,13 +35,23 @@ Page {
                 } else {
                     res = String(converter.convert2(items[idx], items[i], value, unittype));
                 }
-                res = res.replace(".",",");
+                res = res;
                 listModel.setProperty(i,"convValue", res);
                 //listModel.get(i).convValue = res;
             }
         }
         HV.COVER_VALUE1 = listModel.get(0).convValue
         HV.COVER_VALUE2 = listModel.get(1).convValue
+        if (count > 3) {
+            HV.COVER_VALUE4 = listModel.get(3).convValue
+        } else {
+            HV.COVER_VALUE4 = ""
+        }
+        if (count > 2) {
+            HV.COVER_VALUE3 = listModel.get(2).convValue
+        } else {
+            HV.COVER_VALUE3 = ""
+        }
     }
     PageHeader {
         id: pageHeader
@@ -53,8 +63,6 @@ Page {
             top: pageHeader.bottom
             topMargin: Theme.paddingLarge * 6
             fill: parent
-            //topMargin: pageHeader.height + fromField.height + toField.height +
-            //           unitWindowBox.childrenRect.height + Theme.paddingLarge*2
         }
         clip: true
         focus: false
@@ -104,7 +112,7 @@ Page {
                     width: parent.width
                     transform: Translate{x: -10}
                     text: convValue
-                    placeholderText: Number(0.0).toPrecision(2).toString().replace(".",",")
+                    placeholderText: Number(0.0).toPrecision(2).toString()
                     font.pixelSize: Theme.fontSizeLarge
                     font.underline: true
                     font.bold: true
@@ -116,7 +124,7 @@ Page {
                     errorHighlight: text ? !acceptableInput : false
                     inputMethodHints: unittype !== "NUMBERS" ? Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText :
                                                                Qt.ImhNoPredictiveText
-                    validator: RegExpValidator{regExp: /^[0-9\+\-\,a-zA-Z]*$/}
+                    validator: RegExpValidator{regExp: /^[0-9\+\-\,\.a-zA-Z]*$/}
 
                     EnterKey.onClicked: {
                         if (text.length === 0 || text === 0) {
@@ -154,7 +162,7 @@ Page {
                                 if (unittype === "NUMBERS") {
                                     calculateConversion(text, unitName)
                                 } else {
-                                    var value_ = Number(text.replace(",","."));
+                                    var value_ = Number(text);
                                     if (isFinite(value_)) {
                                         calculateConversion(value_, unitName)
                                     } else {
@@ -170,6 +178,8 @@ Page {
     }
     onStatusChanged: {
         if (status === PageStatus.Activating) {
+            HV.COVER_UNIT1 = HV.COVER_UNIT2 = HV.COVER_UNIT3 = HV.COVER_UNIT4 = null
+            HV.COVER_VALUE1 = HV.COVER_VALUE2 = HV.COVER_VALUE3 = HV.COVER_VALUE4 = "0"
             var i = 0, count = 0;
             if (unittype === "ACCELERATION") {
                 items = ["cm/s2","ft/s2","g","m/s2","mm/s2"];
@@ -394,8 +404,28 @@ Page {
             }
             HV.COVER_UNIT1 = HV.UNITS[unittype][0]
             HV.COVER_UNIT2 = HV.UNITS[unittype][1]
+            HV.UNITTYPE = pageHeader.title
+            if (count > 3) {
+                HV.COVER_UNIT4 = HV.UNITS[unittype][3]
+            } else {
+                if (HV.UNITTYPE === "Currency") {
+                    HV.COVER_UNIT4 = HV.UNITS[unittype][3]
+                } else {
+                    HV.COVER_UNIT4 = ""
+                }
+            }
+            if (count > 2) {
+                HV.COVER_UNIT3 = HV.UNITS[unittype][2]
+            } else {
+                if (HV.UNITTYPE === "Currency") {
+                    HV.COVER_UNIT3 = HV.UNITS[unittype][2]
+                } else {
+                    HV.COVER_UNIT3 = ""
+                }
+            }
         } else if (status === PageStatus.Deactivating) {
-            HV.COVER_UNIT1 = HV.COVER_UNIT2 = null
+            HV.COVER_UNIT1 = HV.COVER_UNIT2 = HV.COVER_UNIT3 = HV.COVER_UNIT4 = null
+            HV.COVER_VALUE1 = HV.COVER_VALUE2 = HV.COVER_VALUE3 = HV.COVER_VALUE4 = "0"
         }
     }
 }
