@@ -41,6 +41,7 @@
 #include "converter.h"
 #include "custommodel.h"
 #include "logic.h"
+#include "settings.h"
 #include "currencycache.h"
 
 int main(int argc, char *argv[])
@@ -49,6 +50,7 @@ int main(int argc, char *argv[])
 
     QCoreApplication::setOrganizationName("harbour-unitconverter");
     QCoreApplication::setApplicationName("harbour-unitconverter");
+    qmlRegisterType<Settings>("Settings", 1 , 0 , "MySettings");
 
     Converter converter;
     CustomModel custom_model;

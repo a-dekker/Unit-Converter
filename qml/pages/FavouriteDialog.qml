@@ -135,7 +135,7 @@ Dialog {
                 toUnitModel.append({"name": HV.UNITS[unittype][i]});
             }
         } else if (unittype === "FUELCONSUMPTION") {
-            items = ["km/L","L/100km","mpg"];
+            items = ["km/L","L/100km","impg","mpg"];
             HV.UNITS[unittype].sort();
             count = HV.UNITS[unittype].length;
             for (; i < count; ++i) {
@@ -236,7 +236,7 @@ Dialog {
             }
         } else if (unittype === "VOLUME") {
             items = ["cl","cm3","f3","in3","km3","m3",
-                     "mi3","mm3","yd3","l","ml","gal","oz","qt"];
+                     "mi3","mm3","yd3","l","ml","galuk","gal","oz","qt"];
             HV.UNITS[unittype].sort();
             count = HV.UNITS[unittype].length;
             for (; i < count; ++i) {

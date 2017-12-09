@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.7.1
+- Added imperial gallon (uk) to fuel consumption and volume
+- Option to switch between scientific and normal number notation
+- ft/s2knot fix and more precision for some rates
 * Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.6-1
 - Redesign of coverpage
 - Don't force decimal comma, as numeric keypad may have decimal dot

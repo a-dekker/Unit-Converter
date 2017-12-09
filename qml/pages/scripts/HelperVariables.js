@@ -64,7 +64,7 @@ var UNITS = {
     ],
 
     FUELCONSUMPTION: ["Kilometers per Liter", "Litres per 100 km",
-        "Miles per Gallon (US)"
+        "Miles per Gallon (UK)", "Miles per Gallon (US)"
     ],
 
     LENGTH: ["Angstroms", "Astronomical Units", "Centimeters", "Decimeters",
@@ -115,7 +115,7 @@ var UNITS = {
 
     VOLUME: ["Centiliters", "Cubic Centimeters", "Cubic Feet",
         "Cubic Inches", "Cubic Kilometers", "Cubic Meters", "Cubic Miles",
-        "Cubic Millimeters","Cubic Yards", "Liters", "Milliliters", "US Liquid Gallons",
-        "US Liquid Ounces", "US Liquid Quarts"
+        "Cubic Millimeters","Cubic Yards", "Liters", "Milliliters", "UK Liquid Gallons",
+        "US Liquid Gallons", "US Liquid Ounces", "US Liquid Quarts"
     ],
 }

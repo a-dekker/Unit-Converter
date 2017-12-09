@@ -1,14 +1,16 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "scripts/HelperVariables.js" as HV
+import Settings 1.0
 
-/**
- * @brief
- */
 Dialog {
     id: dialog
     width: Screen.width
     height: Screen.height
+
+    MySettings {
+        id: myset
+    }
 
     SilicaFlickable {
         id: view
@@ -36,6 +38,7 @@ Dialog {
 
             SectionHeader {
                 text: qsTr("Ruler")
+                font.family: "Verdana"
             }
             TextArea {
                 id: textarea
@@ -80,6 +83,7 @@ Dialog {
             }
             SectionHeader {
                 text: qsTr("Currency")
+                font.family: "Verdana"
             }
             TextArea {
                 focus: true
@@ -111,10 +115,38 @@ Dialog {
                 text: qsTr("Update currency cache")
                 onClicked: currencycache.updateNow()
             }
+            SectionHeader {
+                font.family: "Verdana"
+                text: qsTr("Notation")
+            }
+            ComboBox {
+                id: notation
+                width: parent.width
+                label: qsTr("Select number notation")
+                description: qsTr("Preferred number notation")
+                currentIndex: myset.value("notation","scientific") === "scientific" ? 1 : 0
+                menu: ContextMenu {
+                    MenuItem {
+                        text: qsTr("standard") // 0
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("scientific") // 1
+                        font.family: "Verdana"
+                    }
+                }
+            }
         }
     }
     onAccepted: {
         currencycache.setInterval(intervalselection.currentIndex)
+        if (notation.currentIndex === 0) {
+            myset.setValue("notation", "standard")
+        }
+        if (notation.currentIndex === 1) {
+            myset.setValue("notation", "scientific")
+        }
+        myset.sync()
     }
     onOpened: {
         hActivationSwitch.checked = HV.HORIZONTALLINESACTIVE;

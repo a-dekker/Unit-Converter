@@ -232,7 +232,7 @@ Page {
                                        "kilohertz": "kHz", "megahertz": "MHz", "radians per second": "rad/s",
                                        "revolutions per minute": "rpm","terahertz": "THz"});
                 proxymodel.insertUnits("fuel consumption",{"kilometers per liter": "km/L", "litres per 100 km": "L/100km",
-                                           "miles per gallon (US)": "mpg"});
+                                           "miles per gallon (UK)": "impg", "miles per gallon (US)": "mpg"});
                 proxymodel.insertUnits("length",{"angstroms": "A","astronomical units": "au",
                                        "centimeters": "cm", "decimeters": "dm", "feet": "ft",
                                        "inches": "in","kilometers": "km","light years": "ly",
@@ -271,7 +271,8 @@ Page {
                 proxymodel.insertUnits("volume",{"centiliters": "cl","cubic centimeters": "cm3","cubic feet": "f3",
                                        "cubic inches": "in3", "cubic kilometers": "km3","cubic meters": "m3",
                                        "cubic miles": "mi3", "cubic millimeters": "mm3", "cubic yards": "yd3","liters": "l","milliliters": "ml",
-                                       "US liquid gallons": "gal", "US liquid ounces": "oz","US liquid quarts":"qt"});
+                                       "UK liquid gallons": "galuk", "US liquid gallons": "gal", "US liquid ounces": "oz",
+                                       "US liquid quarts":"qt"});
                 proxymodel.setupModel()
             }
             proxymodel.setFilterWildcard("#null#");

@@ -7,20 +7,12 @@
 #include <QtCore/QtMath>
 #include <math.h>
 #include <QRegularExpression>
-#include "settings.h"
 #include "converter.h"
 
 QString doConvert(double val, double conv_val)
 {
-    QSettings mySets;
-    QString retval;
-    QString notation = mySets.value("notation", "scientific").toString();
-    if (notation == "scientific") {
-        retval = QString::number(val * conv_val, 'g');
-    }
-    else {
-        retval = QString::number(val * conv_val, 'f').replace(QRegularExpression("\\.?0+$"), "");
-    }
+    /* QString myval = val; */
+    QString retval = QString::number(val * conv_val, 'f').replace(QRegularExpression("\\.?0+$"), "");
     return retval;
 }
 
@@ -48,7 +40,7 @@ QString Converter::convert2(QString from, QString to, QString value_,
 
         values["m/s22cm/s2"] = doConvert(value, 100);
         values["m/s22mm/s2"] = doConvert(value, 1000);
-        values["m/s22ft/s2"] = doConvert(value, 3.2808398950131);
+        values["m/s22ft/s2"] = doConvert(value, 3.280839895);
         values["m/s22g"] = doConvert(value, 0.101971621);
         values["cm/s22m/s2"] = doConvert(value, 0.01);
         values["cm/s22mm/s2"] = doConvert(value, 10);
@@ -1719,28 +1711,28 @@ QString Converter::convert2(QString from, QString to, QString value_,
         switch (unitOptions.indexOf(unit)) {
         case 0:
             values["ft/s2km/h"] = doConvert(value, 1.09728);
-            values["ft/s2knot"] = doConvert(value, 0.5924838012959);
+            values["ft/s2knot"] = doConvert(value, 1.184967603);
             values["ft/s2mach"] = doConvert(value, 0.000887078);
-            values["ft/s2mph"] = doConvert(value, 0.68181818181818);
+            values["ft/s2mph"] = doConvert(value, 0.681818182);
             values["ft/s2m/s"] = doConvert(value, 0.3048);
 
             return values[from2to];
 
         case 1:
-            values["km/h2ft/s"] = doConvert(value, 0.91134441528142);
-            values["km/h2knot"] = doConvert(value, 0.53995680345572);
+            values["km/h2ft/s"] = doConvert(value, 0.911344415);
+            values["km/h2knot"] = doConvert(value, 0.539956803);
             values["km/h2mach"] = doConvert(value, 0.000808434);
-            values["km/h2mph"] = doConvert(value, 0.62137119223733);
-            values["km/h2m/s"] = doConvert(value, 0.27777777777778);
+            values["km/h2mph"] = doConvert(value, 0.621371192);
+            values["km/h2m/s"] = doConvert(value, 0.277777778);
 
             return values[from2to];
 
         case 2:
             values["knot2km/h"] = doConvert(value, 1.852);
-            values["knot2ft/s"] = doConvert(value, 1.6878098571012);
+            values["knot2ft/s"] = doConvert(value, 1.687809857);
             values["knot2mach"] = doConvert(value, 0.001497219);
-            values["knot2mph"] = doConvert(value, 1.1507794480235);
-            values["knot2m/s"] = doConvert(value, 0.51444444444444);
+            values["knot2mph"] = doConvert(value, 1.150779448);
+            values["knot2m/s"] = doConvert(value, 0.514444444);
 
             return values[from2to];
 
@@ -1766,7 +1758,7 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["m/s2km/h"] = doConvert(value, 3.6);
             values["m/s2knot"] = doConvert(value, 1.943844492);
             values["m/s2mach"] = doConvert(value, 0.002910361);
-            values["m/s2mph"] = doConvert(value, 2.2369362920544);
+            values["m/s2mph"] = doConvert(value, 2.236936292);
             values["m/s2ft/s"] = doConvert(value, 3.280839895);
 
             return values[from2to];
@@ -1780,7 +1772,7 @@ QString Converter::convert2(QString from, QString to, QString value_,
                                      << "R");
         switch (unitOptions.indexOf(unit)) {
         case 0:
-            values["C2F"] = QString::number(value * 1.8 + 32);
+            values["C2F"] = doConvert(value, 1.8 + 32);
             values["C2K"] = QString::number(value + 273.15);
             values["C2R"] = QString::number((value + 273.15) * 1.8);
 
@@ -1794,7 +1786,7 @@ QString Converter::convert2(QString from, QString to, QString value_,
             return values[from2to];
         case 2:
             values["K2C"] = QString::number(value - 273.15);
-            values["K2F"] = QString::number(value * 1.8 - 459.67);
+            values["K2F"] = doConvert(value, 1.8 - 459.67);
             values["K2R"] = doConvert(value, 1.8);
 
             return values[from2to];
@@ -1844,86 +1836,86 @@ QString Converter::convert2(QString from, QString to, QString value_,
             return values[from2to];
 
         case 2:
-            values["us2hr"] = doConvert(value, 2.777777778e-10);
-            values["us2day"] = doConvert(value, 1.157407407e-11);
-            values["us2min"] = doConvert(value, 0.000000017);
-            values["us2ms"] = doConvert(value, 0.001);
-            values["us2ns"] = doConvert(value, 1000);
-            values["us2s"] = doConvert(value, 0.000001);
-            values["us2yr"] = doConvert(value, 3.170979198e-14);
-            values["us2wk"] = doConvert(value, 1.653439153e-12);
+            values["us2hr"] = doConvert(value, 2.777777778e-10, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2day"] = doConvert(value, 1.157407407e-11, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2min"] = doConvert(value, 0.000000017, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2ms"] = doConvert(value, 0.001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2ns"] = doConvert(value, 1000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2s"] = doConvert(value, 0.000001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2yr"] = doConvert(value, 3.170979198e-14, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["us2wk"] = doConvert(value, 1.653439153e-12, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 3:
-            values["min2hr"] = doConvert(value, 0.016666667);
-            values["min2us"] = doConvert(value, 60000000);
-            values["min2day"] = doConvert(value, 0.000694444);
-            values["min2ms"] = doConvert(value, 60000);
-            values["min2ns"] = doConvert(value, 6e10);
-            values["min2s"] = doConvert(value, 60);
-            values["min2yr"] = doConvert(value, 0.000001903);
-            values["min2wk"] = doConvert(value, 0.000099206);
+            values["min2hr"] = doConvert(value, 0.016666667, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2us"] = doConvert(value, 60000000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2day"] = doConvert(value, 0.000694444, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2ms"] = doConvert(value, 60000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2ns"] = doConvert(value, 6e10, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2s"] = doConvert(value, 60, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2yr"] = doConvert(value, 0.000001903, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["min2wk"] = doConvert(value, 0.000099206, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 4:
-            values["ms2hr"] = doConvert(value, 0.000000278);
-            values["ms2us"] = doConvert(value, 1000);
-            values["ms2min"] = doConvert(value, 0.000016667);
-            values["ms2day"] = doConvert(value, 0.000000012);
-            values["ms2ns"] = doConvert(value, 1000000);
-            values["ms2s"] = doConvert(value, 0.001);
-            values["ms2yr"] = doConvert(value, 3.170979198e-11);
-            values["ms2wk"] = doConvert(value, 0.000000002);
+            values["ms2hr"] = doConvert(value, 0.000000278, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2us"] = doConvert(value, 1000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2min"] = doConvert(value, 0.000016667, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2day"] = doConvert(value, 0.000000012, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2ns"] = doConvert(value, 1000000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2s"] = doConvert(value, 0.001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2yr"] = doConvert(value, 3.170979198e-11, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ms2wk"] = doConvert(value, 0.000000002, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 5:
-            values["ns2hr"] = doConvert(value, 2.777777778e-13);
-            values["ns2us"] = doConvert(value, 0.001);
-            values["ns2min"] = doConvert(value, 1.666666667e-11);
-            values["ns2ms"] = doConvert(value, 0.000001);
-            values["ns2day"] = doConvert(value, 1.157407407e-14);
-            values["ns2s"] = doConvert(value, 0.000000001);
-            values["ns2yr"] = doConvert(value, 3.170979198e-17);
-            values["ns2wk"] = doConvert(value, 1.653439153e-15);
+            values["ns2hr"] = doConvert(value, 2.777777778e-13, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2us"] = doConvert(value, 0.001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2min"] = doConvert(value, 1.666666667e-11, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2ms"] = doConvert(value, 0.000001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2day"] = doConvert(value, 1.157407407e-14, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2s"] = doConvert(value, 0.000000001, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2yr"] = doConvert(value, 3.170979198e-17, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["ns2wk"] = doConvert(value, 1.653439153e-15, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 6:
-            values["s2hr"] = doConvert(value, 0.000277778);
-            values["s2us"] = doConvert(value, 1000000);
-            values["s2min"] = doConvert(value, 0.016666667);
-            values["s2ms"] = doConvert(value, 1000);
-            values["s2ns"] = doConvert(value, 1000000000);
-            values["s2day"] = doConvert(value, 0.000011574);
-            values["s2yr"] = doConvert(value, 0.000000032);
-            values["s2wk"] = doConvert(value, 0.000001653);
+            values["s2hr"] = doConvert(value, 0.000277778, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2us"] = doConvert(value, 1000000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2min"] = doConvert(value, 0.016666667, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2ms"] = doConvert(value, 1000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2ns"] = doConvert(value, 1000000000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2day"] = doConvert(value, 0.000011574, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2yr"] = doConvert(value, 0.000000032, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["s2wk"] = doConvert(value, 0.000001653, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 7:
-            values["yr2hr"] = doConvert(value, 8760);
-            values["yr2us"] = doConvert(value, 3.1536e13);
-            values["yr2min"] = doConvert(value, 525600);
-            values["yr2ms"] = doConvert(value, 3.1536e13);
-            values["yr2ns"] = doConvert(value, 3.1536e16);
-            values["yr2s"] = doConvert(value, 31536000);
-            values["yr2day"] = doConvert(value, 365);
-            values["yr2wk"] = doConvert(value, 52.142857142857);
+            values["yr2hr"] = doConvert(value, 8760, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2us"] = doConvert(value, 3.1536e13, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2min"] = doConvert(value, 525600, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2ms"] = doConvert(value, 3.1536e13, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2ns"] = doConvert(value, 3.1536e16, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2s"] = doConvert(value, 31536000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2day"] = doConvert(value, 365, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["yr2wk"] = doConvert(value, 52.142857143, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
 
         case 8:
-            values["wk2hr"] = doConvert(value, 168);
-            values["wk2us"] = doConvert(value, 6.048e11);
-            values["wk2min"] = doConvert(value, 10080);
-            values["wk2ms"] = doConvert(value, 604800000);
-            values["wk2ns"] = doConvert(value, 6.048e14);
-            values["wk2s"] = doConvert(value, 604800);
-            values["wk2yr"] = doConvert(value, 0.019178082);
-            values["wk2day"] = doConvert(value, 7);
+            values["wk2hr"] = doConvert(value, 168, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2us"] = doConvert(value, 6.048e11, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2min"] = doConvert(value, 10080, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2ms"] = doConvert(value, 604800000, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2ns"] = doConvert(value, 6.048e14, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2s"] = doConvert(value, 604800, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2yr"] = doConvert(value, 0.019178082, 'f').replace(QRegularExpression("\\.?0+$"), "");
+            values["wk2day"] = doConvert(value, 7, 'f').replace(QRegularExpression("\\.?0+$"), "");
 
             return values[from2to];
         }

@@ -15,6 +15,7 @@ SOURCES += src/harbour-unitconverter.cpp \
     src/custommodel.cpp \
     src/converter.cpp \
     src/logic.cpp \
+    src/settings.cpp \
     src/currencycache.cpp
 
 OTHER_FILES += qml/harbour-unitconverter.qml \
@@ -58,8 +59,8 @@ HEADERS += \
     src/custommodel.h \
     src/converter.h \
     src/logic.h \
+    src/settings.h \
     src/currencycache.h
 
 RESOURCES += \
     MyResource.qrc
-
