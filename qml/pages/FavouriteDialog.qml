@@ -41,6 +41,7 @@ Dialog {
             res = String(converter.convert2(items[combo2.currentIndex],
                                             items[combo3.currentIndex], value, unittype));
         }
+        res = main.commaSep ? res.replace(".",",") : res;
         return res;
     }
 
@@ -322,7 +323,7 @@ Dialog {
                     if (text === "") {
                         toField.text = calculateConversion(0.0)
                     } else {
-                        var value_ = Number(text);
+                        var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
                         if (isFinite(value_)) {
                             toField.text = calculateConversion(value_)
                         } else {
@@ -372,7 +373,7 @@ Dialog {
                          if (unittype === "NUMBERS") {
                              toField.text = calculateConversion(text)
                          } else {
-                             var value_ = Number(text);
+                             var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
                              if (isFinite(value_)) {
                                  toField.text = calculateConversion(value_)
                              } else {
@@ -416,7 +417,7 @@ Dialog {
                         if (unittype === "NUMBERS") {
                             toField.text = calculateConversion(text)
                         } else {
-                            var value_ = Number(text);
+                            var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
                             if (isFinite(value_)) {
                                 toField.text = calculateConversion(value_)
                             } else {
@@ -430,7 +431,7 @@ Dialog {
                  id: toField
                  focus: true
                  width: parent.width
-                 placeholderText: Number(0.0).toPrecision(2).toString()
+                 placeholderText: main.commaSep ? Number(0.0).toPrecision(2).toString().replace(".",",") : Number(0.0).toPrecision(2).toString()
                  font.pixelSize: Theme.fontSizeLarge
                  font.underline: true
                  font.bold: true

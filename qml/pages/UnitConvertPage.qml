@@ -26,7 +26,11 @@ Page {
         count = HV.UNITS[unittype].length
         for (; i < count; ++i) {
             if (i === idx) {
-                listModel.setProperty(i,"convValue", String(value));
+                if (main.commaSep) {
+                    listModel.setProperty(i,"convValue", String(value).replace(".",","))
+                } else {
+                    listModel.setProperty(i,"convValue", String(value));
+                }
                 continue;
             } else {
                 var res;
@@ -35,7 +39,7 @@ Page {
                 } else {
                     res = String(converter.convert2(items[idx], items[i], value, unittype));
                 }
-                res = res;
+                res = main.commaSep ? res.replace(".",",") : res;
                 listModel.setProperty(i,"convValue", res);
                 //listModel.get(i).convValue = res;
             }
@@ -112,7 +116,7 @@ Page {
                     width: parent.width
                     transform: Translate{x: -10}
                     text: convValue
-                    placeholderText: Number(0.0).toPrecision(2).toString()
+                    placeholderText: main.commaSep ? Number(0.0).toPrecision(2).toString().replace(".",",") : Number(0.0).toPrecision(2).toString()
                     font.pixelSize: Theme.fontSizeLarge
                     font.underline: true
                     font.bold: true
@@ -162,7 +166,7 @@ Page {
                                 if (unittype === "NUMBERS") {
                                     calculateConversion(text, unitName)
                                 } else {
-                                    var value_ = Number(text);
+                                    var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
                                     if (isFinite(value_)) {
                                         calculateConversion(value_, unitName)
                                     } else {

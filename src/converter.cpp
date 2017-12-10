@@ -12,6 +12,8 @@
 
 QString doConvert(double val, double conv_val)
 {
+    /* QLocale locale; */
+    /* qDebug() << locale.decimalPoint(); */
     QSettings mySets;
     QString retval;
     QString notation = mySets.value("notation", "scientific").toString();

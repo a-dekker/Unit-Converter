@@ -36,6 +36,8 @@ import "pages/scripts/UnitConververDB.js" as DB
 
 ApplicationWindow
 {
+    id: main
+    property bool commaSep: Qt.locale().decimalPoint === ','
     initialPage: Component { MainPage {} }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 

@@ -42,7 +42,7 @@ Page {
         Text {
             anchors {
                 top: col.bottom
-                topMargin: Theme.paddingLarge * 2
+                topMargin: Theme.paddingLarge
             }
             width: parent.width;
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere;
@@ -53,8 +53,9 @@ Page {
             text: "<style>a:link { color: " + Theme.highlightColor + "; }</style>" +
                   qsTr("Version %1").arg(HV.VERSION) + "<br/>" +
                   qsTr('Created by Mikko Leppänen') + '<br/>' +
+                  qsTr('Adapted by Arno Dekker') + '<br/>' +
                   qsTr('The source code is available at %1').
-                  arg('<br/> <a href="https://github.com/MikeL83/Unit-Converter">%1</a>').arg("Project webpage")
+                  arg('<br/> <a href="https://github.com/a-dekker/Unit-Converter">%1</a>').arg("Project webpage")
 
             onLinkActivated: {
                 Qt.openUrlExternally(link);

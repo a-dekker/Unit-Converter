@@ -8,7 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Nov 12 2017 Arno Dekker <jack.tar@example.com> 2.7.1
+* Sun Dec 10 2017 Arno Dekker <jack.tar@example.com> 2.8.1
+- Support both dot and comma as decimal sign
+- Updated reference to gitub page
+* Sat Dec 9 2017 Arno Dekker <jack.tar@example.com> 2.7.1
 - Added imperial gallon (uk) to fuel consumption and volume
 - Option to switch between scientific and normal number notation
 - ft/s2knot fix and more precision for some rates
