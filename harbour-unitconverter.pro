@@ -10,6 +10,7 @@ TARGET = harbour-unitconverter
 
 CONFIG += sailfishapp c++11
 QT += network
+DEPLOYMENT_PATH = /usr/share/$${TARGET}
 
 SOURCES += src/harbour-unitconverter.cpp \
     src/custommodel.cpp \
@@ -23,6 +24,7 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
     rpm/harbour-unitconverter.spec \
     rpm/harbour-unitconverter.yaml \
     harbour-unitconverter.desktop \
+    translations/*.ts \
     qml/pages/QuickSearchPage.qml \
     qml/pages/MainPage.qml \
     qml/pages/scripts/Unitconverter.js \
@@ -41,6 +43,16 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
     qml/pages/FavouritesPage.qml \
     qml/pages/FavouriteDialog.qml
 
+
+TRANSLATIONS = translations/harbour-unitconverter-nl.ts
+translations.files = translations
+translations.path = $${DEPLOYMENT_PATH}
+# only include these files for translation:
+lupdate_only {
+    SOURCES = qml/*.qml \
+              qml/pages/*.qml
+}
+
 icon86.files += icons/86x86/harbour-unitconverter.png
 icon86.path = /usr/share/icons/hicolor/86x86/apps
 
@@ -53,7 +65,7 @@ icon128.path = /usr/share/icons/hicolor/128x128/apps
 icon256.files += icons/256x256/harbour-unitconverter.png
 icon256.path = /usr/share/icons/hicolor/256x256/apps
 
-INSTALLS += icon86 icon108 icon128 icon256
+INSTALLS += translations icon86 icon108 icon128 icon256
 
 HEADERS += \
     src/custommodel.h \

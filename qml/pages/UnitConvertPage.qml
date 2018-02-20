@@ -187,7 +187,7 @@ Page {
             var i = 0, count = 0;
             if (unittype === "ACCELERATION") {
                 items = ["cm/s2","ft/s2","g","m/s2","mm/s2"];
-                pageHeader.title = "Acceleration";
+                pageHeader.title = qsTr("Acceleration")
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
@@ -196,7 +196,7 @@ Page {
                 }
             } else if (unittype === "ANGLE") {
                 items = ["deg","grad","rad"];
-                pageHeader.title = "Angle";
+                pageHeader.title = qsTr("Angle")
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
@@ -204,7 +204,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "AREA") {
-                pageHeader.title = "Area";
+                pageHeader.title = qsTr("Area")
                 items = ["acre", "ha", "cm2", "ft2", "in2",
                          "km2", "m2", "mi2","mm2","yd2"];
                 HV.UNITS[unittype].sort();
@@ -214,7 +214,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "CURRENCY") {
-                pageHeader.title = "Currency";
+                pageHeader.title = qsTr("Currency")
                 for(;i < HV.UNITS[unittype].length ; i++) {
                     listModel.append({"unitName": HV.UNITS[unittype][i],
                                       "convValue": ""});
@@ -225,7 +225,7 @@ Page {
                 }
                     //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
             } else if (unittype === "DATASTORAGE") {
-                pageHeader.title = "Data Storage";
+                pageHeader.title = qsTr("Data Storage")
                 items = ["b", "B", "Gb", "GB", "kb",
                          "kB", "Mb", "MB", "word"];
                 HV.UNITS[unittype].sort();
@@ -235,7 +235,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "DENSITY") {
-                pageHeader.title = "Density";
+                pageHeader.title = qsTr("Density")
                 items = ["Al", "Cu", "Au", "g/cm3", "Fe",
                          "kg/m3", "Pb", "Ag"];
                 HV.UNITS[unittype].sort();
@@ -245,7 +245,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "ENERGYANDWORK") {
-                pageHeader.title = "Energy and Work";
+                pageHeader.title = qsTr("Energy and Work")
                 items = ["Btu", "cal", "eV", "erg", "ftlb",
                          "J", "kcal", "kJ", "kWh", "Nm"];
                 HV.UNITS[unittype].sort();
@@ -255,7 +255,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "FLOW") {
-                pageHeader.title = "Flow";
+                pageHeader.title = qsTr("Flow")
                 items = ["cfm","m3/h","m3/s","L/min"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -264,7 +264,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "FORCE") {
-                pageHeader.title = "Force";
+                pageHeader.title = qsTr("Force")
                 items = ["dyn","kN","kip","N","ozf","lbf"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -273,7 +273,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "FREQUENCY") {
-                pageHeader.title = "Frequency";
+                pageHeader.title = qsTr("Frequency")
                 items = ["GHz","Hz","kHz","MHz","rad/s","rpm","THz"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -282,7 +282,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "FUELCONSUMPTION") {
-                pageHeader.title = "Fuel Consumption";
+                pageHeader.title = qsTr("Fuel Consumption")
                 items = ["km/L","L/100km","impg","mpg"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -291,7 +291,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "LENGTH") {
-                pageHeader.title = "Length";
+                pageHeader.title = qsTr("Length")
                 items = ["A","au","cm","dm","ft","in","km",
                          "ly","m","um","mil","mi","mm","nm","nautmi","pm","yd"];
                 HV.UNITS[unittype].sort();
@@ -301,7 +301,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "MAGNETICFIELDSTRENGTH") {
-                pageHeader.title = "Magnetic Field Strength";
+                pageHeader.title = qsTr("Magnetic Field Strength")
                 items = ["A/m","Oe"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -310,7 +310,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "MAGNETICFLUXDENSITY") {
-                pageHeader.title = "Magnetic Flux Density";
+                pageHeader.title = qsTr("Magnetic Flux Density")
                 items = ["gamma","Gs","T"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -319,7 +319,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "MASS") {
-                pageHeader.title = "Mass";
+                pageHeader.title = qsTr("Mass")
                 items = ["amu","gr","g","kg","ug","mg","oz","lbm","slug"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -328,7 +328,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "NUMBERS") {
-                pageHeader.title = "Numbers";
+                pageHeader.title = qsTr("Numbers")
                 //fromField.inputMethodHints = Qt.ImhNoPredictiveText
                 //fromField.validator.destroy()
                 items = ["bin","dec","hex","oct"];
@@ -339,7 +339,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "POWER") {
-                pageHeader.title = "Power";
+                pageHeader.title = qsTr("Power")
                 items = ["Btu/h","hpb","cal/s", "dBm", "dBW", "hpe",
                          "GW","kW","hp","MW","ftlb/s","TW","W"];
                 HV.UNITS[unittype].sort();
@@ -349,7 +349,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "PRESSURE") {
-                pageHeader.title = "Pressure";
+                pageHeader.title = qsTr("Pressure")
                 items = ["bar","dyn/cm2","ftAgua","hPa","inAgua",
                          "kPa","MPa","mbar","mmHg","Pa","psi","atm","Torr"];
                 HV.UNITS[unittype].sort();
@@ -359,7 +359,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "SPEED") {
-                pageHeader.title = "Speed";
+                pageHeader.title = qsTr("Speed")
                 items = ["ft/s","km/h","knot","mach","m/s","mph"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -368,7 +368,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "TEMPERATURE") {
-                pageHeader.title = "Temperature";
+                pageHeader.title = qsTr("Temperature")
                 items = ["C","F","K","R"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -377,7 +377,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "TIME") {
-                pageHeader.title = "Time";
+                pageHeader.title = qsTr("Time")
                 items = ["day","hr","us","ms","min","ns","s","wk","yr"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;
@@ -386,7 +386,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "TORQUE") {
-                pageHeader.title = "Torque";
+                pageHeader.title = qsTr("Torque")
                 items = ["dyn-cm","dyn-m","gf-m","kgf-m","N-cm",
                          "N-m","ozf-in","lbf-ft","lbf-in"];
                 HV.UNITS[unittype].sort();
@@ -396,7 +396,7 @@ Page {
                                       "convValue": ""});
                 }
             } else if (unittype === "VOLUME") {
-                pageHeader.title = "Volume";
+                pageHeader.title = qsTr("Volume")
                 items = ["cl","cm3","f3","in3","km3","m3",
                          "mi3","mm3","yd3","l","ml","galuk","gal","oz","qt"];
                 HV.UNITS[unittype].sort();
