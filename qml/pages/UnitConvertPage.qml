@@ -340,7 +340,7 @@ Page {
                 }
             } else if (unittype === "POWER") {
                 pageHeader.title = qsTr("Power")
-                items = ["Btu/h","hpb","cal/s", "dBm", "dBW", "hpe",
+                items = ["hpb","Btu/h","cal/s", "dBm", "dBW", "hpe",
                          "GW","kW","hp","MW","ftlb/s","TW","W"];
                 HV.UNITS[unittype].sort();
                 count = HV.UNITS[unittype].length;

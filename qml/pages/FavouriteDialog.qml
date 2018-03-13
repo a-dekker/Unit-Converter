@@ -185,7 +185,7 @@ Dialog {
                 toUnitModel.append({"name": HV.UNITS[unittype][i]});
             }
         } else if (unittype === "POWER") {
-            items = ["Btu/h","hpb","cal/s", "dBm", "dBW", "hpe",
+            items = ["hpb","Btu/h","cal/s","dBm", "dBW", "hpe",
                      "GW","kW","hp","MW","ftlb/s","TW","W"];
             HV.UNITS[unittype].sort();
             count = HV.UNITS[unittype].length;
