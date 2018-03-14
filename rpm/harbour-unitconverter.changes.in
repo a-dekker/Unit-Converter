@@ -8,7 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Tue Mar 13 2018 Arno Dekker <jack.tar@example.com> 2.9.1
+* Wed Mar 14 2018 Arno Dekker <jack.tar@example.com> 2.10.1
+- Added Iceland Krona to currency list, which also fixes wrong currency rates
+Tue Mar 13 2018 Arno Dekker <jack.tar@example.com> 2.9.1
 - Fix in Power conversion
 * Sun Dec 10 2017 Arno Dekker <jack.tar@example.com> 2.8.1
 - Support both dot and comma as decimal sign
