@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Apr 2 2018 Arno Dekker <jack.tar@example.com> 2.11.1
+- Basic French translation by lutinotmalin (and Dutch by ade)
 * Wed Mar 14 2018 Arno Dekker <jack.tar@example.com> 2.10.1
 - Added Iceland Krona to currency list, which also fixes wrong currency rates
 Tue Mar 13 2018 Arno Dekker <jack.tar@example.com> 2.9.1

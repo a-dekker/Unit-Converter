@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="FR_fr">
+<TS version="2.1" language="nl">
 <context>
     <name>AboutPage</name>
     <message>
@@ -16,22 +16,22 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="54"/>
         <source>Version %1</source>
-        <translation>Version %1</translation>
+        <translation>Versie %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="55"/>
         <source>Created by Mikko Leppänen</source>
-        <translation>Une création de Mikko Leppänen</translation>
+        <translation>Gemaakt door Mikko Leppänen</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>Adapted by Arno Dekker</source>
-        <translation>Arrangements par Arno Dekker</translation>
+        <translation>Aangepast door Arno Dekker</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>The source code is available at %1</source>
-        <translation>Code source disponible sur %1</translation>
+        <translation>De broncode is te vinden op %1</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="340"/>
         <source>Give a value...</source>
-        <translation>Indiquez une valeur...</translation>
+        <translation>Geeft een waarde...</translation>
     </message>
 </context>
 <context>
@@ -47,32 +47,32 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="22"/>
         <source>Deleting all favourites...</source>
-        <translation>Suppression de tous les favoris...</translation>
+        <translation>Verwijder alle favorieten...</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="49"/>
         <source>Favourites</source>
-        <translation>Favoris</translation>
+        <translation>Favorieten</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="54"/>
         <source>No favourites available</source>
-        <translation>Aucun favori disponible</translation>
+        <translation>Geen favorieten beschikbaar</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="60"/>
         <source>Delete all</source>
-        <translation>Tout supprimer</translation>
+        <translation>Verwijder alles</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="66"/>
         <source>Add favourite</source>
-        <translation>Ajouter un favori</translation>
+        <translation>Favoriet toevoegen</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="201"/>
         <source>Deleting favourite...</source>
-        <translation>Suppression du favori...</translation>
+        <translation>Favoriet aan het verwijderen...</translation>
     </message>
 </context>
 <context>
@@ -85,27 +85,27 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="36"/>
         <source>About</source>
-        <translation>À propos</translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>Options</source>
-        <translation>Paramètres</translation>
+        <translation>Opties</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="46"/>
         <source>Quick Search</source>
-        <translation>Rechercher</translation>
+        <translation>Snel zoeken</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>Favourites</source>
-        <translation>Favoris</translation>
+        <translation>Favorieten</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="67"/>
         <source>Ruler</source>
-        <translation>Règle graduée</translation>
+        <translation>Lineaal</translation>
     </message>
 </context>
 <context>
@@ -113,102 +113,102 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="40"/>
         <source>Ruler</source>
-        <translation>Règle graduée</translation>
+        <translation>Lineaal</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>Vous pouvez activer ou désactiver à votre guise les lignes verticales et horizontales de la règle graduée. Si vous le faites, vous devrez tapoter l&apos;écran pour afficher les lignes de mesure. Par ailleurs, le bouton de retour est par défaut désactivé, mais il est possible de le solliciter en appuyant sur le coin gauche de l&apos;écran.</translation>
+        <translation>Je kunt de schaal van de lineaal activeren en deactiveren. Als je een van de schalen uitzet, kun je die terug krijgen door het scherm aan te raken. Je kunt alleen terug navigeren door de linkerbovenhoek van het scherm aan te raken.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
         <source>Activate ruler&apos;s horizontal lines</source>
-        <translation>Afficher les lignes horizontales</translation>
+        <translation>Zet de horizontale lijnen van de lineaal aan</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="61"/>
         <source>Activates ruler&apos;s horizontal lines</source>
-        <translation>Active les lignes de mesure horizontales</translation>
+        <translation>Activeert de horizontale lijnen van de lineaal</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="73"/>
         <source>Activate ruler&apos;s vertical lines</source>
-        <translation>Afficher les lignes verticales</translation>
+        <translation>Zet de verticale lijnen van de lineaal aan</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="74"/>
         <source>Activates ruler&apos;s vertical lines</source>
-        <translation>Active les lignes de mesure verticales</translation>
+        <translation>Activeert de verticale lijnen van de lineaal</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
         <source>Currency</source>
-        <translation>Devises</translation>
+        <translation>Munteenheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
-        <translation>Vous pouvez modifier la fréquence à laquelle les devises sont mises à jour. Si vous désactivez la mise à jour automatique, vous devrez rafraîchir les devises manuellement.</translation>
+        <translation>Je kunt de frequentie van het bijwerken van de koersen aanpassen. Als je het automatisch bijwerken uitzet, moet je het update proces handmatig starten.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="102"/>
         <source>Select update interval</source>
-        <translation>Intervalle favorite</translation>
+        <translation>Kies een update interval</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="106"/>
         <source>Daily update</source>
-        <translation>MàJ quotidienne</translation>
+        <translation>Dagelijkse update</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="107"/>
         <source>Weekly update</source>
-        <translation>MàJ hebdomadaire</translation>
+        <translation>Wekelijkse update</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="108"/>
         <source>Monthly update</source>
-        <translation>MàJ mensuelle</translation>
+        <translation>Maandelijkse update</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="109"/>
         <source>Always at application start</source>
-        <translation>Au démarrage de l&apos;appli</translation>
+        <translation>Bij het starten van de applicatie</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Disable automatic update</source>
-        <translation>Pas de MàJ automatique</translation>
+        <translation>Zet automatisch bijwerken uit</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="115"/>
         <source>Update currency cache</source>
-        <translation>Mise à jour des devises</translation>
+        <translation>Werk valuta gegevens bij</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="120"/>
         <source>Notation</source>
-        <translation>Nonation des nombres</translation>
+        <translation>Notatie</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="125"/>
         <source>Select number notation</source>
-        <translation>Notation des nombres</translation>
+        <translation>Selecteer de numerieke notatie</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="126"/>
         <source>Preferred number notation</source>
-        <translation>Sélectionnez le type de notation souhaité</translation>
+        <translation>Gewenste numerieke notatie</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="130"/>
         <source>standard</source>
-        <translation>Standard</translation>
+        <translation>standaard</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="134"/>
         <source>scientific</source>
-        <translation>Scientifique</translation>
+        <translation>wetenschappelijk</translation>
     </message>
 </context>
 <context>
@@ -216,7 +216,7 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="57"/>
         <source>Search</source>
-        <translation>Que cherchez-vous ?</translation>
+        <translation>Zoeken</translation>
     </message>
 </context>
 <context>
@@ -224,112 +224,112 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="190"/>
         <source>Acceleration</source>
-        <translation>Accélération</translation>
+        <translation>Versnelling</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="199"/>
         <source>Angle</source>
-        <translation>Angle</translation>
+        <translation>Hoek</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="207"/>
         <source>Area</source>
-        <translation>Superficie</translation>
+        <translation>Oppervlakte</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="217"/>
         <source>Currency</source>
-        <translation>Devise</translation>
+        <translation>Munteenheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="228"/>
         <source>Data Storage</source>
-        <translation>Stockage de données</translation>
+        <translation>Data Opslag</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="238"/>
         <source>Density</source>
-        <translation>Masse volumique</translation>
+        <translation>Dichtheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="248"/>
         <source>Energy and Work</source>
-        <translation>Énergie</translation>
+        <translation>Energie en Werk</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="258"/>
         <source>Flow</source>
-        <translation>Flux</translation>
+        <translation>Stroom</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="267"/>
         <source>Force</source>
-        <translation>Force physique</translation>
+        <translation>Kracht</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="276"/>
         <source>Frequency</source>
-        <translation>Fréquence</translation>
+        <translation>Frequentie</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="285"/>
         <source>Fuel Consumption</source>
-        <translation>Conso. de carburant</translation>
+        <translation>Brandstof Verbruik</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="294"/>
         <source>Length</source>
-        <translation>Longueur</translation>
+        <translation>Lengte</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="304"/>
         <source>Magnetic Field Strength</source>
-        <translation>Champ magnétique (H)</translation>
+        <translation>Magnetisch Veld Kracht</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="313"/>
         <source>Magnetic Flux Density</source>
-        <translation>Champ magnétique (B)</translation>
+        <translation>Magnetische fluxdichtheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="322"/>
         <source>Mass</source>
-        <translation>Masse</translation>
+        <translation>Massa</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="331"/>
         <source>Numbers</source>
-        <translation>Numération</translation>
+        <translation>Getallen</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="342"/>
         <source>Power</source>
-        <translation>Puissance physique</translation>
+        <translation>Vermogen</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="352"/>
         <source>Pressure</source>
-        <translation>Pression</translation>
+        <translation>Druk</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="362"/>
         <source>Speed</source>
-        <translation>Vitesse</translation>
+        <translation>Snelheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="371"/>
         <source>Temperature</source>
-        <translation>Température</translation>
+        <translation>Temperatuur</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="380"/>
         <source>Time</source>
-        <translation>Durée</translation>
+        <translation>Tijd</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="389"/>
         <source>Torque</source>
-        <translation>Moment de force</translation>
+        <translation>Torque</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="399"/>
@@ -342,22 +342,22 @@
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="39"/>
         <source>From</source>
-        <translation>De</translation>
+        <translation>Van</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="57"/>
         <source>To</source>
-        <translation>À</translation>
+        <translation>tot</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
         <source>Give a new rate</source>
-        <translation>Donnez un nouveau taux</translation>
+        <translation>Geef een nieuwe koers</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="79"/>
         <source>Currency rate</source>
-        <translation>Cours des devises</translation>
+        <translation>Munt koers</translation>
     </message>
 </context>
 </TS>

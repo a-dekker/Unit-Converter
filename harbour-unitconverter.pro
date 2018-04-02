@@ -8,7 +8,7 @@
 #         - icon definition filename in desktop file must be changed
 TARGET = harbour-unitconverter
 
-CONFIG += sailfishapp c++11
+CONFIG += sailfishapp c++11 sailfishapp_i18n
 QT += network
 DEPLOYMENT_PATH = /usr/share/$${TARGET}
 
@@ -44,13 +44,15 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
     qml/pages/FavouriteDialog.qml
 
 
-TRANSLATIONS = translations/harbour-unitconverter-nl.ts
+TRANSLATIONS = translations/harbour-unitconverter-nl.ts \
+               translations/harbour-unitconverter-fr.ts
 translations.files = translations
 translations.path = $${DEPLOYMENT_PATH}
 # only include these files for translation:
 lupdate_only {
     SOURCES = qml/*.qml \
-              qml/pages/*.qml
+              qml/pages/*.qml \
+              qml/pages/components/*.qml
 }
 
 icon86.files += icons/86x86/harbour-unitconverter.png
