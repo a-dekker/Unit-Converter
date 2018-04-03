@@ -31,7 +31,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>The source code is available at %1</source>
-        <translation>Code source disponible sur %1</translation>
+        <translation>Code source disponible sur : %1</translation>
     </message>
 </context>
 <context>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>Vous pouvez activer ou désactiver à votre guise les lignes verticales et horizontales de la règle graduée. Si vous le faites, vous devrez tapoter l&apos;écran pour afficher les lignes de mesure. Par ailleurs, le bouton de retour est par défaut désactivé, mais il est possible de le solliciter en appuyant sur le coin gauche de l&apos;écran.</translation>
+        <translation>Vous pouvez activer ou désactiver à votre guise les lignes verticales et horizontales de la règle graduée. Si vous le faites, vous devrez appuyer sur l&apos;écran pour afficher les lignes de mesure. Par ailleurs, le bouton de retour est désactivé, mais il est possible de le solliciter en appuyant sur le coin gauche de l&apos;écran.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
@@ -148,12 +148,12 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
-        <translation>Vous pouvez modifier la fréquence à laquelle les devises sont mises à jour. Si vous désactivez la mise à jour automatique, vous devrez rafraîchir les devises manuellement.</translation>
+        <translation>Vous pouvez modifier la fréquence à laquelle les devises seront mises à jour. Si vous désactivez la mise à jour automatique, vous devrez rafraîchir les devises manuellement.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="102"/>
         <source>Select update interval</source>
-        <translation>Intervalle favorite</translation>
+        <translation>Intervalle désirée</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="106"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="109"/>
         <source>Always at application start</source>
-        <translation>Au démarrage de l&apos;appli</translation>
+        <translation>MàJ au démarrage de l&apos;appli</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="228"/>
         <source>Data Storage</source>
-        <translation>Stockage de données</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="238"/>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="267"/>
         <source>Force</source>
-        <translation>Force physique</translation>
+        <translation>Force</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="276"/>
@@ -299,12 +299,12 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="331"/>
         <source>Numbers</source>
-        <translation>Numération</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="342"/>
         <source>Power</source>
-        <translation>Puissance physique</translation>
+        <translation>Puissance</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="352"/>
@@ -324,12 +324,12 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="380"/>
         <source>Time</source>
-        <translation>Durée</translation>
+        <translation>Temps</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="389"/>
         <source>Torque</source>
-        <translation>Moment de force</translation>
+        <translation>Rotation</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="399"/>
