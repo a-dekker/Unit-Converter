@@ -215,8 +215,8 @@ Page {
                                        "square kilometers": "km2", "square meters": "m2","square miles": "mi2",
                                        "square millimeters": "mm2","square yards": "yd2"});
                 proxymodel.insertUnits("data storage",{"bit": "b","byte": "B",
-                                       "kilobit": "kb", "kilobyte": "kB", "megabit": "Mb",
-                                       "megabyte": "MB","gigabit": "Gb","gigabyte":"GB","word": "word"});
+                                       "kibibit": "kb", "kibibyte": "KiB", "mebibit": "Mb",
+                                       "mebibyte": "MiB","gibibit": "Gb","gibibyte":"GiB","word": "word"});
                 proxymodel.insertUnits("density",{"aluminum": "Al", "copper": "Cu", "gold": "Au", "gram per cubic centimeter": "g/cm3",
                                        "iron": "Fe", "kilogram per cubic metre": "kg/m3", "lead": "Pb", "silver": "Ag"});
                 proxymodel.insertUnits("energy and work",{"British thermal units": "Btu","calories": "cal",

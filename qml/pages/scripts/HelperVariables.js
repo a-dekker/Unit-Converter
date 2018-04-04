@@ -39,8 +39,8 @@ var UNITS = {
         "Thai Baht", "South African Rand"
     ],
 
-    DATASTORAGE: ["Bit", "Byte", "Gigabit", "Gigabyte", "Kilobit",
-        "Kilobyte", "Megabit", "Megabyte", "Word"
+    DATASTORAGE: ["Bit", "Byte", "Gibibit", "Gibibyte", "Kibibit",
+         "Kibibyte", "Mebibit", "Mebibyte", "Word"
     ],
 
     DENSITY: ["Aluminum", "Copper", "Gold", "Gram per Cubic Centimeter",

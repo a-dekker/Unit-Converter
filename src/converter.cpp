@@ -224,109 +224,109 @@ QString Converter::convert2(QString from, QString to, QString value_,
                                      << "B"
                                      << "word"
                                      << "kb"
-                                     << "kB"
+                                     << "KiB"
                                      << "Mb"
-                                     << "MB"
+                                     << "MiB"
                                      << "Gb"
-                                     << "GB");
+                                     << "GiB");
         switch (unitOptions.indexOf(unit)) {
         case 0:
             values["b2B"] = doConvert(value, 0.125);
             values["b2word"] = doConvert(value, 0.0625);
             values["b2kb"] = doConvert(value, 0.000976563);
-            values["b2kB"] = doConvert(value, 0.00012207);
+            values["b2KiB"] = doConvert(value, 0.00012207);
             values["b2Mb"] = doConvert(value, 0.000000954);
-            values["b2MB"] = doConvert(value, 0.000000119);
+            values["b2MiB"] = doConvert(value, 0.000000119);
             values["b2Gb"] = doConvert(value, 9.313225746e-10);
-            values["b2GB"] = doConvert(value, 1.164153218e-10);
+            values["b2GiB"] = doConvert(value, 1.164153218e-10);
 
             return values[from2to];
         case 1:
             values["B2b"] = doConvert(value, 8);
             values["B2word"] = doConvert(value, 0.5);
             values["B2kb"] = doConvert(value, 0.0078125);
-            values["B2kB"] = doConvert(value, 0.000976563);
+            values["B2KiB"] = doConvert(value, 0.000976563);
             values["B2Mb"] = doConvert(value, 0.000007629);
-            values["B2MB"] = doConvert(value, 0.000000954);
+            values["B2MiB"] = doConvert(value, 0.000000954);
             values["B2Gb"] = doConvert(value, 0.000000007);
-            values["B2GB"] = doConvert(value, 9.313225746e-10);
+            values["B2GiB"] = doConvert(value, 9.313225746e-10);
 
             return values[from2to];
         case 2:
             values["word2b"] = doConvert(value, 16);
             values["word2B"] = doConvert(value, 2);
             values["word2kb"] = doConvert(value, 0.015625);
-            values["word2kB"] = doConvert(value, 0.001953125);
+            values["word2KiB"] = doConvert(value, 0.001953125);
             values["word2Mb"] = doConvert(value, 0.000015259);
-            values["word2MB"] = doConvert(value, 0.000001907);
+            values["word2MiB"] = doConvert(value, 0.000001907);
             values["word2Gb"] = doConvert(value, 0.000000015);
-            values["word2GB"] = doConvert(value, 0.000000002);
+            values["word2GiB"] = doConvert(value, 0.000000002);
 
             return values[from2to];
         case 3:
             values["kb2B"] = doConvert(value, 128);
             values["kb2word"] = doConvert(value, 64);
             values["kb2b"] = doConvert(value, 1024);
-            values["kb2kB"] = doConvert(value, 0.125);
+            values["kb2KiB"] = doConvert(value, 0.125);
             values["kb2Mb"] = doConvert(value, 0.000976563);
-            values["kb2MB"] = doConvert(value, 0.00012207);
+            values["kb2MiB"] = doConvert(value, 0.00012207);
             values["kb2Gb"] = doConvert(value, 0.000000954);
-            values["kb2GB"] = doConvert(value, 0.000000119);
+            values["kb2GiB"] = doConvert(value, 0.000000119);
 
             return values[from2to];
         case 4:
-            values["kB2B"] = doConvert(value, 1024);
-            values["kB2word"] = doConvert(value, 512);
-            values["kB2kb"] = doConvert(value, 8);
-            values["kB2b"] = doConvert(value, 8192);
-            values["kB2Mb"] = doConvert(value, 0.0078125);
-            values["kB2MB"] = doConvert(value, 0.000976562);
-            values["kB2Gb"] = doConvert(value, 0.000007629);
-            values["kB2GB"] = doConvert(value, 0.000000954);
+            values["KiB2B"] = doConvert(value, 1024);
+            values["KiB2word"] = doConvert(value, 512);
+            values["KiB2kb"] = doConvert(value, 8);
+            values["KiB2b"] = doConvert(value, 8192);
+            values["KiB2Mb"] = doConvert(value, 0.0078125);
+            values["KiB2MiB"] = doConvert(value, 0.000976562);
+            values["KiB2Gb"] = doConvert(value, 0.000007629);
+            values["KiB2GiB"] = doConvert(value, 0.000000954);
 
             return values[from2to];
         case 5:
             values["Mb2B"] = doConvert(value, 131072);
             values["Mb2word"] = doConvert(value, 65536);
             values["Mb2kb"] = doConvert(value, 1024);
-            values["Mb2kB"] = doConvert(value, 128);
+            values["Mb2KiB"] = doConvert(value, 128);
             values["Mb2b"] = doConvert(value, 1048576);
-            values["Mb2MB"] = doConvert(value, 0.125);
+            values["Mb2MiB"] = doConvert(value, 0.125);
             values["Mb2Gb"] = doConvert(value, 0.000976562);
-            values["Mb2GB"] = doConvert(value, 0.00012207);
+            values["Mb2GiB"] = doConvert(value, 0.00012207);
 
             return values[from2to];
         case 6:
-            values["MB2B"] = doConvert(value, 1048576);
-            values["MB2word"] = doConvert(value, 524288);
-            values["MB2kb"] = doConvert(value, 8192);
-            values["MB2kB"] = doConvert(value, 1024);
-            values["MB2Mb"] = doConvert(value, 8);
-            values["MB2b"] = doConvert(value, 8388608);
-            values["MB2Gb"] = doConvert(value, 0.0078125);
-            values["MB2GB"] = doConvert(value, 0.000976563);
+            values["MiB2B"] = doConvert(value, 1048576);
+            values["MiB2word"] = doConvert(value, 524288);
+            values["MiB2kb"] = doConvert(value, 8192);
+            values["MiB2KiB"] = doConvert(value, 1024);
+            values["MiB2Mb"] = doConvert(value, 8);
+            values["MiB2b"] = doConvert(value, 8388608);
+            values["MiB2Gb"] = doConvert(value, 0.0078125);
+            values["MiB2GiB"] = doConvert(value, 0.000976563);
 
             return values[from2to];
         case 7:
             values["Gb2B"] = doConvert(value, 134217728);
             values["Gb2word"] = doConvert(value, 67108864);
             values["Gb2kb"] = doConvert(value, 1048576);
-            values["Gb2kB"] = doConvert(value, 131072);
+            values["Gb2KiB"] = doConvert(value, 131072);
             values["Gb2Mb"] = doConvert(value, 1024);
-            values["Gb2MB"] = doConvert(value, 128);
+            values["Gb2MiB"] = doConvert(value, 128);
             values["Gb2b"] = doConvert(value, 1073741824);
-            values["Gb2GB"] = doConvert(value, 0.125);
+            values["Gb2GiB"] = doConvert(value, 0.125);
 
             return values[from2to];
         case 8:
-            values["GB2B"] = doConvert(value, 1073741824);
-            values["GB2word"] = doConvert(value, 536870912);
-            values["GB2kb"] = doConvert(value, 8388608);
-            values["GB2kB"] = doConvert(value, 1048576);
-            values["GB2Mb"] = doConvert(value, 8192);
-            values["GB2MB"] = doConvert(value, 1024);
-            values["GB2Gb"] = doConvert(value, 8);
-            values["GB2b"] = doConvert(value, 8589934592);
+            values["GiB2B"] = doConvert(value, 1073741824);
+            values["GiB2word"] = doConvert(value, 536870912);
+            values["GiB2kb"] = doConvert(value, 8388608);
+            values["GiB2KiB"] = doConvert(value, 1048576);
+            values["GiB2Mb"] = doConvert(value, 8192);
+            values["GiB2MiB"] = doConvert(value, 1024);
+            values["GiB2Gb"] = doConvert(value, 8);
+            values["GiB2b"] = doConvert(value, 8589934592);
 
             return values[from2to];
         }

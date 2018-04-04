@@ -85,8 +85,8 @@ Dialog {
             }
                 //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
         } else if (unittype === "DATASTORAGE") {
-            items = ["b", "B", "Gb", "GB", "kb",
-                     "kB", "Mb", "MB", "word"];
+            items = ["b", "B", "Gb", "GiB", "kb",
+                     "KiB", "Mb", "MiB", "word"];
             HV.UNITS[unittype].sort();
             count = HV.UNITS[unittype].length;
             for (; i < count; ++i) {

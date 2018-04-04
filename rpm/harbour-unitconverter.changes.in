@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Apr 4 2018 Arno Dekker <jack.tar@example.com> 2.12.1
+- Switched to IEC binary prefixes (kibi, mebi, gibi, etc.) in Data Storage
+- French translation fixes by lutinotmalin
 * Mon Apr 2 2018 Arno Dekker <jack.tar@example.com> 2.11.1
 - Basic French translation by lutinotmalin (and Dutch by ade)
 * Wed Mar 14 2018 Arno Dekker <jack.tar@example.com> 2.10.1
