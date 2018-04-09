@@ -37,7 +37,7 @@
 <context>
     <name>FavouriteDialog</name>
     <message>
-        <location filename="../qml/pages/FavouriteDialog.qml" line="340"/>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="344"/>
         <source>Give a value...</source>
         <translation>Indiquez une valeur...</translation>
     </message>
@@ -70,7 +70,7 @@
         <translation>Ajouter un favori</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FavouritesPage.qml" line="201"/>
+        <location filename="../qml/pages/FavouritesPage.qml" line="202"/>
         <source>Deleting favourite...</source>
         <translation>Suppression du favori...</translation>
     </message>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="102"/>
         <source>Select update interval</source>
-        <translation>Intervalle désirée</translation>
+        <translation>Intervalle désiré</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="106"/>
@@ -188,7 +188,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="120"/>
         <source>Notation</source>
-        <translation>Nonation des nombres</translation>
+        <translation>Notation des nombres</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="125"/>
@@ -222,117 +222,117 @@
 <context>
     <name>UnitConvertPage</name>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="190"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="208"/>
         <source>Acceleration</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="219"/>
+        <source>Angle</source>
         <translation>Accélération</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="199"/>
-        <source>Angle</source>
-        <translation>Angle</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="207"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="229"/>
         <source>Area</source>
         <translation>Superficie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="217"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="240"/>
         <source>Currency</source>
         <translation>Devise</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="228"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="252"/>
         <source>Data Storage</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="238"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="263"/>
         <source>Density</source>
         <translation>Masse volumique</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="248"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="274"/>
         <source>Energy and Work</source>
         <translation>Énergie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="258"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="285"/>
         <source>Flow</source>
         <translation>Flux</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="267"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="296"/>
         <source>Force</source>
         <translation>Force</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="276"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="307"/>
         <source>Frequency</source>
         <translation>Fréquence</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="285"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="318"/>
         <source>Fuel Consumption</source>
         <translation>Conso. de carburant</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="294"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="329"/>
         <source>Length</source>
         <translation>Longueur</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="304"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="340"/>
         <source>Magnetic Field Strength</source>
         <translation>Champ magnétique (H)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="313"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="351"/>
         <source>Magnetic Flux Density</source>
         <translation>Champ magnétique (B)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="322"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="362"/>
         <source>Mass</source>
         <translation>Masse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="331"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="373"/>
         <source>Numbers</source>
         <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="342"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="386"/>
         <source>Power</source>
         <translation>Puissance</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="352"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="397"/>
         <source>Pressure</source>
         <translation>Pression</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="362"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="408"/>
         <source>Speed</source>
         <translation>Vitesse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="371"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="419"/>
         <source>Temperature</source>
         <translation>Température</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="380"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="430"/>
         <source>Time</source>
         <translation>Temps</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="389"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="441"/>
         <source>Torque</source>
         <translation>Rotation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="399"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="452"/>
         <source>Volume</source>
         <translation>Volume</translation>
     </message>

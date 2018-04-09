@@ -164,9 +164,10 @@ Page {
                 }
                 Separator {
                     anchors.horizontalCenter: parent.horizontalCenter
-                    width: favouritesPage.width * 0.9
+                    width: parent.width
+                    horizontalAlignment: Qt.AlignHCenter
                     height: 2
-                    color: "#00FF00"
+                    color: Theme.primaryColor
                 }
             }
 

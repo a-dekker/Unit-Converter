@@ -18,29 +18,31 @@ Page {
     property bool newrate: false
     property string activeUnitName: ""
 
-
     function calculateConversion(value, unitName) {
-        var idx = HV.UNITS[unittype].indexOf(unitName);
-        var results = [];
-        var count, i = 0;
+        var idx = HV.UNITS[unittype].indexOf(unitName)
+        var results = []
+        var count, i = 0
         count = HV.UNITS[unittype].length
         for (; i < count; ++i) {
             if (i === idx) {
                 if (main.commaSep) {
-                    listModel.setProperty(i,"convValue", String(value).replace(".",","))
+                    listModel.setProperty(i, "convValue",
+                                          String(value).replace(".", ","))
                 } else {
-                    listModel.setProperty(i,"convValue", String(value));
+                    listModel.setProperty(i, "convValue", String(value))
                 }
-                continue;
+                continue
             } else {
-                var res;
+                var res
                 if (unittype === "NUMBERS") {
-                    res = String(converter.convert2Numbers(items[idx], items[i], value));
+                    res = String(converter.convert2Numbers(items[idx],
+                                                           items[i], value))
                 } else {
-                    res = String(converter.convert2(items[idx], items[i], value, unittype));
+                    res = String(converter.convert2(items[idx], items[i],
+                                                    value, unittype))
                 }
-                res = main.commaSep ? res.replace(".",",") : res;
-                listModel.setProperty(i,"convValue", res);
+                res = main.commaSep ? res.replace(".", ",") : res
+                listModel.setProperty(i, "convValue", res)
                 //listModel.get(i).convValue = res;
             }
         }
@@ -70,7 +72,9 @@ Page {
         }
         clip: true
         focus: false
-        model: ListModel{id: listModel}
+        model: ListModel {
+            id: listModel
+        }
         flickDeceleration: 500
         highlight: Rectangle {
             width: listView.width
@@ -104,7 +108,9 @@ Page {
                 Label {
                     id: unit
                     width: parent.width
-                    transform: Translate{x: 10}
+                    transform: Translate {
+                        x: 10
+                    }
                     text: String(unitName).toLowerCase()
                     font.pixelSize: Theme.fontSizeMedium + 5
                     // color: "#3399CC" //bgItem.highlighted ? Theme.highlightColor : Theme.primaryColor
@@ -114,21 +120,29 @@ Page {
                 TextField {
                     id: inputField
                     width: parent.width
-                    transform: Translate{x: -10}
+                    transform: Translate {
+                        x: -10
+                    }
                     text: convValue
-                    placeholderText: main.commaSep ? Number(0.0).toPrecision(2).toString().replace(".",",") : Number(0.0).toPrecision(2).toString()
+                    placeholderText: main.commaSep ? Number(0.0).toPrecision(
+                                                         2).toString().replace(
+                                                         ".", ",") : Number(
+                                                         0.0).toPrecision(
+                                                         2).toString()
                     font.pixelSize: Theme.fontSizeLarge
                     font.underline: true
                     font.bold: true
                     color: "white"
                     placeholderColor: "white"
                     horizontalAlignment: TextInput.AlignLeft
-                    label: items[HV.UNITS[unittype].indexOf(unitName)] //unittype !== "CURRENCY" ? items[HV.UNITS[unittype].indexOf(unitName)] :
-                           //unitName === "Euro" ? "EUR" : xmlListModel.get(HV.UNITS[unittype].indexOf(unitName)-1).currency
+                    label: items[HV.UNITS[unittype].indexOf(
+                                     unitName)] //unittype !== "CURRENCY" ? items[HV.UNITS[unittype].indexOf(unitName)] :
+                    //unitName === "Euro" ? "EUR" : xmlListModel.get(HV.UNITS[unittype].indexOf(unitName)-1).currency
                     errorHighlight: text ? !acceptableInput : false
-                    inputMethodHints: unittype !== "NUMBERS" ? Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText :
-                                                               Qt.ImhNoPredictiveText
-                    validator: RegExpValidator{regExp: /^[0-9\+\-\,\.a-zA-Z]*$/}
+                    inputMethodHints: unittype !== "NUMBERS" ? Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText : Qt.ImhNoPredictiveText
+                    validator: RegExpValidator {
+                        regExp: /^[0-9\+\-\,\.a-zA-Z]*$/
+                    }
 
                     EnterKey.onClicked: {
                         if (text.length === 0 || text === 0) {
@@ -138,9 +152,10 @@ Page {
                                 calculateConversion(0, unitName)
                             }
                         }
-                        focus = false;
+                        focus = false
                     }
                     EnterKey.iconSource: "image://theme/icon-m-enter-close"
+
 
                     /*
                     Keys.onEnterPressed: {
@@ -149,9 +164,8 @@ Page {
                         }
                     }
                     */
-
                     onClicked: {
-                        activeUnitName = unitName;
+                        activeUnitName = unitName
                     }
 
                     onTextChanged: {
@@ -166,7 +180,11 @@ Page {
                                 if (unittype === "NUMBERS") {
                                     calculateConversion(text, unitName)
                                 } else {
-                                    var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
+                                    var value_ = main.commaSep ? Number(
+                                                                     text.replace(
+                                                                         ",",
+                                                                         ".")) : Number(
+                                                                     text)
                                     if (isFinite(value_)) {
                                         calculateConversion(value_, unitName)
                                     } else {
@@ -184,226 +202,262 @@ Page {
         if (status === PageStatus.Activating) {
             HV.COVER_UNIT1 = HV.COVER_UNIT2 = HV.COVER_UNIT3 = HV.COVER_UNIT4 = null
             HV.COVER_VALUE1 = HV.COVER_VALUE2 = HV.COVER_VALUE3 = HV.COVER_VALUE4 = "0"
-            var i = 0, count = 0;
+            var i = 0, count = 0
             if (unittype === "ACCELERATION") {
-                items = ["cm/s2","ft/s2","g","m/s2","mm/s2"];
+                items = ["cm/s2", "ft/s2", "g", "m/s2", "mm/s2"]
                 pageHeader.title = qsTr("Acceleration")
-                HV.UNITS[unittype].sort();
+                HV.UNITS[unittype].sort()
                 count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "ANGLE") {
-                items = ["deg","grad","rad"];
+                items = ["deg", "grad", "rad"]
                 pageHeader.title = qsTr("Angle")
-                HV.UNITS[unittype].sort();
+                HV.UNITS[unittype].sort()
                 count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "AREA") {
                 pageHeader.title = qsTr("Area")
-                items = ["acre", "ha", "cm2", "ft2", "in2",
-                         "km2", "m2", "mi2","mm2","yd2"];
-                HV.UNITS[unittype].sort();
+                items = ["acre", "ha", "cm2", "ft2", "in2", "km2", "m2", "mi2", "mm2", "yd2"]
+                HV.UNITS[unittype].sort()
                 count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "CURRENCY") {
                 pageHeader.title = qsTr("Currency")
-                for(;i < HV.UNITS[unittype].length ; i++) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                HV.UNITS[unittype].sort()
+                for (; i < HV.UNITS[unittype].length; i++) {
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
-                items.push("EUR");
-                for(var k = 0; k < xmlListModel.count ; k++) {
-                    items.push(xmlListModel.get(k).currency)
-                }
-                    //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
+                items = ["AUD", "BRL", "BGN", "CAD", "CNY", "HRK", "CZK", "DKK", "EUR", "HKD",
+                    "HUF", "ISK", "INR", "IDR", "ILS", "JPY", "MYR", "MXN", "RON", "NZD", "NOK",
+                    "PHP", "PLN", "GBP", "RUB", "SGD", "ZAR", "KRW", "SEK", "CHF", "THB", "TRY", "USD"]
             } else if (unittype === "DATASTORAGE") {
                 pageHeader.title = qsTr("Data Storage")
-                items = ["b", "B", "Gb", "GiB", "kb",
-                         "KiB", "Mb", "MiB", "word"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["b", "B", "Gb", "GiB", "kb", "KiB", "Mb", "MiB", "word"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "DENSITY") {
                 pageHeader.title = qsTr("Density")
-                items = ["Al", "Cu", "Au", "g/cm3", "Fe",
-                         "kg/m3", "Pb", "Ag"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["Al", "Cu", "Au", "g/cm3", "Fe", "kg/m3", "Pb", "Ag"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "ENERGYANDWORK") {
                 pageHeader.title = qsTr("Energy and Work")
-                items = ["Btu", "cal", "eV", "erg", "ftlb",
-                         "J", "kcal", "kJ", "kWh", "Nm"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["Btu", "cal", "eV", "erg", "ftlb", "J", "kcal", "kJ", "kWh", "Nm"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "FLOW") {
                 pageHeader.title = qsTr("Flow")
-                items = ["cfm","m3/h","m3/s","L/min"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["cfm", "m3/h", "m3/s", "L/min"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "FORCE") {
                 pageHeader.title = qsTr("Force")
-                items = ["dyn","kN","kip","N","ozf","lbf"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["dyn", "kN", "kip", "N", "ozf", "lbf"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "FREQUENCY") {
                 pageHeader.title = qsTr("Frequency")
-                items = ["GHz","Hz","kHz","MHz","rad/s","rpm","THz"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["GHz", "Hz", "kHz", "MHz", "rad/s", "rpm", "THz"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "FUELCONSUMPTION") {
                 pageHeader.title = qsTr("Fuel Consumption")
-                items = ["km/L","L/100km","impg","mpg"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["km/L", "L/100km", "impg", "mpg"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "LENGTH") {
                 pageHeader.title = qsTr("Length")
-                items = ["A","au","cm","dm","ft","in","km",
-                         "ly","m","um","mil","mi","mm","nm","nautmi","pm","yd"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["A", "au", "cm", "dm", "ft", "in", "km", "ly", "m", "um", "mil", "mi", "mm", "nm", "nautmi", "pm", "yd"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "MAGNETICFIELDSTRENGTH") {
                 pageHeader.title = qsTr("Magnetic Field Strength")
-                items = ["A/m","Oe"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["A/m", "Oe"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "MAGNETICFLUXDENSITY") {
                 pageHeader.title = qsTr("Magnetic Flux Density")
-                items = ["gamma","Gs","T"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["gamma", "Gs", "T"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "MASS") {
                 pageHeader.title = qsTr("Mass")
-                items = ["amu","gr","g","kg","ug","mg","oz","lbm","slug"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["amu", "gr", "g", "kg", "ug", "mg", "oz", "lbm", "slug"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "NUMBERS") {
                 pageHeader.title = qsTr("Numbers")
                 //fromField.inputMethodHints = Qt.ImhNoPredictiveText
                 //fromField.validator.destroy()
-                items = ["bin","dec","hex","oct"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["bin", "dec", "hex", "oct"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "POWER") {
                 pageHeader.title = qsTr("Power")
-                items = ["hpb","Btu/h","cal/s", "dBm", "dBW", "hpe",
-                         "GW","kW","hp","MW","ftlb/s","TW","W"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["hpb", "Btu/h", "cal/s", "dBm", "dBW", "hpe", "GW", "kW", "hp", "MW", "ftlb/s", "TW", "W"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "PRESSURE") {
                 pageHeader.title = qsTr("Pressure")
-                items = ["bar","dyn/cm2","ftAgua","hPa","inAgua",
-                         "kPa","MPa","mbar","mmHg","Pa","psi","atm","Torr"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["bar", "dyn/cm2", "ftAgua", "hPa", "inAgua", "kPa", "MPa", "mbar", "mmHg", "Pa", "psi", "atm", "Torr"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "SPEED") {
                 pageHeader.title = qsTr("Speed")
-                items = ["ft/s","km/h","knot","mach","m/s","mph"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["ft/s", "km/h", "knot", "mach", "m/s", "mph"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "TEMPERATURE") {
                 pageHeader.title = qsTr("Temperature")
-                items = ["C","F","K","R"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["C", "F", "K", "R"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "TIME") {
                 pageHeader.title = qsTr("Time")
-                items = ["day","hr","us","ms","min","ns","s","wk","yr"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["day", "hr", "us", "ms", "min", "ns", "s", "wk", "yr"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "TORQUE") {
                 pageHeader.title = qsTr("Torque")
-                items = ["dyn-cm","dyn-m","gf-m","kgf-m","N-cm",
-                         "N-m","ozf-in","lbf-ft","lbf-in"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["dyn-cm", "dyn-m", "gf-m", "kgf-m", "N-cm", "N-m", "ozf-in", "lbf-ft", "lbf-in"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             } else if (unittype === "VOLUME") {
                 pageHeader.title = qsTr("Volume")
-                items = ["cl","cm3","f3","in3","km3","m3",
-                         "mi3","mm3","yd3","l","ml","galuk","gal","oz","qt"];
-                HV.UNITS[unittype].sort();
-                count = HV.UNITS[unittype].length;
+                items = ["cl", "cm3", "f3", "in3", "km3", "m3", "mi3", "mm3", "yd3", "l", "ml", "galuk", "gal", "oz", "qt"]
+                HV.UNITS[unittype].sort()
+                count = HV.UNITS[unittype].length
                 for (; i < count; ++i) {
-                    listModel.append({"unitName": HV.UNITS[unittype][i],
-                                      "convValue": ""});
+                    listModel.append({
+                                         unitName: HV.UNITS[unittype][i],
+                                         convValue: ""
+                                     })
                 }
             }
             HV.COVER_UNIT1 = HV.UNITS[unittype][0]

@@ -75,14 +75,18 @@ Dialog {
                 toUnitModel.append({"name": HV.UNITS[unittype][i]});
             }
         } else if (unittype === "CURRENCY") {
+            HV.UNITS[unittype].sort()
             for(;i < HV.UNITS[unittype].length ; i++) {
                 fromUnitModel.append({"name": HV.UNITS[unittype][i]});
                 toUnitModel.append({"name": HV.UNITS[unittype][i]});
             }
-            items.push("EUR");
-            for(var k = 0; k < xmlListModel.count ; k++) {
-                items.push(xmlListModel.get(k).currency)
-            }
+            items = ["AUD", "BRL", "BGN", "CAD", "CNY", "HRK", "CZK", "DKK", "EUR", "HKD",
+                "HUF", "ISK", "INR", "IDR", "ILS", "JPY", "MYR", "MXN", "RON", "NZD", "NOK",
+                "PHP", "PLN", "GBP", "RUB", "SGD", "ZAR", "KRW", "SEK", "CHF", "THB", "TRY", "USD"]
+            // items.push("EUR");
+            // for(var k = 0; k < xmlListModel.count ; k++) {
+            //     items.push(xmlListModel.get(k).currency)
+            // }
                 //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
         } else if (unittype === "DATASTORAGE") {
             items = ["b", "B", "Gb", "GiB", "kb",

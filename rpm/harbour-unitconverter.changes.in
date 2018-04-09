@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Apr 9 2018 Arno Dekker <jack.tar@example.com> 2.13.1
+- Sort currencies alphabetically
+- French grammar fixes by objectifnul
 * Wed Apr 4 2018 Arno Dekker <jack.tar@example.com> 2.12.1
 - Switched to IEC binary prefixes (kibi, mebi, gibi, etc.) in Data Storage
 - French translation fixes by lutinotmalin
