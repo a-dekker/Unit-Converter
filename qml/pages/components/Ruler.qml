@@ -9,8 +9,6 @@ Item {
     property real totalDistance: 0.0
     property bool isHorizontalLineActive: true
     property bool isVerticalLineActive: true
-    // property real cRatio: 9.74 //9.636614173228347
-    property real cRatio: Screen.width <= 540 ? 9.74 : 17.49
 
     Canvas {
         id: canvas
@@ -39,16 +37,16 @@ Item {
                 if (i > 0 && i < 10) {
                     cxt2.strokeText(i,110,totalDistance + 5);
                 }
-                totalDistance += cRatio;
+                totalDistance += main.cRatio;
                 for (var k = 1; k < 10; k++) {
                     if (k === 5) {
                         cxt.moveTo(0,totalDistance);
                         cxt.lineTo(75,totalDistance);
-                        totalDistance += cRatio;
+                        totalDistance += main.cRatio;
                     } else {
                         cxt.moveTo(0,totalDistance);
                         cxt.lineTo(50,totalDistance);
-                        totalDistance += cRatio;
+                        totalDistance += main.cRatio;
                     }
                 }
             }
@@ -69,16 +67,16 @@ Item {
                 if (i > 0 && i < 6) {
                     cxt2.strokeText(i,totalDistance - 5, 120);
                 }
-                totalDistance += cRatio// 9.6456693
+                totalDistance += main.cRatio
                 for (var k = 1; k < 10; k++) {
                     if (k === 5) {
                         cxt.moveTo(totalDistance,0);
                         cxt.lineTo(totalDistance,75);
-                        totalDistance += cRatio;
+                        totalDistance += main.cRatio;
                     } else {
                         cxt.moveTo(totalDistance,0);
                         cxt.lineTo(totalDistance,50);
-                        totalDistance += cRatio;
+                        totalDistance += main.cRatio;
                     }
                 }
             }
