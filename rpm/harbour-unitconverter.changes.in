@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Apr 9 2018 Arno Dekker <jack.tar@example.com> 2.15.1
+- Added Swedish and Russian translation
 * Wed Apr 9 2018 Arno Dekker <jack.tar@example.com> 2.14.1
 - Fixed ruler for Jolla tablet screen
 * Wed Apr 9 2018 Arno Dekker <jack.tar@example.com> 2.13.1

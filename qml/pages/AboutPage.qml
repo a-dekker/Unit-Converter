@@ -30,7 +30,7 @@ Page {
                 text: qsTr("Unit Converter")
                 horizontalAlignment: Text.AlignHCenter;
                 color: Theme.primaryColor
-                font.pixelSize: Theme.fontSizeExtraLarge * 1.5
+                font.pixelSize: Theme.fontSizeExtraLarge * 1.3
             }
             Label {
                 text: qsTr("Sailfish OS")
