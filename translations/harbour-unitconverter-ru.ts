@@ -158,17 +158,17 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="106"/>
         <source>Daily update</source>
-        <translation>ежедневно</translation>
+        <translation>раз в день</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="107"/>
         <source>Weekly update</source>
-        <translation>еженедельно</translation>
+        <translation>раз в неделю</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="108"/>
         <source>Monthly update</source>
-        <translation>ежемесячно</translation>
+        <translation>раз в месяц</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="109"/>
