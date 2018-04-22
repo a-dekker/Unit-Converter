@@ -13,8 +13,6 @@ Item {
     Canvas {
         id: canvas
         width: Screen.width
-        // width: 540
-        // height: 960
         height: Screen.height
         smooth: true
 
@@ -34,7 +32,7 @@ Item {
             for (var i = 0; i < 20; i++) {
                 cxt.moveTo(0,totalDistance);
                 cxt.lineTo(100,totalDistance);
-                if (i > 0 && i < 10) {
+                if (i > 0 && i < 16) {
                     cxt2.strokeText(i,110,totalDistance + 5);
                 }
                 totalDistance += main.cRatio;
@@ -64,7 +62,7 @@ Item {
             for (var i = 0; i < 20; i++) {
                 cxt.moveTo(totalDistance,0);
                 cxt.lineTo(totalDistance,100);
-                if (i > 0 && i < 6) {
+                if (i > 0 && i < 12) {
                     cxt2.strokeText(i,totalDistance - 5, 120);
                 }
                 totalDistance += main.cRatio
