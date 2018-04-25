@@ -21,12 +21,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="55"/>
         <source>Created by Mikko Leppänen</source>
-        <translation>Une création de Mikko Leppänen</translation>
+        <translation>Une création de Mikko Leppänen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>Adapted by Arno Dekker</source>
-        <translation>Arrangements par Arno Dekker</translation>
+        <translation>Arrangements par Arno Dekker.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>Vous pouvez activer ou désactiver à votre guise les lignes verticales et horizontales de la règle graduée. Si vous le faites, vous devrez appuyer sur l&apos;écran pour afficher les lignes de mesure. Par ailleurs, le bouton de retour est désactivé, mais il est possible de le solliciter en appuyant sur le coin gauche de l&apos;écran.</translation>
+        <translation>Vous pouvez activer / désactiver à votre guise les lignes verticales et horizontales de la règle graduée. Si vous le faites, vous devrez appuyer sur l&apos;écran pour afficher les lignes de mesure. Par ailleurs, le bouton de retour est toujours désactivé, mais il est possible de le solliciter en appuyant sur le coin gauche de l&apos;écran.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
-        <translation>Vous pouvez modifier la fréquence à laquelle les devises seront mises à jour. Si vous désactivez la mise à jour automatique, vous devrez rafraîchir les devises manuellement.</translation>
+        <translation>Vous pouvez modifier la fréquence à laquelle les devises sont mises à jour. Si vous désactivez la mise à jour automatique, vous devrez rafraîchir les devises manuellement.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="102"/>
@@ -224,12 +224,12 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="208"/>
         <source>Acceleration</source>
-        <translation></translation>
+        <translation>Accélération</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="219"/>
         <source>Angle</source>
-        <translation>Accélération</translation>
+        <translation>Angle</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="229"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="252"/>
         <source>Data Storage</source>
-        <translation>Data</translation>
+        <translation>Stockage de données</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="263"/>
@@ -274,7 +274,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="318"/>
         <source>Fuel Consumption</source>
-        <translation>Conso. de carburant</translation>
+        <translation>Conso de carburant</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="329"/>
@@ -299,7 +299,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="373"/>
         <source>Numbers</source>
-        <translation>Nombre</translation>
+        <translation>Nombres</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="386"/>
@@ -352,7 +352,7 @@
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
         <source>Give a new rate</source>
-        <translation>Donnez un nouveau taux</translation>
+        <translation>Merci d&apos;indiquer un nouveau taux</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="79"/>
