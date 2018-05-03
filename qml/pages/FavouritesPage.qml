@@ -104,44 +104,13 @@ Page {
                     color: Theme.secondaryHighlightColor
                     font.family: Theme.fontFamily
                 }
-
-                Canvas {
-                    id: canvas
-                    anchors.horizontalCenter: fromValue_.horizontalCenter
-                    smooth: true
-                    width: 75
-                    height: 25
-                    onPaint: {
-                        var cxt = canvas.getContext('2d')
-                        var width_ = width
-                        var height_ = height
-                        var arrowW_ = 0.35*width_
-                        var arrowH_ = 0.55*height_
-                        cxt.clearRect(0,0,width_,height_)
-                        var gradient1 = cxt.createLinearGradient(0,0,
-                                                                 canvas.width,0)
-                        gradient1.addColorStop(0, "#1919FF")
-                        gradient1.addColorStop(0.25, "#3333FF")
-                        gradient1.addColorStop(0.40, "#4D4DFF")
-                        gradient1.addColorStop(0.5, '#4D4DFF')
-                        gradient1.addColorStop(0.60, "#4D4DFF")
-                        gradient1.addColorStop(0.75, "#3333FF")
-                        gradient1.addColorStop(1.0, "#1919FF")
-                        cxt.fillStyle = gradient1
-                        cxt.beginPath()
-                        cxt.moveTo(0,height_/2)
-                        cxt.lineTo(arrowW_,0)
-                        cxt.lineTo(arrowW_,(height_-arrowH_)/2)
-                        cxt.lineTo(width_-arrowW_,(height_-arrowH_)/2)
-                        cxt.lineTo(width_-arrowW_,0)
-                        cxt.lineTo(width_,height_/2)
-                        cxt.lineTo(width_-arrowW_,height_)
-                        cxt.lineTo(width_-arrowW_,height_/2+arrowH_/2)
-                        cxt.lineTo(arrowW_,height_/2+arrowH_/2)
-                        cxt.lineTo(arrowW_,height_)
-                        cxt.fill()
-                        cxt.closePath()
-                    }
+                Label {
+                    text: "↔"
+                    width: favouritesPage.width
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pixelSize: Theme.fontSizeExtraLarge
+                    color: Theme.secondaryColor
+                    font.family: Theme.fontFamily
                 }
                 Text {
                     id: toValue_

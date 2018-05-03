@@ -70,7 +70,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FavouritesPage.qml" line="202"/>
+        <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
         <source>Deleting favourite...</source>
         <translation type="unfinished"></translation>
     </message>
