@@ -6,7 +6,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="30"/>
         <source>Unit Converter</source>
-        <translation>Конвертер величин</translation>
+        <translation>Конвертер &lt;BR&gt;величин</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="36"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="61"/>
         <source>Activates ruler&apos;s horizontal lines</source>
-        <translation>Показывать горизонтальную шкалу</translation>
+        <translation>Показывать горизонтальную шкалу линейки</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="73"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="74"/>
         <source>Activates ruler&apos;s vertical lines</source>
-        <translation>Показывать вертикальную шкалу</translation>
+        <translation>Показывать вертикальную шкалу линейки</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
