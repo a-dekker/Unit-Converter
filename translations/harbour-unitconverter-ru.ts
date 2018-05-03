@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.1" language="ru">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="30"/>
         <source>Unit Converter</source>
-        <translation>Конвертер величин</translation>
+        <translation>Конвертер &lt;BR&gt;величин</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="36"/>
@@ -118,27 +118,27 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>Включить или выключить горизонтальную и вертикальную шкалы линейки. Если одна из шкал отключена, то для появления измерительных линий нужно коснуться экрана (один или несколько раз). По умолчанию кнопка выхода из режима линейки скрыта. Коснитесь верхнего-левого угла экрана, чтобы ее увидеть.</translation>
+        <translation>Включить или выключить горизонтальную и вертикальную шкалы линейки. Если одна из шкал отключена, то для появления измерительных линий нужно коснуться экрана. По умолчанию кнопка выхода из режима линейки скрыта. Чтобы увидеть ее, коснитесь верхнего-левого угла экрана.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
         <source>Activate ruler&apos;s horizontal lines</source>
-        <translation>Показать горизонтальную шкалу</translation>
+        <translation>Горизонтальная шкала</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="61"/>
         <source>Activates ruler&apos;s horizontal lines</source>
-        <translation>Показывать горизонтальную шкалу</translation>
+        <translation>Показывать горизонтальную шкалу линейки</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="73"/>
         <source>Activate ruler&apos;s vertical lines</source>
-        <translation>Показать вертикальную шкалу</translation>
+        <translation>Вертикальная шкала</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="74"/>
         <source>Activates ruler&apos;s vertical lines</source>
-        <translation>Показывать вертикальную шкалу</translation>
+        <translation>Показывать вертикальную шкалу линейки</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
-        <translation>Здесь можно задать интервал обновления курсов обмена. Если отключить автоматическое обновление данных, то для правильности пересчета это придется делать вручную.</translation>
+        <translation>Здесь можно задать интервал обновления курсов. Если отключить автоматическое обновление данных, то для правильности пересчета это придется делать вручную.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="102"/>
@@ -158,27 +158,27 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="106"/>
         <source>Daily update</source>
-        <translation>Раз в день</translation>
+        <translation>раз в день</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="107"/>
         <source>Weekly update</source>
-        <translation>Раз в неделю</translation>
+        <translation>раз в неделю</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="108"/>
         <source>Monthly update</source>
-        <translation>Раз в месяц</translation>
+        <translation>раз в месяц</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="109"/>
         <source>Always at application start</source>
-        <translation>При запуске</translation>
+        <translation>при запуске</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Disable automatic update</source>
-        <translation>Отключено</translation>
+        <translation>никогда</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="115"/>
