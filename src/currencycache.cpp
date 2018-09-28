@@ -3,7 +3,7 @@
 #include <QDate>
 #include <QDebug>
 
-const QUrl CurrencyCache::URL("http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
+const QUrl CurrencyCache::URL("https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
 
 CurrencyCache::CurrencyCache(QObject *parent) :
     QObject(parent),

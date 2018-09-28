@@ -14,10 +14,10 @@ Name:       harbour-unitconverter
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    UnitConverter SailfishOS Application
 Version:    2.17
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
-URL:        http://example.org/
+URL:        https://github.com/a-dekker/Unit-Converter
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-unitconverter.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9

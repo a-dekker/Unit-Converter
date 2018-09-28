@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu May 22 2018 Arno Dekker <jack.tar@example.com> 2.17.2
+- Fixed currency request issue
 * Thu May 22 2018 Arno Dekker <jack.tar@example.com> 2.17.1
 - Updated Russian and French
 - More legible app icon by Dikonov
