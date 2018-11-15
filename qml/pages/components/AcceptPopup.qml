@@ -12,7 +12,7 @@ Item {
             id: label
             text: "Close ruler?"
             font.pixelSize: Theme.fontSizeLarge
-            color: "white"
+            color: Theme.primaryColor
         }
         Row {
             id: row
@@ -20,7 +20,7 @@ Item {
             Button {
                 id: okButton
                 text: "Ok"
-                color: "white"
+                color: Theme.primaryColor
 
                 onClicked: {
                     pageStack.clear();
@@ -30,7 +30,7 @@ Item {
             Button {
                 id: cancelButton
                 text: "Cancel"
-                color: "white"
+                color: Theme.primaryColor
 
                 onClicked: {
                     active = false;

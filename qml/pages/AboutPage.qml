@@ -49,7 +49,7 @@ Page {
             horizontalAlignment: Text.AlignHCenter;
             textFormat: Text.RichText;
             font.pixelSize: Theme.fontSizeMedium
-            color: "white"
+            color: Theme.primaryColor
             text: "<style>a:link { color: " + Theme.highlightColor + "; }</style>" +
                   qsTr("Version %1").arg(HV.VERSION) + "<br/>" +
                   qsTr('Created by Mikko Leppänen') + '<br/>' +
@@ -63,4 +63,3 @@ Page {
         }
     }
 }
-

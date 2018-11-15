@@ -345,8 +345,8 @@ Dialog {
                  font.pixelSize: Theme.fontSizeLarge
                  font.underline: true
                  font.bold: true
-                 color: "white"
-                 placeholderColor: "white"
+                 color: Theme.primaryColor
+                 placeholderColor: Theme.primaryColor
                  horizontalAlignment: TextInput.AlignLeft
                  label: "Value from"
                  validator: RegExpValidator{regExp: /^[0-9\+\-\,a-zA-Z]*$/}
@@ -439,8 +439,8 @@ Dialog {
                  font.pixelSize: Theme.fontSizeLarge
                  font.underline: true
                  font.bold: true
-                 color: "white"
-                 placeholderColor: "white"
+                 color: Theme.primaryColor
+                 placeholderColor: Theme.primaryColor
                  horizontalAlignment: TextInput.AlignLeft
                  label: "Value to"
                  validator: DoubleValidator{}

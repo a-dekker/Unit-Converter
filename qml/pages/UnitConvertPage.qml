@@ -132,8 +132,8 @@ Page {
                     font.pixelSize: Theme.fontSizeLarge
                     font.underline: true
                     font.bold: true
-                    color: "white"
-                    placeholderColor: "white"
+                    color: Theme.primaryColor
+                    placeholderColor: Theme.primaryColor
                     horizontalAlignment: TextInput.AlignLeft
                     label: items[HV.UNITS[unittype].indexOf(
                                      unitName)] //unittype !== "CURRENCY" ? items[HV.UNITS[unittype].indexOf(unitName)] :
