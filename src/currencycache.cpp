@@ -2,6 +2,7 @@
 
 #include <QDate>
 #include <QDebug>
+#include <nemonotifications-qt5/notification.h>
 
 const QUrl CurrencyCache::URL("https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
 
@@ -72,6 +73,35 @@ void CurrencyCache::checkUpdate()
     }
 }
 
+void CurrencyCache::showNotification(QString body, QString summary)
+{
+    qWarning() << Q_FUNC_INFO;
+
+    Notification n;
+    n.setReplacesId(m_notificationId);
+    /* n.setBody(body); */
+    /* n.setPreviewBody(n.body()); */
+    n.setPreviewBody(body);
+    /* n.setSummary(summary); */
+    /* n.setPreviewSummary(n.summary()); */
+    n.setPreviewSummary(summary);
+    n.publish();
+    m_notificationId = n.replacesId();
+}
+
+void CurrencyCache::removeNotification()
+{
+    if (m_notificationId == 0) {
+        return;
+    }
+
+    Notification n;
+    n.setReplacesId(m_notificationId);
+    n.close();
+
+    m_notificationId = 0;
+}
+
 void CurrencyCache::updateNow()
 {
     qDebug() << "Sending request for xml";
@@ -97,8 +127,12 @@ void CurrencyCache::getReply(QNetworkReply *reply)
     if(reply->error() != QNetworkReply::NoError)
     {
         qWarning() << "Error while downloading xml:" << reply->errorString();
+        removeNotification();
+        showNotification("Error while downloading xml", "Currency update failure");
         return;
     }
+    removeNotification();
+    showNotification("Currencies are updated", "Update successful");
 
     qDebug() << "Updating xml";
 

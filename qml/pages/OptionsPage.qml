@@ -17,7 +17,7 @@ Dialog {
         anchors.fill: parent
         clip: true
         focus: true
-        contentHeight: col.height + dialogHeader.height + 2*Theme.paddingMedium
+        contentHeight: col.height + dialogHeader.height + 2 * Theme.paddingMedium
 
         DialogHeader {
             id: dialogHeader

@@ -27,12 +27,18 @@ Page {
 
         anchors {
             top: parent.top
-            topMargin: Theme.paddingLarge*3
+            topMargin: Theme.paddingLarge * 3
         }
 
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Help")
+                onClicked: pageStack.push(Qt.resolvedUrl("QuickSearchHelp.qml"))
+            }
+        }
         PushUpMenu {
             MenuItem {
-                text: "Scroll to top"
+                text: qsTr("Scroll to top")
                 onClicked: {
                     listView.scrollToTop()
                 }

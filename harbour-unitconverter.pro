@@ -9,8 +9,10 @@
 TARGET = harbour-unitconverter
 
 CONFIG += sailfishapp c++11 sailfishapp_i18n
-QT += network
+QT += network \
+      dbus
 DEPLOYMENT_PATH = /usr/share/$${TARGET}
+PKGCONFIG += nemonotifications-qt5
 
 SOURCES += src/harbour-unitconverter.cpp \
     src/custommodel.cpp \
@@ -26,6 +28,7 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
     harbour-unitconverter.desktop \
     translations/*.ts \
     qml/pages/QuickSearchPage.qml \
+    qml/pages/QuickSearchHelp.qml \
     qml/pages/MainPage.qml \
     qml/pages/scripts/Unitconverter.js \
     qml/pages/scripts/HelperVariables.js \
@@ -66,10 +69,13 @@ icon108.path = /usr/share/icons/hicolor/108x108/apps
 icon128.files += icons/128x128/harbour-unitconverter.png
 icon128.path = /usr/share/icons/hicolor/128x128/apps
 
+icon172.files += icons/172x172/harbour-unitconverter.png
+icon172.path = /usr/share/icons/hicolor/172x172/apps
+
 icon256.files += icons/256x256/harbour-unitconverter.png
 icon256.path = /usr/share/icons/hicolor/256x256/apps
 
-INSTALLS += translations icon86 icon108 icon128 icon256
+INSTALLS += translations icon86 icon108 icon128 icon172 icon256
 
 HEADERS += \
     src/custommodel.h \

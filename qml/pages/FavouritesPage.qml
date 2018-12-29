@@ -145,7 +145,7 @@ Page {
                 if (!contextMenu) {
                     contextMenu = contextMenuComponent.createObject(listView)
                 }
-                contextMenu.show(bgItem)
+                contextMenu.open(bgItem)
             }
         }
     }

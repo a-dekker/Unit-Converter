@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Dec 29 2018 Arno Dekker <jack.tar@example.com> 2.18.1
+- Fixed deprecated contextMenu in favorites page
+- Show message banner after update of currencies
+- Created page for Quick Search help
 * Thu Nov 15 2018 Arno Dekker <jack.tar@example.com> 2.17.3
 - Fixed colors for light ambiences
 * Thu Sep 28 2018 Arno Dekker <jack.tar@example.com> 2.17.2

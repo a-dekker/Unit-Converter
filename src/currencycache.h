@@ -46,6 +46,10 @@ private:
     UpdateInterval _interval;
     QSettings _settings;
     QNetworkAccessManager _manager;
+    void showNotification(QString body, QString summary);
+    void removeNotification();
+
+    quint32 m_notificationId = 0;
 };
 
 #endif // CURRENCYCACHE_H
