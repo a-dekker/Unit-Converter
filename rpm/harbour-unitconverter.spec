@@ -26,6 +26,7 @@ Requires:   qt5-qtdeclarative-import-localstorageplugin
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(nemonotifications-qt5)
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  qt5-qtdeclarative-import-xmllistmodel
 BuildRequires:  qt5-qtdeclarative-import-localstorageplugin
