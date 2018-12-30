@@ -216,12 +216,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="20"/>
         <source>Help on Quick Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjälp med snabbsök</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="26"/>
         <source>&lt;html&gt;&lt;h2&gt;Howto&lt;/h2&gt;&lt;br&gt;You can search for a category (which will show the related units)                 or for a unit itself. The category name is a short name.&lt;br&gt;The first unit you tap will hold the &lt;b&gt;&apos;1&apos;&lt;/b&gt;                 value. Then tap on another unit, and the (quick) conversion will pop up on the screen.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Example:&lt;/i&gt;&lt;br&gt;Search for &apos;temp&apos;. All temperature units show up. First tap on &apos;celsius&apos;, followed by a                 tap on &apos;fahrenheit&apos;. Now Quick Search will tell you how much fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (degree) celsius is.                 &lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;h2&gt;Hur&lt;/h2&gt;&lt;br&gt;Du kan söka efter en kategori (vilket visar relaterade enheter)                 eller bara en enskild enhet. Kategorinamnet är ett kort namn.&lt;br&gt;Den första enhet du trycker på, kommer att innehålla &lt;b&gt;&apos;1&apos;&lt;/b&gt;-värdet. Tryck sedan på en annan enhet, och (snabb)konverteringen visas på skärmen.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Exempel:&lt;/i&gt;&lt;br&gt;Sök efter &apos;temp&apos;. Alla temperaturenheter visas. Tryck först på &apos;celsius&apos;, följt av                 tryck på &apos;fahrenheit&apos;. Nu visar snabbsök hur mycket fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (grad) celsius är.                 &lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -229,12 +229,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="35"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjälp</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="41"/>
         <source>Scroll to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrolla till toppen</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="63"/>
