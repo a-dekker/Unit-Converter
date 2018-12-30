@@ -25,11 +25,6 @@ Page {
     SilicaListView {
         id: listView
 
-        anchors {
-            top: parent.top
-            topMargin: Theme.paddingLarge * 3
-        }
-
         PullDownMenu {
             MenuItem {
                 text: qsTr("Help")

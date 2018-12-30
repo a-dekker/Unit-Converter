@@ -227,17 +227,17 @@
 <context>
     <name>QuickSearchPage</name>
     <message>
-        <location filename="../qml/pages/QuickSearchPage.qml" line="35"/>
+        <location filename="../qml/pages/QuickSearchPage.qml" line="30"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/QuickSearchPage.qml" line="41"/>
+        <location filename="../qml/pages/QuickSearchPage.qml" line="36"/>
         <source>Scroll to top</source>
         <translation>Skrolla till toppen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/QuickSearchPage.qml" line="63"/>
+        <location filename="../qml/pages/QuickSearchPage.qml" line="58"/>
         <source>Search</source>
         <translation>Sök</translation>
     </message>

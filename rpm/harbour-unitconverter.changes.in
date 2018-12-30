@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Dec 30 2018 Arno Dekker <jack.tar@example.com> 2.18.2
+- Reposition Quick Search help page to top
+- Updated Swedish translation
 * Sat Dec 29 2018 Arno Dekker <jack.tar@example.com> 2.18.1
 - Fixed deprecated contextMenu in favorites page
 - Show message banner after update of currencies
