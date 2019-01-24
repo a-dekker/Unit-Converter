@@ -21,12 +21,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="55"/>
         <source>Created by Mikko Leppänen</source>
-        <translation>Une création de Mikko Leppänen.</translation>
+        <translation>Une création de Mikko Leppänen</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>Adapted by Arno Dekker</source>
-        <translation>Arrangements par Arno Dekker.</translation>
+        <translation>Arrangements par Arno Dekker</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
@@ -188,17 +188,17 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="120"/>
         <source>Notation</source>
-        <translation>Notation des nombres</translation>
+        <translation>Nombres</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="125"/>
         <source>Select number notation</source>
-        <translation>Notation des nombres</translation>
+        <translation>La manière d&apos;afficher les nombres</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="126"/>
         <source>Preferred number notation</source>
-        <translation>Sélectionnez le type de notation souhaité</translation>
+        <translation>Sélectionnez la manière d&apos;afficher les nombres</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="130"/>
@@ -216,7 +216,7 @@
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="20"/>
         <source>Help on Quick Search</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos de la recherche rapide</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="26"/>
@@ -229,12 +229,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="30"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Infos</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="36"/>
         <source>Scroll to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Revenir en haut</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="58"/>
