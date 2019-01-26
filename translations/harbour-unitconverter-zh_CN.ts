@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_cn">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AboutPage</name>
     <message>
@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="55"/>
-        <source>Created by Mikko Lepp?nen</source>
-        <translation>由Mikko Leppnen开发</translation>
+        <source>Created by Mikko Leppänen</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>Favourites</source>
-        <translation>Закладки</translation>
+        <translation type="unfinished">收藏</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="67"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>启用或禁用水平/垂直标尺比例。如果其中一个刻度被禁用, 则需要点击屏幕以查看测量线。默认情况下, 标尺模式的 "退出" 按钮处于隐藏状态。要查看它, 请点按屏幕的左上角</translation>
+        <translation>启用或禁用水平/垂直标尺比例。如果其中一个刻度被禁用, 则需要点击屏幕以查看测量线。默认情况下, 标尺模式的 &quot;退出&quot; 按钮处于隐藏状态。要查看它, 请点按屏幕的左上角</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Disable automatic update</source>
-        <translation>禁用自动更新/translation>
+        <translation>禁用自动更新</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="115"/>

@@ -50,6 +50,7 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
 TRANSLATIONS = translations/harbour-unitconverter-nl.ts \
                translations/harbour-unitconverter-fr.ts \
                translations/harbour-unitconverter-sv.ts \
+               translations/harbour-unitconverter-zh_CN.ts \
                translations/harbour-unitconverter-ru.ts
 translations.files = translations
 translations.path = $${DEPLOYMENT_PATH}
