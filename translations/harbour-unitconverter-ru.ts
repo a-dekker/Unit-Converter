@@ -216,12 +216,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="20"/>
         <source>Help on Quick Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Справочная страница</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="26"/>
         <source>&lt;html&gt;&lt;h2&gt;Howto&lt;/h2&gt;&lt;br&gt;You can search for a category (which will show the related units)                 or for a unit itself. The category name is a short name.&lt;br&gt;The first unit you tap will hold the &lt;b&gt;&apos;1&apos;&lt;/b&gt;                 value. Then tap on another unit, and the (quick) conversion will pop up on the screen.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Example:&lt;/i&gt;&lt;br&gt;Search for &apos;temp&apos;. All temperature units show up. First tap on &apos;celsius&apos;, followed by a                 tap on &apos;fahrenheit&apos;. Now Quick Search will tell you how much fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (degree) celsius is.                 &lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;h2&gt;Как пользоваться быстрым поиском&lt;/h2&gt;&lt;br&gt;Вы можете искать категорию (чтобы увидеть список входящих в неё единиц) или единицу измерения. Для категорий используются короткие английские имена.&lt;br&gt;Значением первой единицы измерения, которую вы выберете, будет &lt;b&gt;&apos;1&apos;&lt;/b&gt;. Коснитесь строчки со второй единицей измерения, и на экране появится соответствующее &lt;b&gt;&apos;1&apos;&lt;/b&gt; значение по второй шкале или соотношение единиц.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Например:&lt;/i&gt;&lt;br&gt;Введите в поле поиска &apos;temp&apos;. Появится список всех единиц температуры. Сначала коснитесь &apos;celsius&apos;, а затем &apos;fahrenheit&apos;. Теперь быстрый поиск сообщит, сколько 1 (градус) цельсия будет по фаренгейту.&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -229,12 +229,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="30"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="36"/>
         <source>Scroll to top</source>
-        <translation type="unfinished"></translation>
+        <translation>К началу</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="58"/>
