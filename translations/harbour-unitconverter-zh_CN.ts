@@ -16,17 +16,17 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="54"/>
         <source>Version %1</source>
-        <translation>版本%1</translation>
+        <translation>版本 %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="55"/>
         <source>Created by Mikko Leppänen</source>
-        <translation type="unfinished"></translation>
+        <translation>由  Mikko Leppänen 创建</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>Adapted by Arno Dekker</source>
-        <translation>由Arno Dekker适配</translation>
+        <translation>由 Arno Dekker 适配</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="22"/>
         <source>Deleting all favourites...</source>
-        <translation>删除全部收藏...</translation>
+        <translation>正在删除全部收藏...</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="49"/>
@@ -72,7 +72,7 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
         <source>Deleting favourite...</source>
-        <translation>删除收藏...</translation>
+        <translation>正在删除收藏...</translation>
     </message>
 </context>
 <context>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>Favourites</source>
-        <translation type="unfinished">收藏</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="67"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
-        <translation>启用或禁用水平/垂直标尺比例。如果其中一个刻度被禁用, 则需要点击屏幕以查看测量线。默认情况下, 标尺模式的 &quot;退出&quot; 按钮处于隐藏状态。要查看它, 请点按屏幕的左上角</translation>
+        <translation>启用或禁用水平/垂直标尺比例。如果其中一个比例尺被禁用, 则需要点击屏幕（或多次点击）以查看测量线。默认情况下, 标尺模式的返回导航按钮处于隐藏状态。要查看它, 请点按屏幕的左上角</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="60"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="134"/>
         <source>scientific</source>
-        <translation>科学的</translation>
+        <translation>科学</translation>
     </message>
 </context>
 <context>
@@ -216,12 +216,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="20"/>
         <source>Help on Quick Search</source>
-        <translation type="unfinished"></translation>
+        <translation>快速搜索帮助</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="26"/>
         <source>&lt;html&gt;&lt;h2&gt;Howto&lt;/h2&gt;&lt;br&gt;You can search for a category (which will show the related units)                 or for a unit itself. The category name is a short name.&lt;br&gt;The first unit you tap will hold the &lt;b&gt;&apos;1&apos;&lt;/b&gt;                 value. Then tap on another unit, and the (quick) conversion will pop up on the screen.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Example:&lt;/i&gt;&lt;br&gt;Search for &apos;temp&apos;. All temperature units show up. First tap on &apos;celsius&apos;, followed by a                 tap on &apos;fahrenheit&apos;. Now Quick Search will tell you how much fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (degree) celsius is.                 &lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;h2&gt;Howto&lt;/h2&gt;&lt;br&gt;你可以搜索类别(将会显示相关单位)</translation>
     </message>
 </context>
 <context>
@@ -229,12 +229,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="30"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="36"/>
         <source>Scroll to top</source>
-        <translation type="unfinished"></translation>
+        <translation>滚到顶部</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="58"/>
@@ -247,17 +247,17 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="208"/>
         <source>Acceleration</source>
-        <translation>加速</translation>
+        <translation>加速度</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="219"/>
         <source>Angle</source>
-        <translation>角落</translation>
+        <translation>角度</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="229"/>
         <source>Area</source>
-        <translation>区域</translation>
+        <translation>面积</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="240"/>
@@ -277,7 +277,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="274"/>
         <source>Energy and Work</source>
-        <translation>能源和工作</translation>
+        <translation>能源及功</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="285"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="39"/>
         <source>From</source>
-        <translation>自</translation>
+        <translation>从</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="57"/>
         <source>To</source>
-        <translation>至</translation>
+        <translation>到</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
