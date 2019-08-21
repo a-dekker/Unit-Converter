@@ -870,15 +870,15 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["in2dm"] = doConvert(value, 0.254);
             values["in2ft"] = QString::number(value / 12);
             values["in2km"] = doConvert(value, 0.0000254);
-            values["in2ly"] = doConvert(value, 2.684782118423e-18);
-            values["in2m"] = doConvert(value, 2.684782118423e-18);
-            values["in2um"] = doConvert(value, 0.0254);
+            values["in2ly"] = QString::number(value / 3.725e+17);
+            values["in2m"] = doConvert(value, 0.0254);
+            values["in2um"] = doConvert(value, 25400);
             values["in2mi"] = doConvert(value, 0.00001578282828283);
             values["in2mm"] = doConvert(value, 25.4);
             values["in2mil"] = doConvert(value, 1000);
             values["in2nautmi"] = doConvert(value, 0.00001371490280778);
             values["in2nm"] = doConvert(value, 25400000);
-            values["in2pm"] = doConvert(value, 2.54e10);
+            values["in2pm"] = QString::number(value / 2.54e+10);
             values["in2yd"] = QString::number(value / 36);
 
             return values[from2to];

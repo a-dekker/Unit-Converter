@@ -8,7 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Jan ?? 2019 Arno Dekker <jack.tar@example.com> 2.18.3
+* Wed Aug 21 2019 Arno Dekker <jack.tar@example.com> 2.18.4
+- Updated Chinese translation
+- Various fixes in inch conversion
+* Sun Jan 12 2019 Arno Dekker <jack.tar@example.com> 2.18.3
 - Chinese translation
 - Updated French translation
 * Sun Dec 30 2018 Arno Dekker <jack.tar@example.com> 2.18.2
