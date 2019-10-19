@@ -1,3 +1,5 @@
+
+
 /*
   Copyright (C) 2013 Jolla Ltd.
   Contact: Thomas Perl <thomas.perl@jollamobile.com>
@@ -27,30 +29,30 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
 import "pages/scripts/HelperVariables.js" as HV
 import "pages/scripts/UnitConververDB.js" as DB
 
-ApplicationWindow
-{
+ApplicationWindow {
     id: main
     property bool commaSep: Qt.locale().decimalPoint === ','
     // jolla 1: 540 x 960 pixels, 16:9 ratio (~245 ppi density)
     // jolla c: 720 x 1280 pixels, 16:9 ratio (~294 ppi density)
     // xperia: 1080 x 1920 pixels, 16:9 ratio (~441 ppi density)
+    // xperia XA2 plus: 1080 x 2160 pixels, 18:9 ratio (~402 ppi density)
     // tablet: 1536 x 2048 pixels, 4:3 ratio (~330 ppi density)
-    property real cRatio: Screen.width <= 540 ? 9.74 : Screen.width === 1080 ? 17.49 : Screen.width === 1536 ? 12.80 : Screen.width === 720 ? 10 : 9.74
+    property real cRatio: Screen.width <= 540 ? 9.74 : Screen.height === 1920 ? 17.49 : Screen.width === 1536 ? 12.80 : Screen.height === 2160 ? 16.07 : Screen.width === 720 ? 10 : 9.74
 
-    initialPage: Component { MainPage {} }
+    initialPage: Component {
+        MainPage {
+        }
+    }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 
     Component.onCompleted: {
-        DB.openDB();
-        HV.VERSION = logic.getVersion();
+        DB.openDB()
+        HV.VERSION = logic.getVersion()
     }
 }
-
-
