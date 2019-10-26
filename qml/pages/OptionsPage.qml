@@ -24,7 +24,8 @@ Dialog {
             width: parent.width
         }
 
-        ScrollDecorator {}
+        ScrollDecorator {
+        }
 
         Column {
             id: col
@@ -48,12 +49,11 @@ Dialog {
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 wrapMode: TextEdit.WordWrap
-                text: qsTr("You can activate/deactivate ruler's horizontal/vertical scale. If you deactivate one of the scales, " +
-                           "you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. " +
-                           "By default the ruler page's back navigation is off. " +
-                           "It can be activated by pressing on the top-left corner of the screen.")
+                text: qsTr(
+                          "You can activate/deactivate ruler's horizontal/vertical scale. If you deactivate one of the scales, " + "you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. "
+                          + "By default the ruler page's back navigation is off. "
+                          + "It can be activated by pressing on the top-left corner of the screen.")
                 readOnly: true
-
             }
             TextSwitch {
                 id: hActivationSwitch
@@ -61,10 +61,10 @@ Dialog {
                 description: qsTr("Activates ruler's horizontal lines")
                 onCheckedChanged: {
                     if (!checked && !vActivationSwitch.checked) {
-                        HV.HORIZONTALLINESACTIVE = checked;
-                        vActivationSwitch.checked = true;
+                        HV.HORIZONTALLINESACTIVE = checked
+                        vActivationSwitch.checked = true
                     } else {
-                        HV.HORIZONTALLINESACTIVE = checked;
+                        HV.HORIZONTALLINESACTIVE = checked
                     }
                 }
             }
@@ -74,10 +74,10 @@ Dialog {
                 description: qsTr("Activates ruler's vertical lines")
                 onCheckedChanged: {
                     if (!checked && !vActivationSwitch.checked) {
-                        HV.VERTICALLINESACTIVE = checked;
-                        hActivationSwitch.checked = true;
+                        HV.VERTICALLINESACTIVE = checked
+                        hActivationSwitch.checked = true
                     } else {
-                        HV.VERTICALLINESACTIVE = checked;
+                        HV.VERTICALLINESACTIVE = checked
                     }
                 }
             }
@@ -92,8 +92,9 @@ Dialog {
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 wrapMode: TextEdit.WordWrap
-                text: qsTr("You can change the rate at which the currency rates are updated. " +
-                           "If you disable the automatic update, you have to start the update process manually.")
+                text: qsTr(
+                          "You can change the rate at which the currency rates are updated. "
+                          + "If you disable the automatic update, you have to start the update process manually.")
                 readOnly: true
             }
             ComboBox {
@@ -103,11 +104,26 @@ Dialog {
                 width: parent.width
                 currentIndex: currencycache.interval()
                 menu: ContextMenu {
-                    MenuItem { text: qsTr("Daily update"); font.family: "Verdana" }
-                    MenuItem { text: qsTr("Weekly update"); font.family: "Verdana" }
-                    MenuItem { text: qsTr("Monthly update"); font.family: "Verdana" }
-                    MenuItem { text: qsTr("Always at application start"); font.family: "Verdana" }
-                    MenuItem { text: qsTr("Disable automatic update"); font.family: "Verdana" }
+                    MenuItem {
+                        text: qsTr("Daily update")
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("Weekly update")
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("Monthly update")
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("Always at application start")
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("Disable automatic update")
+                        font.family: "Verdana"
+                    }
                 }
             }
             Button {
@@ -124,7 +140,8 @@ Dialog {
                 width: parent.width
                 label: qsTr("Select number notation")
                 description: qsTr("Preferred number notation")
-                currentIndex: myset.value("notation","scientific") === "scientific" ? 1 : 0
+                currentIndex: myset.value("notation",
+                                          "scientific") === "scientific" ? 1 : 0
                 menu: ContextMenu {
                     MenuItem {
                         text: qsTr("standard") // 0
@@ -149,7 +166,7 @@ Dialog {
         myset.sync()
     }
     onOpened: {
-        hActivationSwitch.checked = HV.HORIZONTALLINESACTIVE;
-        vActivationSwitch.checked = HV.VERTICALLINESACTIVE;
+        hActivationSwitch.checked = HV.HORIZONTALLINESACTIVE
+        vActivationSwitch.checked = HV.VERTICALLINESACTIVE
     }
 }

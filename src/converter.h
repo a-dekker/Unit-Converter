@@ -58,6 +58,7 @@ public:
         AREA,
         CURRENCY,
         DATASTORAGE,
+        DATATRANSFER,
         DENSITY,
         ENERGYANDWORK,
         FLOW,

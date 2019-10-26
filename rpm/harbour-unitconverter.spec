@@ -13,8 +13,8 @@ Name:       harbour-unitconverter
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    UnitConverter SailfishOS Application
-Version:    2.18
-Release:    5
+Version:    2.19
+Release:    1
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/Unit-Converter

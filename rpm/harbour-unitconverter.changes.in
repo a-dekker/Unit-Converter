@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Oct 26 2019 Arno Dekker <jack.tar@example.com> 2.19.1
+- Added Data Transfer rate conversion
+- Slightly larger distance indicator on ruler for bigger screens
 * Sat Oct 19 2019 Arno Dekker <jack.tar@example.com> 2.18.5
 - Fixed ruler for Xperia XA2 plus sizing
 * Wed Aug 21 2019 Arno Dekker <jack.tar@example.com> 2.18.4

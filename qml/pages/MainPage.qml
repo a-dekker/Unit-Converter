@@ -19,7 +19,9 @@ Page {
         anchors.fill: parent
         clip: true
         focus: false
-        model: ListModel{id: listModel}
+        model: ListModel {
+            id: listModel
+        }
         header: PageHeader {
             id: pageheader
             title: qsTr("Unit Converter")
@@ -34,24 +36,26 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"));
+                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
             }
             MenuItem {
                 text: qsTr("Options")
                 onClicked: {
-                    pageStack.push(Qt.resolvedUrl("OptionsPage.qml"));
+                    pageStack.push(Qt.resolvedUrl("OptionsPage.qml"))
                 }
             }
             MenuItem {
                 text: qsTr("Quick Search")
                 onClicked: {
                     if (!proxymodel.isModelPopulated()) {
-                        var i = 1, len = xmlModel.count, tmp = {"Euro": "EUR"};
-                        for (i; i <= len ; ++i) {
-                            tmp[HV.UNITS["CURRENCY"][i]] =
-                                    proxymodel.stripHTMLtags(xmlModel.get(i-1).currency);
+                        var i = 1, len = xmlModel.count, tmp = {
+                            "Euro": "EUR"
                         }
-                        proxymodel.insertUnits("currency",tmp);
+                        for (i; i <= len; ++i) {
+                            tmp[HV.UNITS["CURRENCY"][i]] = proxymodel.stripHTMLtags(
+                                        xmlModel.get(i - 1).currency)
+                        }
+                        proxymodel.insertUnits("currency", tmp)
                     }
                     pageStack.push(Qt.resolvedUrl("QuickSearchPage.qml"))
                 }
@@ -59,8 +63,9 @@ Page {
             MenuItem {
                 text: qsTr("Favourites")
                 onClicked: {
-                    pageStack.push(Qt.resolvedUrl("FavouritesPage.qml"),
-                                   {"xmlListModel": xmlModel});
+                    pageStack.push(Qt.resolvedUrl("FavouritesPage.qml"), {
+                                       "xmlListModel": xmlModel
+                                   })
                 }
             }
             MenuItem {
@@ -70,33 +75,41 @@ Page {
         }
 
         XmlListModel {
-             id: xmlModel
-             xml: currencycache.xml
-             namespaceDeclarations: "declare namespace gesmes='http://www.gesmes.org/xml/2002-08-01';"
-                                    +"declare default element namespace 'http://www.ecb.int/vocabulary/2002-08-01/eurofxref';"
-             query: "/gesmes:Envelope/Cube/Cube/Cube"
-             XmlRole { name: "currency"; query: "@currency/string()" }
-             XmlRole { name: "rate"; query: "@rate/string()" }
-             onStatusChanged: {
-                 if (status == XmlListModel.Ready) {
-                     console.log("Upload succeeded...")
-                     var items = {};
-                     var i = 0
-                     for (; i < count; i++) {
-                         items[get(i).currency] = get(i).rate;
-                     }
+            id: xmlModel
+            xml: currencycache.xml
+            namespaceDeclarations: "declare namespace gesmes='http://www.gesmes.org/xml/2002-08-01';" + "declare default element namespace 'http://www.ecb.int/vocabulary/2002-08-01/eurofxref';"
+            query: "/gesmes:Envelope/Cube/Cube/Cube"
+            XmlRole {
+                name: "currency"
+                query: "@currency/string()"
+            }
+            XmlRole {
+                name: "rate"
+                query: "@rate/string()"
+            }
+            onStatusChanged: {
+                if (status == XmlListModel.Ready) {
+                    console.log("Upload succeeded...")
+                    var items = {
 
-                     if (HV.UNITS["CURRENCY"].length - 1 !== Object.getOwnPropertyNames(items).length) {
-                         console.log("Currencies has been changed and does not match the currency table...")
-                     }
-                     converter.getCurrencies(items)
-                     proxymodel.updateCurrencies(items)
-                 } else if (status == XmlListModel.Loading) {
-                     console.log("Loading...")
-                 } else if (status == XmlListModel.Error) {
-                     console.log("Error occured: " + errorString())
-                 }
-             }
+                    }
+                    var i = 0
+                    for (; i < count; i++) {
+                        items[get(i).currency] = get(i).rate
+                    }
+
+                    if (HV.UNITS["CURRENCY"].length - 1 !== Object.getOwnPropertyNames(
+                                items).length) {
+                        console.log("Currencies has been changed and does not match the currency table...")
+                    }
+                    converter.getCurrencies(items)
+                    proxymodel.updateCurrencies(items)
+                } else if (status == XmlListModel.Loading) {
+                    console.log("Loading...")
+                } else if (status == XmlListModel.Error) {
+                    console.log("Error occured: " + errorString())
+                }
+            }
         }
 
         delegate: unitDelegate
@@ -144,25 +157,28 @@ Page {
                 anchors.rightMargin: Theme.paddingLarge
             }
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("UnitConvertPage.qml"),
-                               {"unittype": unitName.replace(/\s/g,"").toUpperCase(),"xmlListModel": xmlModel});
+                pageStack.push(Qt.resolvedUrl("UnitConvertPage.qml"), {
+                                   "unittype": unitName.replace(
+                                                   /\s/g, "").toUpperCase(),
+                                   "xmlListModel": xmlModel
+                               })
             }
         }
     }
     onStatusChanged: {
         if (status === PageStatus.Activating) {
             if (listView.model.count !== 0) {
-                return;
+                return
             } else {
-                var unitNames = ["Acceleration","Angle","Area","Currency","Data Storage","Density",
-                                 "Energy and Work","Flow","Force","Frequency","Fuel Consumption",
-                                 "Length","Magnetic Field Strength","Magnetic Flux Density","Mass","Numbers",
-                                 "Power","Pressure","Speed","Temperature","Time","Torque","Volume"];
-                unitNames.sort();
-                var i = 0, count = unitNames.length;
+                var unitNames = ["Acceleration", "Angle", "Area", "Currency", "Data Storage", "Data Transfer", "Density", "Energy and Work", "Flow", "Force", "Frequency", "Fuel Consumption", "Length", "Magnetic Field Strength", "Magnetic Flux Density", "Mass", "Numbers", "Power", "Pressure", "Speed", "Temperature", "Time", "Torque", "Volume"]
+                unitNames.sort()
+                var i = 0, count = unitNames.length
                 for (; i < count; ++i) {
-                        listView.model.append({"imageSource": "qrc:/images/images/unit_icon_" + (i+1) + ".png",
-                                                "unitName": unitNames[i] })
+                    listView.model.append({
+                                              "imageSource": "qrc:/images/images/unit_icon_"
+                                                             + (i + 1) + ".png",
+                                              "unitName": unitNames[i]
+                                          })
                 }
             }
         }

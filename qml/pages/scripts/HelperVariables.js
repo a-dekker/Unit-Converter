@@ -38,11 +38,13 @@ var UNITS = {
         "New Zealand Dollar", "Philippine Peso", "Singapore Dollar",
         "Thai Baht", "South African Rand"
     ],
-
     DATASTORAGE: ["Bit", "Byte", "Gibibit", "Gibibyte", "Kibibit",
          "Kibibyte", "Mebibit", "Mebibyte", "Word"
     ],
-
+    DATATRANSFER: ["bit/s", "B/s", "kbit/s", "Kibit/s", "kB/s",
+        "KiB/s", "Mbit/s", "Mibit/s", "MB/s", "MiB/s", "Gbit/s",
+        "Gibit/s", "GB/s", "GiB/s", "Tbit/s", "Tibit/s", "TB/s", "TiB/s"
+    ],
     DENSITY: ["Aluminum", "Copper", "Gold", "Gram per Cubic Centimeter",
         "Iron", "Kilogram per Cubic Metre", "Lead", "Silver"
     ],
@@ -50,45 +52,34 @@ var UNITS = {
         "Ergs", "Foot-pounds", "Joules", "Kilocalories", "Kilojoules",
         "Kilowatt-hours", "Newton-meters"
     ],
-
     FLOW: ["Cubic Foot per Minute", "Cubic Meter per Hour",
         "Cubic Meter per Second", "Litres per Minute"
     ],
-
     FORCE: ["Dynes", "Kilopounds", "Kilonewtons", "Pounds", "Newtons",
         "Ounces-force"
     ],
-
     FREQUENCY: ["Gigahertz", "Hertz", "Kilohertz", "Megahertz",
         "Radians per Second", "Revolutions per Minute", "Terahertz"
     ],
-
     FUELCONSUMPTION: ["Kilometers per Liter", "Litres per 100 km",
         "Miles per Gallon (UK)", "Miles per Gallon (US)"
     ],
-
     LENGTH: ["Angstroms", "Astronomical Units", "Centimeters", "Decimeters",
         "Feet", "Inches", "Kilometers", "Light Years", "Meters",
         "Micrometers or Microns", "Miles", "Millimeters", "Mil or Thou",
         "Nautical Miles", "Nanometers", "Picometers", "Yards"
     ],
-
     MAGNETICFIELDSTRENGTH: ["Ampere per Meter", "Oersted"],
-
     MAGNETICFLUXDENSITY: ["Gamma", "Gauss", "Tesla"],
-
     MASS: ["Atomic Mass Units", "Grains", "Grams", "Kilograms",
         "Pounds-mass", "Microgram", "Milligrams", "Ounce", "Slugs"
     ],
-
     NUMBERS: ["Binary", "Decimal", "Hexadecimal", "Octal"],
-
     POWER: ["Boiler Horsepower", "British Thermal Units per Hour",
         "Calorie per Second","Decibel Milliwatts" , "Decibel Watts", "Electrical Horsepower",
         "Pound-Foot per Second", "Gigawatts", "Kilowatts",
         "Mechanical Horsepower", "Megawatts", "Terawatts", "Watts"
     ],
-
     PRESSURE: ["Bar", "Dynes per Square Centimeter",
         "Feet of Water Column at 4°C", "Hectopascals",
         "Inches of Water Column at 4°C", "Kilopascals", "Megapascals",
@@ -96,23 +87,18 @@ var UNITS = {
         "Pascals(Newton per Meter)", "Pounds per Square Inch",
         "Standard Atmospheres", "Torr"
     ],
-
     SPEED: ["Feet per Second", "Kilometers per Hour", "Knots",
         "Mach Number at STP", "Miles per Hour", "Meters per Second"
     ],
-
     TEMPERATURE: ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
-
     TIME: ["Days", "Hours", "Microseconds", "Minutes", "Milliseconds",
         "Nanoseconds", "Seconds", "Years", "Weeks"
     ],
-
     TORQUE: ["Dyne Centimeter", "Dyne Meter", "Gram-Force Meter",
         "Kilogram-Force Meter",
         "Newton Centimeter", "Newton Meter", "Ounce-Force Inch",
         "Pound-Force Foot", "Pound-Force Inch"
     ],
-
     VOLUME: ["Centiliters", "Cubic Centimeters", "Cubic Feet",
         "Cubic Inches", "Cubic Kilometers", "Cubic Meters", "Cubic Miles",
         "Cubic Millimeters","Cubic Yards", "Liters", "Milliliters", "UK Liquid Gallons",

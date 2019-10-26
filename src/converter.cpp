@@ -332,6 +332,389 @@ QString Converter::convert2(QString from, QString to, QString value_,
         }
         break;
 
+    case DATATRANSFER:
+        unitOptions = (QStringList() << "bits"
+                                     << "Bs"
+                                     << "kbits"
+                                     << "Kibits"
+                                     << "kBs"
+                                     << "KiBs"
+                                     << "Mbits"
+                                     << "Mibits"
+                                     << "MBs"
+                                     << "MiBs"
+                                     << "Gbits"
+                                     << "Gibits"
+                                     << "GBs"
+                                     << "GiBs"
+                                     << "Tbits"
+                                     << "Tibits"
+                                     << "TBs"
+                                     << "TiBs");
+        switch (unitOptions.indexOf(unit)) {
+        case 0:
+            values["bits2Bs"] = doConvert(value, 0.125);
+            values["bits2kbits"] = doConvert(value, 0.001);
+            values["bits2Kibits"] = doConvert(value, 0.0009765625);
+            values["bits2kBs"] = doConvert(value, 0.000125);
+            values["bits2KiBs"] = doConvert(value, 0.0001220703125);
+            values["bits2Mbits"] = doConvert(value, 0.000001);
+            values["bits2Mibits"] = doConvert(value, 0.0000009536743164);
+            values["bits2MBs"] = doConvert(value, 0.000000125);
+            values["bits2MiBs"] = doConvert(value, 0.0000001192092896);
+            values["bits2Gbits"] = doConvert(value, 0.000000001);
+            values["bits2Gibits"] = doConvert(value, 0.0000000009313226);
+            values["bits2GBs"] = doConvert(value, 0.000000000125);
+            values["bits2GiBs"] = doConvert(value, 0.0000000001164153);
+            values["bits2Tbits"] = doConvert(value, 0.000000000001);
+            values["bits2Tibits"] = doConvert(value, 0.0000000000009095);
+            values["bits2TBs"] = doConvert(value, 0.000000000000125);
+            values["bits2TiBs"] = doConvert(value, 0.0000000000001137);
+
+            return values[from2to];
+        case 1:
+            values["Bs2bits"] = doConvert(value, 8);
+            values["Bs2kbits"] = doConvert(value, 0.008);
+            values["Bs2Kibits"] = doConvert(value, 0.0078125);
+            values["Bs2kBs"] = doConvert(value, 0.001);
+            values["Bs2KiBs"] = doConvert(value, 0.0009765625);
+            values["Bs2Mbits"] = doConvert(value, 0.000008);
+            values["Bs2Mibits"] = doConvert(value, 0.0000076293945312);
+            values["Bs2MBs"] = doConvert(value, 0.000001);
+            values["Bs2MiBs"] = doConvert(value, 0.0000009536743164);
+            values["Bs2Gbits"] = doConvert(value, 0.000000008);
+            values["Bs2Gibits"] = doConvert(value, 0.0000000074505806);
+            values["Bs2GBs"] = doConvert(value, 0.000000001);
+            values["Bs2GiBs"] = doConvert(value, 0.0000000009313226);
+            values["Bs2Tbits"] = doConvert(value, 0.000000000008);
+            values["Bs2Tibits"] = doConvert(value, 0.000000000007276);
+            values["Bs2TBs"] = doConvert(value, 0.000000000001);
+            values["Bs2TiBs"] = doConvert(value, 0.0000000000009095);
+
+            return values[from2to];
+        case 2:
+            values["kbits2bits"] = doConvert(value, 1000);
+            values["kbits2Bs"] = doConvert(value, 125);
+            values["kbits2Kibits"] = doConvert(value, 0.9765625);
+            values["kbits2kBs"] = doConvert(value, 0.125);
+            values["kbits2KiBs"] = doConvert(value, 0.1220703125);
+            values["kbits2Mbits"] = doConvert(value, 0.001);
+            values["kbits2Mibits"] = doConvert(value, 0.0009536743164062);
+            values["kbits2MBs"] = doConvert(value, 0.000125);
+            values["kbits2MiBs"] = doConvert(value, 0.0001192092895508);
+            values["kbits2Gbits"] = doConvert(value, 0.000001);
+            values["kbits2Gibits"] = doConvert(value, 0.0000009313225746);
+            values["kbits2GBs"] = doConvert(value, 0.000000125);
+            values["kbits2GiBs"] = doConvert(value, 0.0000001164153218);
+            values["kbits2Tbits"] = doConvert(value, 0.000000001);
+            values["kbits2Tibits"] = doConvert(value, 0.0000000009094947);
+            values["kbits2TBs"] = doConvert(value, 0.000000000125);
+            values["kbits2TiBs"] = doConvert(value, 0.0000000001136868);
+
+            return values[from2to];
+        case 3:
+            values["Kibits2bits"] = doConvert(value, 1024);
+            values["Kibits2Bs"] = doConvert(value, 128);
+            values["Kibits2kbits"] = doConvert(value, 1.024);
+            values["Kibits2kBs"] = doConvert(value, 0.128);
+            values["Kibits2KiBs"] = doConvert(value, 0.125);
+            values["Kibits2Mbits"] = doConvert(value, 0.001024);
+            values["Kibits2Mibits"] = doConvert(value, 0.0009765625);
+            values["Kibits2MBs"] = doConvert(value, 0.000128);
+            values["Kibits2MiBs"] = doConvert(value, 0.0001220703125);
+            values["Kibits2Gbits"] = doConvert(value, 0.000001024);
+            values["Kibits2Gibits"] = doConvert(value, 0.0000009536743164);
+            values["Kibits2GBs"] = doConvert(value, 0.000000128);
+            values["Kibits2GiBs"] = doConvert(value, 0.0000001192092896);
+            values["Kibits2Tbits"] = doConvert(value, 0.000000001024);
+            values["Kibits2Tibits"] = doConvert(value, 0.0000000009313226);
+            values["Kibits2TBs"] = doConvert(value, 0.000000000128);
+            values["Kibits2TiBs"] = doConvert(value, 0.0000000001164153);
+
+            return values[from2to];
+        case 4:
+            values["kBs2bits"] = doConvert(value, 8000);
+            values["kBs2Bs"] = doConvert(value, 1000);
+            values["kBs2kbits"] = doConvert(value, 8);
+            values["kBs2Kibits"] = doConvert(value, 7.8125);
+            values["kBs2KiBs"] = doConvert(value, 0.9765625);
+            values["kBs2Mbits"] = doConvert(value, 0.008);
+            values["kBs2Mibits"] = doConvert(value, 0.00762939453125);
+            values["kBs2MBs"] = doConvert(value, 0.001);
+            values["kBs2MiBs"] = doConvert(value, 0.0009536743164062);
+            values["kBs2Gbits"] = doConvert(value, 0.000008);
+            values["kBs2Gibits"] = doConvert(value, 0.0000074505805969);
+            values["kBs2GBs"] = doConvert(value, 0.000001);
+            values["kBs2GiBs"] = doConvert(value, 0.0000009313225746);
+            values["kBs2Tbits"] = doConvert(value, 0.000000008);
+            values["kBs2Tibits"] = doConvert(value, 0.0000000072759576);
+            values["kBs2TBs"] = doConvert(value, 0.000000001);
+            values["kBs2TiBs"] = doConvert(value, 0.0000000009094947);
+
+            return values[from2to];
+        case 5:
+            values["KiBs2bits"] = doConvert(value, 8192);
+            values["KiBs2Bs"] = doConvert(value, 1024);
+            values["KiBs2kbits"] = doConvert(value, 8.192);
+            values["KiBs2Kibits"] = doConvert(value, 8);
+            values["KiBs2kBs"] = doConvert(value, 1.024);
+            values["KiBs2Mbits"] = doConvert(value, 0.008192);
+            values["KiBs2Mibits"] = doConvert(value, 0.0078125);
+            values["KiBs2MBs"] = doConvert(value, 0.001024);
+            values["KiBs2MiBs"] = doConvert(value, 0.0009765625);
+            values["KiBs2Gbits"] = doConvert(value, 0.000008192);
+            values["KiBs2Gibits"] = doConvert(value, 0.0000076293945312);
+            values["KiBs2GBs"] = doConvert(value, 0.000001024);
+            values["KiBs2GiBs"] = doConvert(value, 0.0000009536743164);
+            values["KiBs2Tbits"] = doConvert(value, 0.000000008192);
+            values["KiBs2Tibits"] = doConvert(value, 0.0000000074505806);
+            values["KiBs2TBs"] = doConvert(value, 0.000000001024);
+            values["KiBs2TiBs"] = doConvert(value, 0.0000000009313226);
+
+            return values[from2to];
+        case 6:
+            values["Mbits2bits"] = doConvert(value, 1000000);
+            values["Mbits2Bs"] = doConvert(value, 125000);
+            values["Mbits2kbits"] = doConvert(value, 1000);
+            values["Mbits2Kibits"] = doConvert(value, 976.5625);
+            values["Mbits2kBs"] = doConvert(value, 125);
+            values["Mbits2KiBs"] = doConvert(value, 122.0703125);
+            values["Mbits2Mibits"] = doConvert(value, 0.95367431640625);
+            values["Mbits2MBs"] = doConvert(value, 0.125);
+            values["Mbits2MiBs"] = doConvert(value, 0.119209289550781);
+            values["Mbits2Gbits"] = doConvert(value, 0.001);
+            values["Mbits2Gibits"] = doConvert(value, 0.0009313225746155);
+            values["Mbits2GBs"] = doConvert(value, 0.000125);
+            values["Mbits2GiBs"] = doConvert(value, 0.0001164153218269);
+            values["Mbits2Tbits"] = doConvert(value, 0.000001);
+            values["Mbits2Tibits"] = doConvert(value, 0.0000009094947018);
+            values["Mbits2TBs"] = doConvert(value, 0.000000125);
+            values["Mbits2TiBs"] = doConvert(value, 0.0000001136868377);
+
+            return values[from2to];
+        case 7:
+            values["Mibits2bits"] = doConvert(value, 1048576);
+            values["Mibits2Bs"] = doConvert(value, 131072);
+            values["Mibits2kbits"] = doConvert(value, 1048.576);
+            values["Mibits2Kibits"] = doConvert(value, 1024);
+            values["Mibits2kBs"] = doConvert(value, 131.072);
+            values["Mibits2KiBs"] = doConvert(value, 128);
+            values["Mibits2Mbits"] = doConvert(value, 1.048576);
+            values["Mibits2MBs"] = doConvert(value, 0.131072);
+            values["Mibits2MiBs"] = doConvert(value, 0.125);
+            values["Mibits2Gbits"] = doConvert(value, 0.001048576);
+            values["Mibits2Gibits"] = doConvert(value, 0.0009765625);
+            values["Mibits2GBs"] = doConvert(value, 0.000131072);
+            values["Mibits2GiBs"] = doConvert(value, 0.0001220703125);
+            values["Mibits2Tbits"] = doConvert(value, 0.000001048576);
+            values["Mibits2Tibits"] = doConvert(value, 0.0000009536743164);
+            values["Mibits2TBs"] = doConvert(value, 0.000000131072);
+            values["Mibits2TiBs"] = doConvert(value, 0.0000001192092896);
+
+            return values[from2to];
+        case 8:
+            values["MBs2bits"] = doConvert(value, 8000000);
+            values["MBs2Bs"] = doConvert(value, 1000000);
+            values["MBs2kbits"] = doConvert(value, 8000);
+            values["MBs2Kibits"] = doConvert(value, 7812.5);
+            values["MBs2kBs"] = doConvert(value, 1000);
+            values["MBs2KiBs"] = doConvert(value, 976.56);
+            values["MBs2Mbits"] = doConvert(value, 8);
+            values["MBs2Mibits"] = doConvert(value, 7.62939453125);
+            values["MBs2MiBs"] = doConvert(value, 0.95367431640625);
+            values["MBs2Gbits"] = doConvert(value, 0.008);
+            values["MBs2Gibits"] = doConvert(value, 0.0074505805969238);
+            values["MBs2GBs"] = doConvert(value, 0.001);
+            values["MBs2GiBs"] = doConvert(value, 0.0009313225746155);
+            values["MBs2Tbits"] = doConvert(value, 0.000008);
+            values["MBs2Tibits"] = doConvert(value, 0.0000072759576142);
+            values["MBs2TBs"] = doConvert(value, 0.000001);
+            values["MBs2TiBs"] = doConvert(value, 0.0000009094947018);
+
+            return values[from2to];
+        case 9:
+            values["MiBs2bits"] = doConvert(value, 8388608);
+            values["MiBs2Bs"] = doConvert(value, 1048576);
+            values["MiBs2kbits"] = doConvert(value, 8388.608);
+            values["MiBs2Kibits"] = doConvert(value, 8192);
+            values["MiBs2kBs"] = doConvert(value, 1048.576);
+            values["MiBs2KiBs"] = doConvert(value, 1024);
+            values["MiBs2Mbits"] = doConvert(value, 8.388608);
+            values["MiBs2Mibits"] = doConvert(value, 8);
+            values["MiBs2MBs"] = doConvert(value, 1.048576);
+            values["MiBs2Gbits"] = doConvert(value, 0.008388608);
+            values["MiBs2Gibits"] = doConvert(value, 0.0078125);
+            values["MiBs2GBs"] = doConvert(value, 0.001048576);
+            values["MiBs2GiBs"] = doConvert(value, 0.0009765625);
+            values["MiBs2Tbits"] = doConvert(value, 0.000008388608);
+            values["MiBs2Tibits"] = doConvert(value, 0.0000076293945312);
+            values["MiBs2TBs"] = doConvert(value, 0.000001048576);
+            values["MiBs2TiBs"] = doConvert(value, 0.0000009536743164);
+
+            return values[from2to];
+        case 10:
+            values["Gbits2bits"] = doConvert(value, 1000000000);
+            values["Gbits2Bs"] = doConvert(value, 125000000);
+            values["Gbits2kbits"] = doConvert(value, 1000000);
+            values["Gbits2kibits"] = doConvert(value, 976562.5);
+            values["Gbits2kBs"] = doConvert(value, 125000);
+            values["Gbits2KiBs"] = doConvert(value, 122070.3125);
+            values["Gbits2Mbits"] = doConvert(value, 1000);
+            values["Gbits2Mibits"] = doConvert(value, 953.67431640625);
+            values["Gbits2MBs"] = doConvert(value, 125);
+            values["Gbits2MiBs"] = doConvert(value, 119.209289550781);
+            values["Gbits2Gibits"] = doConvert(value, 0.931322574615479);
+            values["Gbits2GBs"] = doConvert(value, 0.125);
+            values["Gbits2GiBs"] = doConvert(value, 0.116415321826935);
+            values["Gbits2Tbits"] = doConvert(value, 0.001);
+            values["Gbits2Tibits"] = doConvert(value, 0.0009094947017729);
+            values["Gbits2TBs"] = doConvert(value, 0.000125);
+            values["Gbits2TiBs"] = doConvert(value, 0.0001136868377216);
+
+            return values[from2to];
+        case 11:
+            values["Gibits2bits"] = doConvert(value, 1073741824);
+            values["Gibits2Bs"] = doConvert(value, 134217728);
+            values["Gibits2kbits"] = doConvert(value, 1073741.824);
+            values["Gibits2Kibits"] = doConvert(value, 1048576);
+            values["Gibits2kBs"] = doConvert(value, 134217.728);
+            values["Gibits2KiBs"] = doConvert(value, 131072);
+            values["Gibits2Mbits"] = doConvert(value, 1073.741824);
+            values["Gibits2Mibits"] = doConvert(value, 1024);
+            values["Gibits2MBs"] = doConvert(value, 134.217728);
+            values["Gibits2MiBs"] = doConvert(value, 128);
+            values["Gibits2Gibits"] = doConvert(value, 1.073741824);
+            values["Gibits2GBs"] = doConvert(value, 0.134217728);
+            values["Gibits2GiBs"] = doConvert(value, 0.125);
+            values["Gibits2Tbits"] = doConvert(value, 0.001073741824);
+            values["Gibits2Tibits"] = doConvert(value, 0.0009765625);
+            values["Gibits2TBs"] = doConvert(value, 0.000134217728);
+            values["Gibits2TiBs"] = doConvert(value, 0.0001220703125);
+
+            return values[from2to];
+        case 12:
+            values["GBs2bits"] = doConvert(value, 8000000000);
+            values["GBs2Bs"] = doConvert(value, 1000000000);
+            values["GBs2kbits"] = doConvert(value, 8000000);
+            values["GBs2Kibits"] = doConvert(value, 7812500);
+            values["GBs2kBs"] = doConvert(value, 1000000);
+            values["GBs2KiBs"] = doConvert(value, 976562.5);
+            values["GBs2Mbits"] = doConvert(value, 8000);
+            values["GBs2Mibits"] = doConvert(value, 7629.39453125);
+            values["GBs2MBs"] = doConvert(value, 953.67431640625);
+            values["GBs2MiBs"] = doConvert(value, 1000);
+            values["GBs2Gbits"] = doConvert(value, 8);
+            values["GBs2Gibits"] = doConvert(value, 7.45058059692383);
+            values["GBs2GiBs"] = doConvert(value, 0.931322574615479);
+            values["GBs2Tbits"] = doConvert(value, 0.008);
+            values["GBs2Tibits"] = doConvert(value, 0.0072759576141834);
+            values["GBs2TBs"] = doConvert(value, 0.001);
+            values["GBs2TiBs"] = doConvert(value, 0.0009094947017729);
+
+            return values[from2to];
+        case 13:
+            values["GiBs2bits"] = doConvert(value, 8589934592);
+            values["GiBs2Bs"] = doConvert(value, 1073741824);
+            values["GiBs2kbits"] = doConvert(value, 8589934.592);
+            values["GiBs2Kibits"] = doConvert(value, 8388608);
+            values["GiBs2kBs"] = doConvert(value, 1073741.824);
+            values["GiBs2KiBs"] = doConvert(value, 1048576);
+            values["GiBs2Mbits"] = doConvert(value, 8589.934592);
+            values["GiBs2Mibits"] = doConvert(value, 8192);
+            values["GiBs2MBs"] = doConvert(value, 1073.741824);
+            values["GiBs2MiBs"] = doConvert(value, 1024);
+            values["GiBs2Gbits"] = doConvert(value, 8.589934592);
+            values["GiBs2Gibits"] = doConvert(value, 8);
+            values["GiBs2GBs"] = doConvert(value, 1.073741824);
+            values["GiBs2Tbits"] = doConvert(value, 0.008589934592);
+            values["GiBs2Tibits"] = doConvert(value, 0.0078125);
+            values["GiBs2TBs"] = doConvert(value, 0.001073741824);
+            values["GiBs2TiBs"] = doConvert(value, 0.0009765625);
+
+            return values[from2to];
+        case 14:
+            values["Tbits2bits"] = doConvert(value, 1000000000000);
+            values["Tbits2Bs"] = doConvert(value, 125000000000);
+            values["Tbits2kbits"] = doConvert(value, 1000000000);
+            values["Tbits2Kibits"] = doConvert(value, 976562500);
+            values["Tbits2kBs"] = doConvert(value, 125000000);
+            values["Tbits2KiBs"] = doConvert(value, 122070312.5);
+            values["Tbits2Mbits"] = doConvert(value, 1000000);
+            values["Tbits2Mibits"] = doConvert(value, 953674.31640625);
+            values["Tbits2MBs"] = doConvert(value, 125000);
+            values["Tbits2MiBs"] = doConvert(value, 119209.289550781);
+            values["Tbits2Gbits"] = doConvert(value, 1000);
+            values["Tbits2Gibits"] = doConvert(value, 931.322574615479);
+            values["Tbits2GBs"] = doConvert(value, 125);
+            values["Tbits2GiBs"] = doConvert(value, 116.415321826935);
+            values["Tbits2Tibits"] = doConvert(value, 0.909494701772928);
+            values["Tbits2TBs"] = doConvert(value, 0.125);
+            values["Tbits2TiBs"] = doConvert(value, 0.113686837721616);
+
+            return values[from2to];
+        case 15:
+            values["Tibits2bits"] = doConvert(value, 1099511627776);
+            values["Tibits2Bs"] = doConvert(value, 137438953472);
+            values["Tibits2kbits"] = doConvert(value, 1099511627.776);
+            values["Tibits2Kibits"] = doConvert(value, 1073741824);
+            values["Tibits2kBs"] = doConvert(value, 137438953.472);
+            values["Tibits2KiBs"] = doConvert(value, 134217728);
+            values["Tibits2Mbits"] = doConvert(value, 1099511.627776);
+            values["Tibits2Mibits"] = doConvert(value, 1048576);
+            values["Tibits2MBs"] = doConvert(value, 137438.953472);
+            values["Tibits2MiBs"] = doConvert(value, 131072);
+            values["Tibits2Gbits"] = doConvert(value, 1099.511627776);
+            values["Tibits2Gibits"] = doConvert(value, 1024);
+            values["Tibits2GBs"] = doConvert(value, 137.438953472);
+            values["Tibits2GiBs"] = doConvert(value, 128);
+            values["Tibits2Tbits"] = doConvert(value, 1.099511627776);
+            values["Tibits2TBs"] = doConvert(value, 0.137438953472);
+            values["Tibits2TiBs"] = doConvert(value, 0.125);
+
+            return values[from2to];
+        case 16:
+            values["TBs2bits"] = doConvert(value, 8000000000000);
+            values["TBs2Bs"] = doConvert(value, 1000000000000);
+            values["TBs2kbits"] = doConvert(value, 8000000000);
+            values["TBs2Kibits"] = doConvert(value, 7812500000);
+            values["TBs2kBs"] = doConvert(value, 1000000000);
+            values["TBs2KiBs"] = doConvert(value, 976562500);
+            values["TBs2Mbits"] = doConvert(value, 8000000);
+            values["TBs2Mibits"] = doConvert(value, 7629394.53125);
+            values["TBs2MBs"] = doConvert(value, 1000000);
+            values["TBs2MiBs"] = doConvert(value, 953674.31640625);
+            values["TBs2Gbits"] = doConvert(value, 8000);
+            values["TBs2Gibits"] = doConvert(value, 7450.58059692383);
+            values["TBs2GBs"] = doConvert(value, 1000);
+            values["TBs2GiBs"] = doConvert(value, 931.322574615479);
+            values["TBs2Tbits"] = doConvert(value, 8);
+            values["TBs2Tibits"] = doConvert(value, 7.27595761418343);
+            values["TBs2TiBs"] = doConvert(value, 0.909494701772928);
+
+            return values[from2to];
+        case 17:
+            values["TiBs2bits"] = doConvert(value, 8796093022208);
+            values["TiBs2Bs"] = doConvert(value, 1099511627776);
+            values["TiBs2kbits"] = doConvert(value, 8796093022.208);
+            values["TiBs2Kibits"] = doConvert(value, 8589934592);
+            values["TiBs2kBs"] = doConvert(value, 1099511627.776);
+            values["TiBs2KiBs"] = doConvert(value, 1073741824);
+            values["TiBs2Mbits"] = doConvert(value, 8796093.022208);
+            values["TiBs2Mibits"] = doConvert(value, 8388608);
+            values["TiBs2MBs"] = doConvert(value, 1099511.627776);
+            values["TiBs2MiBs"] = doConvert(value, 1048576);
+            values["TiBs2Gbits"] = doConvert(value, 8796.093022208);
+            values["TiBs2Gibits"] = doConvert(value, 8192);
+            values["TiBs2GBs"] = doConvert(value, 1099.511627776);
+            values["TiBs2GiBs"] = doConvert(value, 1024);
+            values["TiBs2Tbits"] = doConvert(value, 8.796093022208);
+            values["TiBs2Tibits"] = doConvert(value, 8);
+            values["TiBs2TBs"] = doConvert(value, 1.099511627776);
+
+            return values[from2to];
+        }
+        break;
+
     case DENSITY:
         unitOptions = (QStringList() << "Al"
                                      << "Cu"

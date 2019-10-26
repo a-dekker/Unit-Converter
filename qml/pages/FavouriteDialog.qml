@@ -4,6 +4,7 @@ import QtQuick.XmlListModel 2.0
 import "scripts/UnitConververDB.js" as DB
 import "scripts/HelperVariables.js" as HV
 
+
 /**
  * @brief Dialog for
  */
@@ -28,225 +29,319 @@ Dialog {
     //acceptDestinationAction: PageStackAction.Replace
     //acceptDestination: Qt.resolvedUrl("ImagePage.qml")
     //acceptDestinationProperties: {"path": path, "isScannedImage": true}
-
     function calculateConversion(value) {
         if (items[combo2.currentIndex] === items[combo3.currentIndex]) {
-            return value;
+            return value
         }
-        var res;
+        var res
         if (unittype === "NUMBERS") {
             res = String(converter.convert2Numbers(items[combo2.currentIndex],
-                                                   items[combo3.currentIndex], value));
+                                                   items[combo3.currentIndex],
+                                                   value))
         } else {
             res = String(converter.convert2(items[combo2.currentIndex],
-                                            items[combo3.currentIndex], value, unittype));
+                                            items[combo3.currentIndex], value,
+                                            unittype))
         }
-        res = main.commaSep ? res.replace(".",",") : res;
-        return res;
+        res = main.commaSep ? res.replace(".", ",") : res
+        return res
     }
 
     function populateModels() {
-        fromUnitModel.clear();
-        toUnitModel.clear();
-        var i = 0, count = 0;
+        fromUnitModel.clear()
+        toUnitModel.clear()
+        var i = 0, count = 0
         if (unittype === "ACCELERATION") {
-            items = ["cm/s2","ft/s2","g","m/s2","mm/s2"];
-            HV.UNITS[unittype].sort();
+            items = ["cm/s2", "ft/s2", "g", "m/s2", "mm/s2"]
+            HV.UNITS[unittype].sort()
             count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "ANGLE") {
-            items = ["deg","grad","rad"];
-            HV.UNITS[unittype].sort();
+            items = ["deg", "grad", "rad"]
+            HV.UNITS[unittype].sort()
             count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "AREA") {
-            items = ["acre", "ha", "cm2", "ft2", "in2",
-                     "km2", "m2", "mi2","mm2","yd2"];
-            HV.UNITS[unittype].sort();
+            items = ["acre", "ha", "cm2", "ft2", "in2", "km2", "m2", "mi2", "mm2", "yd2"]
+            HV.UNITS[unittype].sort()
             count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "CURRENCY") {
             HV.UNITS[unittype].sort()
-            for(;i < HV.UNITS[unittype].length ; i++) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+            for (; i < HV.UNITS[unittype].length; i++) {
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
-            items = ["AUD", "BRL", "BGN", "CAD", "CNY", "HRK", "CZK", "DKK", "EUR", "HKD",
-                "HUF", "ISK", "INR", "IDR", "ILS", "JPY", "MYR", "MXN", "RON", "NZD", "NOK",
-                "PHP", "PLN", "GBP", "RUB", "SGD", "ZAR", "KRW", "SEK", "CHF", "THB", "TRY", "USD"]
+            items = ["AUD", "BRL", "BGN", "CAD", "CNY", "HRK", "CZK", "DKK", "EUR", "HKD", "HUF", "ISK", "INR", "IDR", "ILS", "JPY", "MYR", "MXN", "RON", "NZD", "NOK", "PHP", "PLN", "GBP", "RUB", "SGD", "ZAR", "KRW", "SEK", "CHF", "THB", "TRY", "USD"]
             // items.push("EUR");
             // for(var k = 0; k < xmlListModel.count ; k++) {
             //     items.push(xmlListModel.get(k).currency)
             // }
-                //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
+            //items[i+1] = Object.getOwnPropertyNames(HV.currencies)[i];
         } else if (unittype === "DATASTORAGE") {
-            items = ["b", "B", "Gb", "GiB", "kb",
-                     "KiB", "Mb", "MiB", "word"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["b", "B", "Gb", "GiB", "kb", "KiB", "Mb", "MiB", "word"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
+            }
+        } else if (unittype === "DATATRANSFER") {
+            items = ["bits", "Bs", "kbits", "Kibits", "kBs", "KiBs", "Mbits", "Mibits", "MBs", "MiBs", "Gbits", "Gibits", "GBs", "GiBs", "Tbits", "Tibits", "TBs", "TiBs"]
+            // HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
+            for (; i < count; ++i) {
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "DENSITY") {
-            items = ["Al", "Cu", "Au", "g/cm3", "Fe",
-                     "kg/m3", "Pb", "Ag"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["Al", "Cu", "Au", "g/cm3", "Fe", "kg/m3", "Pb", "Ag"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "ENERGYANDWORK") {
-            items = ["Btu", "cal", "eV", "erg", "ftlb",
-                     "J", "kcal", "kJ", "kWh", "Nm"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["Btu", "cal", "eV", "erg", "ftlb", "J", "kcal", "kJ", "kWh", "Nm"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "FLOW") {
-            items = ["cfm","m3/h","m3/s","L/min"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["cfm", "m3/h", "m3/s", "L/min"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "FORCE") {
-            items = ["dyn","kN","kip","N","ozf","lbf"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["dyn", "kN", "kip", "N", "ozf", "lbf"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "FREQUENCY") {
-            items = ["GHz","Hz","kHz","MHz","rad/s","rpm","THz"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["GHz", "Hz", "kHz", "MHz", "rad/s", "rpm", "THz"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "FUELCONSUMPTION") {
-            items = ["km/L","L/100km","impg","mpg"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["km/L", "L/100km", "impg", "mpg"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "LENGTH") {
-            items = ["A","au","cm","dm","ft","in","km",
-                     "ly","m","um","mil","mi","mm","nm","nautmi","pm","yd"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["A", "au", "cm", "dm", "ft", "in", "km", "ly", "m", "um", "mil", "mi", "mm", "nm", "nautmi", "pm", "yd"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "MAGNETICFIELDSTRENGTH") {
-            items = ["A/m","Oe"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["A/m", "Oe"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "MAGNETICFLUXDENSITY") {
-            items = ["gamma","Gs","T"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["gamma", "Gs", "T"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "MASS") {
-            items = ["amu","gr","g","kg","ug","mg","oz","lbm","slug"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["amu", "gr", "g", "kg", "ug", "mg", "oz", "lbm", "slug"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "NUMBERS") {
-            items = ["bin","dec","hex","oct"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["bin", "dec", "hex", "oct"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "POWER") {
-            items = ["hpb","Btu/h","cal/s","dBm", "dBW", "hpe",
-                     "GW","kW","hp","MW","ftlb/s","TW","W"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["hpb", "Btu/h", "cal/s", "dBm", "dBW", "hpe", "GW", "kW", "hp", "MW", "ftlb/s", "TW", "W"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "PRESSURE") {
-            items = ["bar","dyn/cm2","ftAgua","hPa","inAgua",
-                     "kPa","MPa","mbar","mmHg","Pa","psi","atm","Torr"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["bar", "dyn/cm2", "ftAgua", "hPa", "inAgua", "kPa", "MPa", "mbar", "mmHg", "Pa", "psi", "atm", "Torr"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "SPEED") {
-            items = ["ft/s","km/h","knot","mach","m/s","mph"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["ft/s", "km/h", "knot", "mach", "m/s", "mph"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "TEMPERATURE") {
-            items = ["C","F","K","R"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["C", "F", "K", "R"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "TIME") {
-            items = ["day","hr","us","ms","min","ns","s","wk","yr"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["day", "hr", "us", "ms", "min", "ns", "s", "wk", "yr"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "TORQUE") {
-            items = ["dyn-cm","dyn-m","gf-m","kgf-m","N-cm",
-                     "N-m","ozf-in","lbf-ft","lbf-in"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["dyn-cm", "dyn-m", "gf-m", "kgf-m", "N-cm", "N-m", "ozf-in", "lbf-ft", "lbf-in"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         } else if (unittype === "VOLUME") {
-            items = ["cl","cm3","f3","in3","km3","m3",
-                     "mi3","mm3","yd3","l","ml","galuk","gal","oz","qt"];
-            HV.UNITS[unittype].sort();
-            count = HV.UNITS[unittype].length;
+            items = ["cl", "cm3", "f3", "in3", "km3", "m3", "mi3", "mm3", "yd3", "l", "ml", "galuk", "gal", "oz", "qt"]
+            HV.UNITS[unittype].sort()
+            count = HV.UNITS[unittype].length
             for (; i < count; ++i) {
-                fromUnitModel.append({"name": HV.UNITS[unittype][i]});
-                toUnitModel.append({"name": HV.UNITS[unittype][i]});
+                fromUnitModel.append({
+                                         "name": HV.UNITS[unittype][i]
+                                     })
+                toUnitModel.append({
+                                       "name": HV.UNITS[unittype][i]
+                                   })
             }
         }
     }
@@ -273,28 +368,34 @@ Dialog {
 
             menu: ContextMenu {
                 Repeater {
-                     id: rep1
-                     model: ListModel { id: unitConverterModel }
-                     MenuItem { text: model.name }
+                    id: rep1
+                    model: ListModel {
+                        id: unitConverterModel
+                    }
+                    MenuItem {
+                        text: model.name
+                    }
                 }
             }
             Component.onCompleted: {
-                var i = 0;
-                keys = Object.keys(HV.UNITS);
-                keys.sort();
-                var count = Object.keys(HV.UNITS).length;
-                for(;i < count; i++) {
-                    unitConverterModel.append({name: keys[i]});
+                var i = 0
+                keys = Object.keys(HV.UNITS)
+                keys.sort()
+                var count = Object.keys(HV.UNITS).length
+                for (; i < count; i++) {
+                    unitConverterModel.append({
+                                                  "name": keys[i]
+                                              })
                 }
             }
 
             onCurrentIndexChanged: {
                 if (currentIndex !== -1) {
                     try {
-                        unittype = currentItem.text;
-                        populateModels();
+                        unittype = currentItem.text
+                        populateModels()
                     } catch (err) {
-                        console.log(err);
+                        console.log(err)
                     }
                 }
             }
@@ -317,17 +418,24 @@ Dialog {
                 menu: ContextMenu {
                     id: conMenu2
                     Repeater {
-                         id: rep2
-                         model: ListModel { id: fromUnitModel }
-                         MenuItem { text: String(model.name).toLowerCase() }
+                        id: rep2
+                        model: ListModel {
+                            id: fromUnitModel
+                        }
+                        MenuItem {
+                            text: String(model.name).toLowerCase()
+                        }
                     }
                 }
                 onCurrentIndexChanged: {
-                    var text = fromField.text;
+                    var text = fromField.text
                     if (text === "") {
                         toField.text = calculateConversion(0.0)
                     } else {
-                        var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
+                        var value_ = main.commaSep ? Number(text.replace(
+                                                                ",",
+                                                                ".")) : Number(
+                                                         text)
                         if (isFinite(value_)) {
                             toField.text = calculateConversion(value_)
                         } else {
@@ -337,55 +445,60 @@ Dialog {
                 }
             }
             TextField {
-                 id: fromField
-                 focus: true
-                 width: parent.width
-                 text: ""
-                 placeholderText: qsTr("Give a value...")
-                 font.pixelSize: Theme.fontSizeLarge
-                 font.underline: true
-                 font.bold: true
-                 color: Theme.primaryColor
-                 placeholderColor: Theme.primaryColor
-                 horizontalAlignment: TextInput.AlignLeft
-                 label: "Value from"
-                 validator: RegExpValidator{regExp: /^[0-9\+\-\,a-zA-Z]*$/}
-                 errorHighlight: text ? !acceptableInput : false
-                 inputMethodHints: unittype !== "NUMBERS" ? Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText :
-                                                            Qt.ImhNoPredictiveText
+                id: fromField
+                focus: true
+                width: parent.width
+                text: ""
+                placeholderText: qsTr("Give a value...")
+                font.pixelSize: Theme.fontSizeLarge
+                font.underline: true
+                font.bold: true
+                color: Theme.primaryColor
+                placeholderColor: Theme.primaryColor
+                horizontalAlignment: TextInput.AlignLeft
+                label: "Value from"
+                validator: RegExpValidator {
+                    regExp: /^[0-9\+\-\,a-zA-Z]*$/
+                }
+                errorHighlight: text ? !acceptableInput : false
+                inputMethodHints: unittype !== "NUMBERS" ? Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText : Qt.ImhNoPredictiveText
 
-                 EnterKey.onClicked: {
-                     if (text.length === 0 || text === 0) {
-                         if (unittype !== "NUMBERS") {
+                EnterKey.onClicked: {
+                    if (text.length === 0 || text === 0) {
+                        if (unittype !== "NUMBERS") {
                             calculateConversion(0.0)
-                         } else {
+                        } else {
                             calculateConversion(0)
-                         }
-                     }
-                     focus = false;
-                 }
-                 EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                        }
+                    }
+                    focus = false
+                }
+                EnterKey.iconSource: "image://theme/icon-m-enter-close"
 
-                 onTextChanged: {
-                     if (text === "") {
-                         if (unittype !== "NUMBERS") {
-                             toField.text = calculateConversion(0.0)
-                         } else {
-                             toField.text = calculateConversion(0)
-                         }
-                     } else {
-                         if (unittype === "NUMBERS") {
-                             toField.text = calculateConversion(text)
-                         } else {
-                             var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
-                             if (isFinite(value_)) {
-                                 toField.text = calculateConversion(value_)
-                             } else {
-                                 toField.text = calculateConversion(0.0)
-                             }
-                         }
-                     }
-                 }
+                onTextChanged: {
+                    if (text === "") {
+                        if (unittype !== "NUMBERS") {
+                            toField.text = calculateConversion(0.0)
+                        } else {
+                            toField.text = calculateConversion(0)
+                        }
+                    } else {
+                        if (unittype === "NUMBERS") {
+                            toField.text = calculateConversion(text)
+                        } else {
+                            var value_ = main.commaSep ? Number(
+                                                             text.replace(
+                                                                 ",",
+                                                                 ".")) : Number(
+                                                             text)
+                            if (isFinite(value_)) {
+                                toField.text = calculateConversion(value_)
+                            } else {
+                                toField.text = calculateConversion(0.0)
+                            }
+                        }
+                    }
+                }
             }
         }
         Column {
@@ -404,13 +517,17 @@ Dialog {
 
                 menu: ContextMenu {
                     Repeater {
-                         id: rep3
-                         model: ListModel { id: toUnitModel }
-                         MenuItem { text: String(model.name).toLowerCase() }
+                        id: rep3
+                        model: ListModel {
+                            id: toUnitModel
+                        }
+                        MenuItem {
+                            text: String(model.name).toLowerCase()
+                        }
                     }
                 }
                 onCurrentIndexChanged: {
-                    var text = fromField.text;
+                    var text = fromField.text
                     if (text === "") {
                         if (unittype !== "NUMBERS") {
                             toField.text = calculateConversion(0.0)
@@ -421,7 +538,11 @@ Dialog {
                         if (unittype === "NUMBERS") {
                             toField.text = calculateConversion(text)
                         } else {
-                            var value_ = main.commaSep ? Number(text.replace(",",".")) : Number(text);
+                            var value_ = main.commaSep ? Number(
+                                                             text.replace(
+                                                                 ",",
+                                                                 ".")) : Number(
+                                                             text)
                             if (isFinite(value_)) {
                                 toField.text = calculateConversion(value_)
                             } else {
@@ -432,32 +553,37 @@ Dialog {
                 }
             }
             TextField {
-                 id: toField
-                 focus: true
-                 width: parent.width
-                 placeholderText: main.commaSep ? Number(0.0).toPrecision(2).toString().replace(".",",") : Number(0.0).toPrecision(2).toString()
-                 font.pixelSize: Theme.fontSizeLarge
-                 font.underline: true
-                 font.bold: true
-                 color: Theme.primaryColor
-                 placeholderColor: Theme.primaryColor
-                 horizontalAlignment: TextInput.AlignLeft
-                 label: "Value to"
-                 validator: DoubleValidator{}
-                 errorHighlight: text ? !acceptableInput : false
-                 inputMethodHints: Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText
-                 readOnly: true
-                 EnterKey.onClicked: {
-                     if (text.length === 0 || text === 0) {
-                         if (unittype !== "NUMBERS") {
-                             text = calculateConversion(0.0)
-                         } else {
-                             text = calculateConversion(0)
-                         }
-                     }
-                     focus = false;
-                 }
-                 EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                id: toField
+                focus: true
+                width: parent.width
+                placeholderText: main.commaSep ? Number(0.0).toPrecision(
+                                                     2).toString().replace(
+                                                     ".", ",") : Number(
+                                                     0.0).toPrecision(
+                                                     2).toString()
+                font.pixelSize: Theme.fontSizeLarge
+                font.underline: true
+                font.bold: true
+                color: Theme.primaryColor
+                placeholderColor: Theme.primaryColor
+                horizontalAlignment: TextInput.AlignLeft
+                label: "Value to"
+                validator: DoubleValidator {
+                }
+                errorHighlight: text ? !acceptableInput : false
+                inputMethodHints: Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText
+                readOnly: true
+                EnterKey.onClicked: {
+                    if (text.length === 0 || text === 0) {
+                        if (unittype !== "NUMBERS") {
+                            text = calculateConversion(0.0)
+                        } else {
+                            text = calculateConversion(0)
+                        }
+                    }
+                    focus = false
+                }
+                EnterKey.iconSource: "image://theme/icon-m-enter-close"
             }
         }
     }
@@ -466,49 +592,62 @@ Dialog {
         State {
             when: combo1.currentIndex !== -1
             PropertyChanges {
-                target: col1; enabled: true; opacity: 1
+                target: col1
+                enabled: true
+                opacity: 1
             }
             PropertyChanges {
-                target: col2; enabled: true; opacity: 1
+                target: col2
+                enabled: true
+                opacity: 1
             }
         },
         State {
             when: combo1.currentIndex === -1
             PropertyChanges {
-                target: col1; enabled: false; opacity: 0.25
+                target: col1
+                enabled: false
+                opacity: 0.25
             }
             PropertyChanges {
-                target: col2; enabled: false; opacity: 0.25
+                target: col2
+                enabled: false
+                opacity: 0.25
             }
         }
     ]
 
     onOpened: {
         if (unittype !== "" && unitConverterModel.count > 0) {
-            populateModels(unittype);
-            combo1.currentIndex = keys.indexOf(unittype);
-            combo1.currentItem = rep1.itemAt(keys.indexOf(unittype));
-            combo2.currentIndex = items.indexOf(unitTypeFromAbb);
-            combo2.currentItem = rep2.itemAt(items.indexOf(unitTypeFromAbb));
-            fromField.text = unitValueFrom;
-            combo3.currentIndex = items.indexOf(unitTypeToAbb);
-            combo3.currentItem = rep3.itemAt(items.indexOf(unitTypeToAbb));
-            toField.text = unitValueTo;
-            unittype_old = unittype;
+            populateModels(unittype)
+            combo1.currentIndex = keys.indexOf(unittype)
+            combo1.currentItem = rep1.itemAt(keys.indexOf(unittype))
+            combo2.currentIndex = items.indexOf(unitTypeFromAbb)
+            combo2.currentItem = rep2.itemAt(items.indexOf(unitTypeFromAbb))
+            fromField.text = unitValueFrom
+            combo3.currentIndex = items.indexOf(unitTypeToAbb)
+            combo3.currentItem = rep3.itemAt(items.indexOf(unitTypeToAbb))
+            toField.text = unitValueTo
+            unittype_old = unittype
         } else {
-            combo1.currentIndex = -1;
+            combo1.currentIndex = -1
         }
     }
 
     onAccepted: {
         if (unittype !== "") {
             if (isUpdate) {
-                DB.updateFavourite(unittype_old,unitTypeFrom,unitValueFrom,unitTypeTo,unitValueTo,
-                                   unittype, combo2.currentItem.text, items[combo2.currentIndex], fromField.text,
-                                   combo3.currentItem.text, items[combo3.currentIndex], toField.text);
+                DB.updateFavourite(unittype_old, unitTypeFrom, unitValueFrom,
+                                   unitTypeTo, unitValueTo, unittype,
+                                   combo2.currentItem.text,
+                                   items[combo2.currentIndex], fromField.text,
+                                   combo3.currentItem.text,
+                                   items[combo3.currentIndex], toField.text)
             } else {
-                DB.addFavourite(unittype, combo2.currentItem.text, items[combo2.currentIndex], fromField.text,
-                            combo3.currentItem.text, items[combo3.currentIndex], toField.text);
+                DB.addFavourite(unittype, combo2.currentItem.text,
+                                items[combo2.currentIndex], fromField.text,
+                                combo3.currentItem.text,
+                                items[combo3.currentIndex], toField.text)
             }
         }
     }

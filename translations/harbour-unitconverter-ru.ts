@@ -37,7 +37,7 @@
 <context>
     <name>FavouriteDialog</name>
     <message>
-        <location filename="../qml/pages/FavouriteDialog.qml" line="344"/>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="452"/>
         <source>Give a value...</source>
         <translation>Введите значение...</translation>
     </message>
@@ -78,32 +78,32 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="25"/>
+        <location filename="../qml/pages/MainPage.qml" line="27"/>
         <source>Unit Converter</source>
         <translation>Пересчет величин</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="36"/>
+        <location filename="../qml/pages/MainPage.qml" line="38"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="40"/>
+        <location filename="../qml/pages/MainPage.qml" line="42"/>
         <source>Options</source>
         <translation>Настройка</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="46"/>
+        <location filename="../qml/pages/MainPage.qml" line="48"/>
         <source>Quick Search</source>
         <translation>Поиск</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="60"/>
+        <location filename="../qml/pages/MainPage.qml" line="64"/>
         <source>Favourites</source>
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="67"/>
+        <location filename="../qml/pages/MainPage.qml" line="72"/>
         <source>Ruler</source>
         <translation>Линейка</translation>
     </message>
@@ -111,12 +111,12 @@
 <context>
     <name>OptionsPage</name>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="40"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="41"/>
         <source>Ruler</source>
         <translation>Линейка</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="51"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="52"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
         <translation>Включить или выключить горизонтальную и вертикальную шкалы линейки. Если одна из шкал отключена, то для появления измерительных линий нужно коснуться экрана. По умолчанию кнопка выхода из режима линейки скрыта. Чтобы увидеть ее, коснитесь верхнего-левого угла экрана.</translation>
     </message>
@@ -151,62 +151,62 @@
         <translation>Здесь можно задать интервал обновления курсов. Если отключить автоматическое обновление данных, то для правильности пересчета это придется делать вручную.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="102"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="103"/>
         <source>Select update interval</source>
         <translation>Интервал обновления курсов</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="106"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="108"/>
         <source>Daily update</source>
         <translation>раз в день</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="107"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="112"/>
         <source>Weekly update</source>
         <translation>раз в неделю</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="108"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
         <source>Monthly update</source>
         <translation>раз в месяц</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="109"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="120"/>
         <source>Always at application start</source>
         <translation>при запуске</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="110"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
         <source>Disable automatic update</source>
         <translation>никогда</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="115"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="131"/>
         <source>Update currency cache</source>
         <translation>Обновить курсы обмена</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="120"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
         <source>Notation</source>
         <translation>Формат чисел</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="125"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="141"/>
         <source>Select number notation</source>
         <translation>Выберите формат</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="126"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="142"/>
         <source>Preferred number notation</source>
         <translation>Предпочтительный формат чисел</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="130"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>standard</source>
         <translation>стандартный</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="134"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
         <source>scientific</source>
         <translation>научный</translation>
     </message>
@@ -265,97 +265,102 @@
         <translation>Валюты</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="252"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="250"/>
         <source>Data Storage</source>
         <translation>Объем данных</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="263"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="261"/>
+        <source>Data Transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="272"/>
         <source>Density</source>
         <translation>Плотность</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="274"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="283"/>
         <source>Energy and Work</source>
         <translation>Энергия и работа</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="285"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="294"/>
         <source>Flow</source>
         <translation>Поток</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="296"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="305"/>
         <source>Force</source>
         <translation>Сила</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="307"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="316"/>
         <source>Frequency</source>
         <translation>Частота</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="318"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="327"/>
         <source>Fuel Consumption</source>
         <translation>Расход топлива</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="329"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="338"/>
         <source>Length</source>
         <translation>Длина</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="340"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="349"/>
         <source>Magnetic Field Strength</source>
         <translation>Магнитное поле</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="351"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="360"/>
         <source>Magnetic Flux Density</source>
         <translation>Плотность магнитного потока</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="362"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="371"/>
         <source>Mass</source>
         <translation>Масса</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="373"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="382"/>
         <source>Numbers</source>
         <translation>Числа</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="386"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="395"/>
         <source>Power</source>
         <translation>Мощность</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="397"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="406"/>
         <source>Pressure</source>
         <translation>Давление</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="408"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="417"/>
         <source>Speed</source>
         <translation>Скорость</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="419"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="428"/>
         <source>Temperature</source>
         <translation>Температура</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="430"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="439"/>
         <source>Time</source>
         <translation>Время</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="441"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="450"/>
         <source>Torque</source>
         <translation>Момент вращения</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UnitConvertPage.qml" line="452"/>
+        <location filename="../qml/pages/UnitConvertPage.qml" line="461"/>
         <source>Volume</source>
         <translation>Объем</translation>
     </message>
