@@ -272,7 +272,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="261"/>
         <source>Data Transfer</source>
-        <translation type="unfinished"></translation>
+        <translation>Dataöverföring</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="272"/>
