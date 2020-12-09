@@ -38,12 +38,7 @@ import "pages/scripts/UnitConververDB.js" as DB
 ApplicationWindow {
     id: main
     property bool commaSep: Qt.locale().decimalPoint === ','
-    // jolla 1: 540 x 960 pixels, 16:9 ratio (~245 ppi density)
-    // jolla c: 720 x 1280 pixels, 16:9 ratio (~294 ppi density)
-    // xperia: 1080 x 1920 pixels, 16:9 ratio (~441 ppi density)
-    // xperia XA2 plus: 1080 x 2160 pixels, 18:9 ratio (~402 ppi density)
-    // tablet: 1536 x 2048 pixels, 4:3 ratio (~330 ppi density)
-    property real cRatio: Screen.width <= 540 ? 9.74 : Screen.height === 1920 ? 17.49 : Screen.width === 1536 ? 12.80 : Screen.height === 2160 ? 16.07 : Screen.width === 720 ? 10 : 9.74
+    property real cRatio: screenPixelDensity / 25.25
 
     initialPage: Component {
         MainPage {

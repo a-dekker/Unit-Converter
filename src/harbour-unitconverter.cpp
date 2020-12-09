@@ -38,6 +38,7 @@
 #include <QQuickView>
 #include <QtQml/QQmlContext>
 #include <sailfishapp.h>
+#include <QScreen>
 #include "converter.h"
 #include "custommodel.h"
 #include "logic.h"
@@ -63,6 +64,7 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("proxymodel", &custom_model);
     view->rootContext()->setContextProperty("logic", &logic);
     view->rootContext()->setContextProperty("currencycache", &currency_cache);
+    view->rootContext()->setContextProperty("screenPixelDensity", QGuiApplication::primaryScreen()->physicalDotsPerInch());
 
     view->setSource(SailfishApp::pathTo("qml/harbour-unitconverter.qml"));
 
