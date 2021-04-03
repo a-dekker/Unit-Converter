@@ -111,102 +111,122 @@
 <context>
     <name>OptionsPage</name>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="41"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="40"/>
         <source>Ruler</source>
         <translation>Lineaal</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="52"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
         <translation>Je kunt de schaal van de lineaal activeren en deactiveren. Als je een van de schalen uitzet, kun je die terug krijgen door het scherm aan te raken. Je kunt alleen terug navigeren door de linkerbovenhoek van het scherm aan te raken.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="59"/>
         <source>Activate ruler&apos;s horizontal lines</source>
         <translation>Zet de horizontale lijnen van de lineaal aan</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="61"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
         <source>Activates ruler&apos;s horizontal lines</source>
         <translation>Activeert de horizontale lijnen van de lineaal</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="72"/>
         <source>Activate ruler&apos;s vertical lines</source>
         <translation>Zet de verticale lijnen van de lineaal aan</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="74"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
         <source>Activates ruler&apos;s vertical lines</source>
         <translation>Activeert de verticale lijnen van de lineaal</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
+        <source>Select ruler unit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="87"/>
+        <source>Unit scale used on borders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="91"/>
+        <source>cm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <source>inch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="101"/>
         <source>Currency</source>
         <translation>Munteenheid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="111"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
         <translation>Je kunt de frequentie van het bijwerken van de koersen aanpassen. Als je het automatisch bijwerken uitzet, moet je het update proces handmatig starten.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="103"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="119"/>
         <source>Select update interval</source>
         <translation>Kies een update interval</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="108"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
         <source>Daily update</source>
         <translation>Dagelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="112"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
         <source>Weekly update</source>
         <translation>Wekelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="132"/>
         <source>Monthly update</source>
         <translation>Maandelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="120"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
         <source>Always at application start</source>
         <translation>Bij het starten van de applicatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="140"/>
         <source>Disable automatic update</source>
         <translation>Zet automatisch bijwerken uit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="131"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Update currency cache</source>
         <translation>Werk valuta gegevens bij</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="152"/>
         <source>Notation</source>
         <translation>Notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="141"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="157"/>
         <source>Select number notation</source>
         <translation>Selecteer de numerieke notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="142"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="158"/>
         <source>Preferred number notation</source>
         <translation>Gewenste numerieke notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="163"/>
         <source>standard</source>
         <translation>standaard</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
         <source>scientific</source>
         <translation>wetenschappelijk</translation>
     </message>
@@ -368,22 +388,22 @@
 <context>
     <name>UnitWindow</name>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="39"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="38"/>
         <source>From</source>
         <translation>Van</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="57"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="56"/>
         <source>To</source>
         <translation>tot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="77"/>
         <source>Give a new rate</source>
         <translation>Geef een nieuwe koers</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="79"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
         <source>Currency rate</source>
         <translation>Munt koers</translation>
     </message>

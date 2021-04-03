@@ -29,7 +29,7 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-import QtQuick 2.0
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "pages"
 import "pages/scripts/HelperVariables.js" as HV
@@ -41,8 +41,7 @@ ApplicationWindow {
     property real cRatio: screenPixelDensity / 25.25
 
     initialPage: Component {
-        MainPage {
-        }
+        MainPage {}
     }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 

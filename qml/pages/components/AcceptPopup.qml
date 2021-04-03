@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "../scripts/HelperVariables.js" as HV
 
@@ -23,8 +23,8 @@ Item {
                 color: Theme.primaryColor
 
                 onClicked: {
-                    pageStack.clear();
-                    pageStack.push(Qt.resolvedUrl("../MainPage.qml"));
+                    pageStack.clear()
+                    pageStack.push(Qt.resolvedUrl("../MainPage.qml"))
                 }
             }
             Button {
@@ -33,7 +33,7 @@ Item {
                 color: Theme.primaryColor
 
                 onClicked: {
-                    active = false;
+                    active = false
                 }
             }
         }
@@ -43,28 +43,35 @@ Item {
             name: "show notification"
             when: active
             PropertyChanges {
-                target: col; visible: true
+                target: col
+                visible: true
             }
         },
         State {
             name: "hide notification"
             when: !active
             PropertyChanges {
-                target: col; visible: false
+                target: col
+                visible: false
             }
         }
     ]
     transitions: Transition {
-            from: "*"
-            to: "*"
-            NumberAnimation { property: "visible"
-                              duration: 500; easing.type: Easing.InOutQuad }
-            }
+        from: "*"
+        to: "*"
+        NumberAnimation {
+            property: "visible"
+            duration: 500
+            easing.type: Easing.InOutQuad
+        }
+    }
     Timer {
         id: timer
         interval: 5000
         repeat: false
         running: active
-        onTriggered: {active = false;}
+        onTriggered: {
+            active = false
+        }
     }
 }

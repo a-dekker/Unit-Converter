@@ -111,102 +111,122 @@
 <context>
     <name>OptionsPage</name>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="41"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="40"/>
         <source>Ruler</source>
         <translation>Линейка</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="52"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
         <translation>Включить или выключить горизонтальную и вертикальную шкалы линейки. Если одна из шкал отключена, то для появления измерительных линий нужно коснуться экрана. По умолчанию кнопка выхода из режима линейки скрыта. Чтобы увидеть ее, коснитесь верхнего-левого угла экрана.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="59"/>
         <source>Activate ruler&apos;s horizontal lines</source>
         <translation>Горизонтальная шкала</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="61"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
         <source>Activates ruler&apos;s horizontal lines</source>
         <translation>Показывать горизонтальную шкалу линейки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="72"/>
         <source>Activate ruler&apos;s vertical lines</source>
         <translation>Вертикальная шкала</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="74"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
         <source>Activates ruler&apos;s vertical lines</source>
         <translation>Показывать вертикальную шкалу линейки</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
+        <source>Select ruler unit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="87"/>
+        <source>Unit scale used on borders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="91"/>
+        <source>cm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <source>inch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="101"/>
         <source>Currency</source>
         <translation>Курсы валют</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="111"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
         <translation>Здесь можно задать интервал обновления курсов. Если отключить автоматическое обновление данных, то для правильности пересчета это придется делать вручную.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="103"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="119"/>
         <source>Select update interval</source>
         <translation>Интервал обновления курсов</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="108"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
         <source>Daily update</source>
         <translation>раз в день</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="112"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
         <source>Weekly update</source>
         <translation>раз в неделю</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="132"/>
         <source>Monthly update</source>
         <translation>раз в месяц</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="120"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
         <source>Always at application start</source>
         <translation>при запуске</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="140"/>
         <source>Disable automatic update</source>
         <translation>никогда</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="131"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Update currency cache</source>
         <translation>Обновить курсы обмена</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="152"/>
         <source>Notation</source>
         <translation>Формат чисел</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="141"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="157"/>
         <source>Select number notation</source>
         <translation>Выберите формат</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="142"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="158"/>
         <source>Preferred number notation</source>
         <translation>Предпочтительный формат чисел</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="163"/>
         <source>standard</source>
         <translation>стандартный</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
         <source>scientific</source>
         <translation>научный</translation>
     </message>
@@ -368,22 +388,22 @@
 <context>
     <name>UnitWindow</name>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="39"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="38"/>
         <source>From</source>
         <translation>Из</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="57"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="56"/>
         <source>To</source>
         <translation>В</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="77"/>
         <source>Give a new rate</source>
         <translation>Введите новый курс</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="79"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
         <source>Currency rate</source>
         <translation>Курс обмена</translation>
     </message>

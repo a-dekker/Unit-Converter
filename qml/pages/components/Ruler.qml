@@ -1,14 +1,18 @@
-import QtQuick 2.1
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "../scripts/HelperVariables.js" as HV
+import Settings 1.0
 
 Item {
 
-    property int lineW: 10
-    property real pixelToMM: 3.7795
+    MySettings {
+        id: myset
+    }
     property real totalDistance: 0.0
     property bool isHorizontalLineActive: true
     property bool isVerticalLineActive: true
+    property real cm_inch: myset.value("rulerunit",
+                                       "cm") === "cm" ? 1 : 0.393700787
 
     Canvas {
         id: canvas
@@ -30,20 +34,20 @@ Item {
             cxt.lineWidth = 1
             cxt.beginPath()
             for (var i = 0; i < 20; i++) {
-                cxt.moveTo(0, totalDistance)
-                cxt.lineTo(100, totalDistance)
-                if (i > 0 && i < 16) {
-                    cxt2.strokeText(i, 110, totalDistance + 5)
+                cxt.moveTo(0, totalDistance / cm_inch)
+                cxt.lineTo(100, totalDistance / cm_inch)
+                if (i > 0 && i < 20) {
+                    cxt2.strokeText(i, 110, totalDistance / cm_inch + 10)
                 }
                 totalDistance += main.cRatio
                 for (var k = 1; k < 10; k++) {
                     if (k === 5) {
-                        cxt.moveTo(0, totalDistance)
-                        cxt.lineTo(75, totalDistance)
+                        cxt.moveTo(0, totalDistance / cm_inch)
+                        cxt.lineTo(75, totalDistance / cm_inch)
                         totalDistance += main.cRatio
                     } else {
-                        cxt.moveTo(0, totalDistance)
-                        cxt.lineTo(50, totalDistance)
+                        cxt.moveTo(0, totalDistance / cm_inch)
+                        cxt.lineTo(50, totalDistance / cm_inch)
                         totalDistance += main.cRatio
                     }
                 }
@@ -60,20 +64,20 @@ Item {
             cxt.lineWidth = 1
             cxt.beginPath()
             for (var i = 0; i < 20; i++) {
-                cxt.moveTo(totalDistance, 0)
-                cxt.lineTo(totalDistance, 100)
+                cxt.moveTo(totalDistance / cm_inch, 0)
+                cxt.lineTo(totalDistance / cm_inch, 100)
                 if (i > 0 && i < 12) {
-                    cxt2.strokeText(i, totalDistance - 5, 120)
+                    cxt2.strokeText(i, totalDistance / cm_inch - 5, 120)
                 }
                 totalDistance += main.cRatio
                 for (var k = 1; k < 10; k++) {
                     if (k === 5) {
-                        cxt.moveTo(totalDistance, 0)
-                        cxt.lineTo(totalDistance, 75)
+                        cxt.moveTo(totalDistance / cm_inch, 0)
+                        cxt.lineTo(totalDistance / cm_inch, 75)
                         totalDistance += main.cRatio
                     } else {
-                        cxt.moveTo(totalDistance, 0)
-                        cxt.lineTo(totalDistance, 50)
+                        cxt.moveTo(totalDistance / cm_inch, 0)
+                        cxt.lineTo(totalDistance / cm_inch, 50)
                         totalDistance += main.cRatio
                     }
                 }
@@ -84,7 +88,6 @@ Item {
         }
 
         onPaint: {
-
             var cxt = canvas.getContext('2d')
             var cxt2 = canvas.getContext('2d')
             cxt.globalCompositeOperation = "source-over"

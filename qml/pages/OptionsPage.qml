@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "scripts/HelperVariables.js" as HV
 import Settings 1.0
@@ -24,8 +24,7 @@ Dialog {
             width: parent.width
         }
 
-        ScrollDecorator {
-        }
+        VerticalScrollDecorator {}
 
         Column {
             id: col
@@ -78,6 +77,23 @@ Dialog {
                         hActivationSwitch.checked = true
                     } else {
                         HV.VERTICALLINESACTIVE = checked
+                    }
+                }
+            }
+            ComboBox {
+                id: ruler_unit
+                label: qsTr("Select ruler unit")
+                width: parent.width
+                description: qsTr("Unit scale used on borders")
+                currentIndex: myset.value("rulerunit", "cm") === "inch" ? 1 : 0
+                menu: ContextMenu {
+                    MenuItem {
+                        text: qsTr("cm")
+                        font.family: "Verdana"
+                    }
+                    MenuItem {
+                        text: qsTr("inch")
+                        font.family: "Verdana"
                     }
                 }
             }
@@ -162,6 +178,12 @@ Dialog {
         }
         if (notation.currentIndex === 1) {
             myset.setValue("notation", "scientific")
+        }
+        if (ruler_unit.currentIndex === 0) {
+            myset.setValue("rulerunit", "cm")
+        }
+        if (ruler_unit.currentIndex === 1) {
+            myset.setValue("rulerunit", "inch")
         }
         myset.sync()
     }

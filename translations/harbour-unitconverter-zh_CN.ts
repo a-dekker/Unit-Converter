@@ -111,102 +111,122 @@
 <context>
     <name>OptionsPage</name>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="41"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="40"/>
         <source>Ruler</source>
         <translation>标尺</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="52"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="51"/>
         <source>You can activate/deactivate ruler&apos;s horizontal/vertical scale. If you deactivate one of the scales, you need to touch(or multi-touch) on the screen in order to bring the measurement lines visible. By default the ruler page&apos;s back navigation is off. It can be activated by pressing on the top-left corner of the screen.</source>
         <translation>启用或禁用水平/垂直标尺比例。如果其中一个比例尺被禁用, 则需要点击屏幕（或多次点击）以查看测量线。默认情况下, 标尺模式的返回导航按钮处于隐藏状态。要查看它, 请点按屏幕的左上角</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="59"/>
         <source>Activate ruler&apos;s horizontal lines</source>
         <translation>显示标尺：水平线</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="61"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="60"/>
         <source>Activates ruler&apos;s horizontal lines</source>
         <translation>显示标尺：水平线</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="72"/>
         <source>Activate ruler&apos;s vertical lines</source>
         <translation>显示标尺：垂直线</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="74"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="73"/>
         <source>Activates ruler&apos;s vertical lines</source>
         <translation>显示标尺：垂直线</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
+        <source>Select ruler unit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="87"/>
+        <source>Unit scale used on borders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="91"/>
+        <source>cm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <source>inch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="101"/>
         <source>Currency</source>
         <translation>货币</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="95"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="111"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
         <translation>你可以在此更改货币汇率的更新时间间隔。如果关闭自动更新, 则必须手动执行此操作以进行正确计算。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="103"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="119"/>
         <source>Select update interval</source>
         <translation>选择更新间隔</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="108"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
         <source>Daily update</source>
         <translation>日更</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="112"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
         <source>Weekly update</source>
         <translation>周更</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="132"/>
         <source>Monthly update</source>
         <translation>月更</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="120"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
         <source>Always at application start</source>
         <translation>每次应用启动</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="140"/>
         <source>Disable automatic update</source>
         <translation>禁用自动更新</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="131"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Update currency cache</source>
         <translation>更新货币缓存</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="152"/>
         <source>Notation</source>
         <translation>符号</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="141"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="157"/>
         <source>Select number notation</source>
         <translation>选择数字符号</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="142"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="158"/>
         <source>Preferred number notation</source>
         <translation>数字符号偏好</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="163"/>
         <source>standard</source>
         <translation>标准</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
         <source>scientific</source>
         <translation>科学</translation>
     </message>
@@ -368,22 +388,22 @@
 <context>
     <name>UnitWindow</name>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="39"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="38"/>
         <source>From</source>
         <translation>从</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="57"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="56"/>
         <source>To</source>
         <translation>到</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="77"/>
         <source>Give a new rate</source>
         <translation>给一个新汇率</translation>
     </message>
     <message>
-        <location filename="../qml/pages/components/UnitWindow.qml" line="79"/>
+        <location filename="../qml/pages/components/UnitWindow.qml" line="78"/>
         <source>Currency rate</source>
         <translation>货币汇率</translation>
     </message>

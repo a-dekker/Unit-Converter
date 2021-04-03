@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 
 Item {
@@ -8,7 +8,6 @@ Item {
     property alias currencyRateField: currencyField
     property alias currencyRateField_text: currencyField.text
     property alias currencyRateVisible: currencyField.visible
-    //property alias convertLabel_text: convertingLabel.text
 
     Separator {
         id: separator1
@@ -19,14 +18,14 @@ Item {
         }
         color: Theme.secondaryHighlightColor
         height: 2
-        width: parent.width - Theme.paddingLarge*2
+        width: parent.width - Theme.paddingLarge * 2
     }
 
     Column {
         id: col
         anchors {
             top: separator1.bottom
-            topMargin: Theme.paddingLarge/2
+            topMargin: Theme.paddingLarge / 2
         }
         spacing: Theme.paddingMedium
         Column {
@@ -80,7 +79,7 @@ Item {
                 font.pixelSize: Theme.fontSizeLarge
                 color: errorHighlight && text !== "" ? "red" : "lightgreen"
                 placeholderColor: "steelblue"
-                validator: DoubleValidator{}
+                validator: DoubleValidator {}
                 errorHighlight: text ? !acceptableInput : false
                 inputMethodHints: Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText
             }
@@ -97,7 +96,6 @@ Item {
         }
         color: Theme.secondaryHighlightColor
         height: 2
-        width: parent.width - Theme.paddingLarge*2
+        width: parent.width - Theme.paddingLarge * 2
     }
 }
-
