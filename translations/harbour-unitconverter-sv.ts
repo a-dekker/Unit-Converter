@@ -143,22 +143,22 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
         <source>Select ruler unit</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj måttenhet</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="87"/>
         <source>Unit scale used on borders</source>
-        <translation type="unfinished"></translation>
+        <translation>Enhet för linjalen</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="91"/>
         <source>cm</source>
-        <translation type="unfinished"></translation>
+        <translation>cm</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>inch</source>
-        <translation type="unfinished"></translation>
+        <translation>tum</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="101"/>
