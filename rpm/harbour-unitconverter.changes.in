@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Dec 09 2020 Arno Dekker <jack.tar@example.com> 2.22.1
+- Actually save horizontal and vertical visibility preference of ruler
+- Fix ruler line length on larger devices when only vertical lines are shown
 * Wed Dec 09 2020 Arno Dekker <jack.tar@example.com> 2.21.1
 - Ruler can be set to cm or inch display
 * Wed Dec 09 2020 Arno Dekker <jack.tar@example.com> 2.20.1

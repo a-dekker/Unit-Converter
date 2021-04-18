@@ -37,7 +37,7 @@
 <context>
     <name>FavouriteDialog</name>
     <message>
-        <location filename="../qml/pages/FavouriteDialog.qml" line="452"/>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
         <source>Give a value...</source>
         <translation>Indiquez une valeur...</translation>
     </message>

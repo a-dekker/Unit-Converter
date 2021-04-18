@@ -26,9 +26,6 @@ Dialog {
     property string unittype_old: ""
     property bool isUpdate: false
 
-    //acceptDestinationAction: PageStackAction.Replace
-    //acceptDestination: Qt.resolvedUrl("ImagePage.qml")
-    //acceptDestinationProperties: {"path": path, "isScannedImage": true}
     function calculateConversion(value) {
         if (items[combo2.currentIndex] === items[combo3.currentIndex]) {
             return value

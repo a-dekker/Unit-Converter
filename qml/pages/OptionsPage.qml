@@ -185,10 +185,22 @@ Dialog {
         if (ruler_unit.currentIndex === 1) {
             myset.setValue("rulerunit", "inch")
         }
+        if (hActivationSwitch.checked) {
+            myset.setValue("horizontallinesactive", "true")
+        } else {
+            myset.setValue("horizontallinesactive", "false")
+        }
+        if (vActivationSwitch.checked) {
+            myset.setValue("verticallinesactive", "true")
+        } else {
+            myset.setValue("verticallinesactive", "false")
+        }
         myset.sync()
     }
     onOpened: {
-        hActivationSwitch.checked = HV.HORIZONTALLINESACTIVE
-        vActivationSwitch.checked = HV.VERTICALLINESACTIVE
+        hActivationSwitch.checked = HV.HORIZONTALLINESACTIVE = myset.value(
+                    "horizontallinesactive", "true") === "true"
+        vActivationSwitch.checked = HV.VERTICALLINESACTIVE = myset.value(
+                    "verticallinesactive", "true") === "true"
     }
 }
