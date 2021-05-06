@@ -387,7 +387,7 @@ Dialog {
             }
 
             onCurrentIndexChanged: {
-                if (currentIndex !== -1) {
+                if (currentIndex !== -1 && !isUpdate) {
                     try {
                         unittype = currentItem.text
                         populateModels()
@@ -565,8 +565,7 @@ Dialog {
                 placeholderColor: Theme.primaryColor
                 horizontalAlignment: TextInput.AlignLeft
                 label: "Value to"
-                validator: DoubleValidator {
-                }
+                validator: DoubleValidator {}
                 errorHighlight: text ? !acceptableInput : false
                 inputMethodHints: Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText
                 readOnly: true
