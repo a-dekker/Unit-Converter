@@ -51,7 +51,7 @@ Page {
             font.pixelSize: Theme.fontSizeMedium
             color: Theme.primaryColor
             text: "<style>a:link { color: " + Theme.highlightColor + "; }</style>" +
-                  qsTr("Version %1").arg(HV.VERSION) + "<br/>" +
+                  qsTr("Version %1").arg(version) + "<br/>" +
                   qsTr('Created by Mikko Leppänen') + '<br/>' +
                   qsTr('Adapted by Arno Dekker') + '<br/>' +
                   qsTr('The source code is available at %1').

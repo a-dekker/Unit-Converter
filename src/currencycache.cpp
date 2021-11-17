@@ -13,8 +13,10 @@ CurrencyCache::CurrencyCache(QObject *parent) :
     _settings(),
     _manager()
 {
-    _xml = _settings.value("xml", "").toString();
-    _interval = static_cast<UpdateInterval>(_settings.value("interval", UpdateInterval::DAILY).toInt());
+    _settings = new QSettings(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
+                              "/org.mikeleppane/unitconverter/harbour-unitconverter.conf", QSettings::NativeFormat);
+    _xml = _settings->value("xml", "").toString();
+    _interval = static_cast<UpdateInterval>(_settings->value("interval", UpdateInterval::DAILY).toInt());
 
     QObject::connect(&_manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(getReply(QNetworkReply*)));
 
@@ -29,7 +31,7 @@ QString CurrencyCache::XML()
 void CurrencyCache::setXML(QString xml)
 {
     _xml = xml;
-    _settings.setValue("xml", _xml);
+    _settings->setValue("xml", _xml);
     emit xmlChanged(_xml);
 }
 
@@ -41,7 +43,7 @@ void CurrencyCache::checkUpdate()
         return;
     }
     qlonglong current_time = QDate::currentDate().toJulianDay();
-    qlonglong last_update = _settings.value("update", 0).toLongLong();
+    qlonglong last_update = _settings->value("update", 0).toLongLong();
     switch (_interval)
     {
     case DAILY:
@@ -118,7 +120,7 @@ CurrencyCache::UpdateInterval CurrencyCache::interval()
 void CurrencyCache::setInterval(CurrencyCache::UpdateInterval interval)
 {
     _interval = interval;
-    _settings.setValue("interval", interval);
+    _settings->setValue("interval", interval);
     checkUpdate();;
 }
 
@@ -138,5 +140,5 @@ void CurrencyCache::getReply(QNetworkReply *reply)
 
     setXML(reply->readAll());
     reply->deleteLater();
-    _settings.setValue("update", QDate::currentDate().toJulianDay());
+    _settings->setValue("update", QDate::currentDate().toJulianDay());
 }

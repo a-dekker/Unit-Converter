@@ -4,3 +4,8 @@ X-Nemo-Application-Type=silica-qt5
 Name=Unit Converter
 Icon=harbour-unitconverter
 Exec=harbour-unitconverter
+
+[X-Sailjail]
+OrganizationName=org.mikeleppane
+ApplicationName=unitconverter
+Permissions=Internet

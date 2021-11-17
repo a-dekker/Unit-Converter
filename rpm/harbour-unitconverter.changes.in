@@ -8,7 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Thu Mey 06 2021 Arno Dekker <jack.tar@example.com> 2.22.2
+* Wed Nov 17 2021 Arno Dekker <jack.tar@example.com> 2.23.1
+- Changes for sailjail compliancy
+* Thu May 06 2021 Arno Dekker <jack.tar@example.com> 2.22.2
 - Fixed bug where edit of favorite would reset current values
 * Wed Dec 09 2020 Arno Dekker <jack.tar@example.com> 2.22.1
 - Actually save horizontal and vertical visibility preference of ruler

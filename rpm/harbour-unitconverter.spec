@@ -13,8 +13,8 @@ Name:       harbour-unitconverter
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    UnitConverter SailfishOS Application
-Version:    2.22
-Release:    2
+Version:    2.23
+Release:    1
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/Unit-Converter
@@ -46,7 +46,8 @@ Short description of my SailfishOS Application
 # >> build pre
 # << build pre
 
-%qtc_qmake5
+%qtc_qmake5  \
+    VERSION=%{version}
 
 %qtc_make %{?_smp_mflags}
 
@@ -74,10 +75,6 @@ desktop-file-install --delete-original       \
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
 /usr/share/harbour-unitconverter
 /usr/share/applications
-/usr/share/icons/hicolor/86x86/apps
-/usr/share/icons/hicolor/108x108/apps
-/usr/share/icons/hicolor/128x128/apps
-/usr/share/icons/hicolor/172x172/apps
-/usr/share/icons/hicolor/256x256/apps
+/usr/share/icons/hicolor/*/apps
 # >> files
 # << files

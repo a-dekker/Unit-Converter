@@ -41,7 +41,6 @@
 #include <QScreen>
 #include "converter.h"
 #include "custommodel.h"
-#include "logic.h"
 #include "settings.h"
 #include "currencycache.h"
 
@@ -49,20 +48,17 @@ int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
 
-    QCoreApplication::setOrganizationName("harbour-unitconverter");
-    QCoreApplication::setApplicationName("harbour-unitconverter");
     qmlRegisterType<Settings>("Settings", 1 , 0 , "MySettings");
 
     Converter converter;
     CustomModel custom_model;
-    Logic logic;
     CurrencyCache currency_cache;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
 
+    view->rootContext()->setContextProperty("version", APP_VERSION);
     view->rootContext()->setContextProperty("converter", &converter);
     view->rootContext()->setContextProperty("proxymodel", &custom_model);
-    view->rootContext()->setContextProperty("logic", &logic);
     view->rootContext()->setContextProperty("currencycache", &currency_cache);
     view->rootContext()->setContextProperty("screenPixelDensity", QGuiApplication::primaryScreen()->physicalDotsPerInch());
 

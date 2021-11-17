@@ -11,7 +11,6 @@ var COVER_VALUE3 = "0";
 var COVER_VALUE4 = "0";
 var CURRENTRATE = null;
 var NEWCURRENCYRATE = null;
-var VERSION = "";
 var HORIZONTALLINESACTIVE = true;
 var VERTICALLINESACTIVE = true;
 

@@ -47,6 +47,5 @@ ApplicationWindow {
 
     Component.onCompleted: {
         DB.openDB()
-        HV.VERSION = logic.getVersion()
     }
 }

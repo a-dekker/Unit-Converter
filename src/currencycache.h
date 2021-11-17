@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QString>
 #include <QSettings>
+#include <QStandardPaths>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
 #include <QNetworkReply>
@@ -44,7 +45,7 @@ private:
 
     QString _xml;
     UpdateInterval _interval;
-    QSettings _settings;
+    QSettings *_settings;
     QNetworkAccessManager _manager;
     void showNotification(QString body, QString summary);
     void removeNotification();

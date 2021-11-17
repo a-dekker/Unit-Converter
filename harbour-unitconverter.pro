@@ -17,7 +17,6 @@ PKGCONFIG += nemonotifications-qt5
 SOURCES += src/harbour-unitconverter.cpp \
     src/custommodel.cpp \
     src/converter.cpp \
-    src/logic.cpp \
     src/settings.cpp \
     src/currencycache.cpp
 
@@ -46,6 +45,11 @@ OTHER_FILES += qml/harbour-unitconverter.qml \
     qml/pages/FavouritesPage.qml \
     qml/pages/FavouriteDialog.qml
 
+isEmpty(VERSION) {
+    VERSION = $$system( egrep "^Version:\|^Release:" rpm/harbour-unitconverter.spec | tr -d "[A-Z][a-z]: " | tr "\\\n" "-" | sed "s/\.$//g" | tr -d "[:space:]")
+    message("VERSION is unset, assuming $$VERSION")
+}
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 TRANSLATIONS = translations/harbour-unitconverter-nl.ts \
                translations/harbour-unitconverter-fr.ts \
@@ -81,7 +85,6 @@ INSTALLS += translations icon86 icon108 icon128 icon172 icon256
 HEADERS += \
     src/custommodel.h \
     src/converter.h \
-    src/logic.h \
     src/settings.h \
     src/currencycache.h
 

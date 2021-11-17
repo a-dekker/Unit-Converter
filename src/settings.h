@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QSettings>
+#include <QStandardPaths>
 
 class Settings : public QObject
 {
@@ -21,7 +22,7 @@ signals:
 
         public slots:
     private:
-            QSettings settings_;
+            QSettings *settings_;
 };
 
 #endif // SETTINGS_H
