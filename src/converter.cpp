@@ -12,9 +12,12 @@
 
 QString doConvert(double val, double conv_val)
 {
-    QSettings mySets;
+    QSettings* mySets = new QSettings(
+        QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
+            "/org.adekker/unitconverter/harbour-unitconverter.conf",
+        QSettings::NativeFormat);
     QString retval;
-    QString notation = mySets.value("notation", "scientific").toString();
+    QString notation = mySets->value("notation", "scientific").toString();
     if (notation == "scientific") {
         retval = QString::number(val * conv_val, 'g');
     }

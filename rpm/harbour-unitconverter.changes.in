@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Nov 18 2021 Arno Dekker <jack.tar@example.com> 2.23.2
+- Fixed reading scientific display config setting
 * Wed Nov 17 2021 Arno Dekker <jack.tar@example.com> 2.23.1
 - Changes for sailjail compliancy
 * Thu May 06 2021 Arno Dekker <jack.tar@example.com> 2.22.2
