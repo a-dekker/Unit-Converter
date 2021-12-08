@@ -14,7 +14,7 @@ QString doConvert(double val, double conv_val)
 {
     QSettings* mySets = new QSettings(
         QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
-            "/org.adekker/unitconverter/harbour-unitconverter.conf",
+            "/org.mikeleppane/unitconverter/harbour-unitconverter.conf",
         QSettings::NativeFormat);
     QString retval;
     QString notation = mySets->value("notation", "scientific").toString();
