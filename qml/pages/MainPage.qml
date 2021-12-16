@@ -124,7 +124,7 @@ Page {
         BackgroundItem {
             id: bgItem
             width: listView.width
-            height: Theme.itemSizeLarge
+            height: Theme.itemSizeSmall
             Row {
                 id: row
                 anchors {

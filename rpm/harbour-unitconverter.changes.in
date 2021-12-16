@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Dec 09 2021 Arno Dekker <jack.tar@example.com> 2.23.4
+- Decrease space between items in categories
 * Wed Dec 08 2021 Arno Dekker <jack.tar@example.com> 2.23.3
 - Fixed reading scientific display config setting final attempt
 * Thu Nov 18 2021 Arno Dekker <jack.tar@example.com> 2.23.2
