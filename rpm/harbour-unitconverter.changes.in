@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Dec 29 2021 Arno Dekker <jack.tar@example.com> 2.23.5
+- Correctly vertically align icon and category name on mainpage
 * Thu Dec 09 2021 Arno Dekker <jack.tar@example.com> 2.23.4
 - Decrease space between items in categories
 * Wed Dec 08 2021 Arno Dekker <jack.tar@example.com> 2.23.3

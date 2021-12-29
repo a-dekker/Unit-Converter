@@ -136,14 +136,13 @@ Page {
                 spacing: Theme.paddingLarge
                 Image {
                     id: img
-                    //anchors.verticalCenter: label.verticalCenter
+                    anchors.verticalCenter: parent.verticalCenter
                     source: imageSource
                     scale: largeScreen ? 2 : 1.25
                     smooth: true
                 }
                 Label {
                     id: unit
-                    anchors.verticalCenter: img.verticalCenter
                     text: unitName
                     font.pixelSize: Theme.fontSizeLarge
                     color: bgItem.highlighted ? Theme.highlightColor : Theme.primaryColor
