@@ -20,6 +20,8 @@ Item {
         height: Screen.height
         smooth: true
 
+        onVisibleChanged: requestPaint()
+
         function drawBackground(cxt) {
             cxt.save()
             cxt.fillStyle = "#FFFF00"

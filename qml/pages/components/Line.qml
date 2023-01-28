@@ -42,6 +42,9 @@ Item {
 
         z: 10
         smooth: true
+
+        onVisibleChanged: requestPaint()
+
         onPaint: {
             if (isHorizontal && isVertical) {
                 cxtLine1 = canvas.getContext('2d')

@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Jan 28 2023 Arno Dekker <jack.tar@example.com> 2.23.6
+- Redraw ruler after losing focus to prevent empty page
 * Wed Dec 29 2021 Arno Dekker <jack.tar@example.com> 2.23.5
 - Correctly vertically align icon and category name on mainpage
 * Thu Dec 09 2021 Arno Dekker <jack.tar@example.com> 2.23.4
