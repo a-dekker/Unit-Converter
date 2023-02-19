@@ -46,7 +46,6 @@ QString Converter::convert2(QString from, QString to, QString value_,
 
     switch (metaEnum.keysToValue(
         unittype.replace(QRegExp(" "), "").toUpper().toLatin1())) {
-
     case ACCELERATION:
 
         values["m/s22cm/s2"] = doConvert(value, 100);
@@ -2451,7 +2450,9 @@ QString Converter::convert2(QString from, QString to, QString value_,
                                      << "gal"
                                      << "oz"
                                      << "qt"
-                                     << "mm3");
+                                     << "mm3"
+                                     << "ipt"
+                                     << "upt");
         switch (unitOptions.indexOf(unit)) {
         case 0:
             values["cl2cm3"] = doConvert(value, 10);
@@ -2468,6 +2469,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["cl2oz"] = doConvert(value, 0.338140227);
             values["cl2qt"] = doConvert(value, 0.010566882);
             values["cl2mm3"] = doConvert(value, 10000);
+            values["cl2ipt"] = doConvert(value, 0.0175975);
+            values["cl2upt"] = doConvert(value, 0.0211338);
 
             return values[from2to];
 
@@ -2486,6 +2489,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["cm32oz"] = doConvert(value, 0.033814023);
             values["cm32qt"] = doConvert(value, 0.001056688);
             values["cm32mm3"] = doConvert(value, 1000);
+            values["cm2ipt"] = doConvert(value, 0.001759754);
+            values["cm2upt"] = doConvert(value, 0.0021133764);
 
             return values[from2to];
 
@@ -2504,6 +2509,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["f32oz"] = doConvert(value, 957.506493506);
             values["f32qt"] = doConvert(value, 29.922077922);
             values["f32mm3"] = doConvert(value, 28316846.592);
+            values["f32ipt"] = doConvert(value, 49.8307);
+            values["f32upt"] = doConvert(value, 0.00211338);
 
             return values[from2to];
 
@@ -2522,6 +2529,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["in32oz"] = doConvert(value, 0.554112554);
             values["in32qt"] = doConvert(value, 0.017316017);
             values["in32mm3"] = doConvert(value, 16387.064);
+            values["in32ipt"] = doConvert(value, 0.0288372);
+            values["in32upt"] = doConvert(value, 0.034632);
 
             return values[from2to];
 
@@ -2540,6 +2549,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["km32oz"] = doConvert(value, 3.38140227e13);
             values["km32qt"] = doConvert(value, 1.056688209e12);
             values["km32mm3"] = doConvert(value, 1e18);
+            values["km32ipt"] = doConvert(value, 1.76e+12);
+            values["km32upt"] = doConvert(value, 2.113e+12);
 
             return values[from2to];
 
@@ -2558,6 +2569,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["m32oz"] = doConvert(value, 33814.022701843);
             values["m32qt"] = doConvert(value, 1056.688209433);
             values["m32mm3"] = doConvert(value, 1000000000.0);
+            values["m32ipt"] = doConvert(value, 1759.75);
+            values["m32upt"] = doConvert(value, 2113.38);
 
             return values[from2to];
 
@@ -2576,6 +2589,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["mi32oz"] = doConvert(value, 1.409429949e14);
             values["mi32qt"] = doConvert(value, 4.40446859e12);
             values["mi32mm3"] = doConvert(value, 4.168181825e18);
+            values["mi2ipt"] = doConvert(value, 7.335e+12);
+            values["mi2upt"] = doConvert(value, 8.809e+12);
 
             return values[from2to];
 
@@ -2594,6 +2609,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["yd32oz"] = doConvert(value, 25852.675324675);
             values["yd32qt"] = doConvert(value, 807.896103896);
             values["yd32mm3"] = doConvert(value, 764554857.984);
+            values["yd2ipt"] = doConvert(value, 1345.43);
+            values["yd2upt"] = doConvert(value, 1615.79);
 
             return values[from2to];
 
@@ -2612,6 +2629,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["l2oz"] = doConvert(value, 33.814022702);
             values["l2qt"] = doConvert(value, 1.056688209);
             values["l2mm3"] = doConvert(value, 1000000);
+            values["l2ipt"] = doConvert(value, 1.75975);
+            values["l2upt"] = doConvert(value, 2.11338);
 
             return values[from2to];
 
@@ -2630,6 +2649,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["ml2oz"] = doConvert(value, 0.033814023);
             values["ml2qt"] = doConvert(value, 0.001056688);
             values["ml2mm3"] = doConvert(value, 1000);
+            values["ml2ipt"] = doConvert(value, 0.00175975);
+            values["ml2upt"] = doConvert(value, 0.00211338);
 
             return values[from2to];
 
@@ -2648,6 +2669,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["galuk2qt"] = doConvert(value, 4.8038);
             values["galuk2mm3"] = doConvert(value, 4546090.2819948);
             values["galuk2gal"] = doConvert(value, 1.20095);
+            values["galuk2ipt"] = doConvert(value, 8);
+            values["galuk2upt"] = doConvert(value, 9.6076);
 
             return values[from2to];
 
@@ -2666,6 +2689,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["gal2qt"] = doConvert(value, 4);
             values["gal2mm3"] = doConvert(value, 3785411.784);
             values["gal2galuk"] = doConvert(value, 0.83267413297806);
+            values["gal2ipt"] = doConvert(value, 6.66139);
+            values["gal2upt"] = doConvert(value, 8);
 
             return values[from2to];
 
@@ -2684,6 +2709,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["oz2cl"] = doConvert(value, 2.957352956);
             values["oz2qt"] = doConvert(value, 0.03125);
             values["oz2mm3"] = doConvert(value, 29573.5295625);
+            values["oz2ipt"] = doConvert(value, 0.0520421);
+            values["oz2upt"] = doConvert(value, 0.0625);
 
             return values[from2to];
 
@@ -2702,6 +2729,8 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["qt2oz"] = doConvert(value, 32);
             values["qt2cl"] = doConvert(value, 94.6352946);
             values["qt2mm3"] = doConvert(value, 946352.946);
+            values["qt2ipt"] = doConvert(value, 1.67);
+            values["qt2upt"] = doConvert(value, 2);
 
             return values[from2to];
 
@@ -2720,6 +2749,46 @@ QString Converter::convert2(QString from, QString to, QString value_,
             values["mm32oz"] = doConvert(value, 0.000033814);
             values["mm32cl"] = doConvert(value, 0.0001);
             values["mm32qt"] = doConvert(value, 0.000001057);
+            values["mm32ipt"] = doConvert(value, 0.00175975);
+            values["mm32upt"] = doConvert(value, 0.00211338);
+
+            return values[from2to];
+
+        case 15:
+            values["ipt2cm3"] = doConvert(value, 568.261);
+            values["ipt2f3"] = doConvert(value, 0.020068);
+            values["ipt2in3"] = doConvert(value, 34.6774);
+            values["ipt2km3"] = doConvert(value, 5.68261e-13);
+            values["ipt2m3"] = doConvert(value, 0.000568261);
+            values["ipt2mi3"] = doConvert(value, 568261);
+            values["ipt2yd3"] = doConvert(value, 0.000743258);
+            values["ipt2l"] = doConvert(value, 0.568261);
+            values["ipt2ml"] = doConvert(value, 568.261);
+            values["ipt2galuk"] = doConvert(value, 0.125);
+            values["ipt2gal"] = doConvert(value, 0.150119);
+            values["ipt2oz"] = doConvert(value, 19.2152);
+            values["ipt2cl"] = doConvert(value, 56.8261);
+            values["ipt2qt"] = doConvert(value, 0.600475);
+            values["ipt2upt"] = doConvert(value, 1.20095);
+
+            return values[from2to];
+
+        case 16:
+            values["upt2cm3"] = doConvert(value, 473.176);
+            values["upt2f3"] = doConvert(value, 0.0167101);
+            values["upt2in3"] = doConvert(value, 28.875);
+            values["upt2km3"] = doConvert(value, 4.73176e-13);
+            values["upt2m3"] = doConvert(value, 0.000473176);
+            values["upt2mi3"] = doConvert(value, 473176);
+            values["upt2yd3"] = doConvert(value, 0.000618891);
+            values["upt2l"] = doConvert(value, 0.473176);
+            values["upt2ml"] = doConvert(value, 473.176);
+            values["upt2galuk"] = doConvert(value, 0.104084);
+            values["upt2gal"] = doConvert(value, 0.125);
+            values["upt2oz"] = doConvert(value, 16);
+            values["upt2cl"] = doConvert(value, 47.3176),
+            values["upt2qt"] = doConvert(value, 0.5);
+            values["upt2ipt"] = doConvert(value, 0.832674);
 
             return values[from2to];
         }

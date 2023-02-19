@@ -440,9 +440,11 @@ Page {
                                            "liters": "l",
                                            "milliliters": "ml",
                                            "UK liquid gallons": "galuk",
+                                           "UK imperial pint": "ipt",
                                            "US liquid gallons": "gal",
                                            "US liquid ounces": "oz",
-                                           "US liquid quarts": "qt"
+                                           "US liquid quarts": "qt",
+                                           "US pint": "upt"
                                        })
                 proxymodel.setupModel()
             }
