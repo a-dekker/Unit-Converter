@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Feb 02 2026 Arno Dekker <jack.tar@example.com> 2.25.1
+- Add landscape support
 * Sun Feb 19 2023 Arno Dekker <jack.tar@example.com> 2.24.1
 - Added US pint and UK imperial pint
 * Sat Jan 28 2023 Arno Dekker <jack.tar@example.com> 2.23.6

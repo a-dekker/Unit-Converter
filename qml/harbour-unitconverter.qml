@@ -39,6 +39,8 @@ ApplicationWindow {
     id: main
     property bool commaSep: Qt.locale().decimalPoint === ','
     property real cRatio: screenPixelDensity / 25.25
+    allowedOrientations: defaultAllowedOrientations
+    _defaultPageOrientations: defaultAllowedOrientations
 
     initialPage: Component {
         MainPage {}

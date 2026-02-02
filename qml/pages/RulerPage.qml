@@ -7,6 +7,7 @@ import Settings 1.0
 
 Page {
     id: rulerPage
+    allowedOrientations: Orientation.Portrait
     width: Screen.width
     backNavigation: false
 
