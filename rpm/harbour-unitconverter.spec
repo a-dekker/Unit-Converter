@@ -13,7 +13,7 @@ Name:       harbour-unitconverter
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    UnitConverter SailfishOS Application
-Version:    2.25
+Version:    2.26
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
@@ -26,6 +26,7 @@ Requires:   qt5-qtdeclarative-import-localstorageplugin
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(nemonotifications-qt5)
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  qt5-qtdeclarative-import-xmllistmodel

@@ -4,32 +4,32 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="30"/>
+        <location filename="../qml/pages/AboutPage.qml" line="43"/>
         <source>Unit Converter</source>
         <translation>Enhetskonverterer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="36"/>
+        <location filename="../qml/pages/AboutPage.qml" line="49"/>
         <source>Sailfish OS</source>
         <translation>Sailfish OS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="54"/>
+        <location filename="../qml/pages/AboutPage.qml" line="67"/>
         <source>Version %1</source>
         <translation>Versjon %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="55"/>
+        <location filename="../qml/pages/AboutPage.qml" line="68"/>
         <source>Created by Mikko Leppänen</source>
         <translation>Laget av Mikko Leppänen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="56"/>
+        <location filename="../qml/pages/AboutPage.qml" line="68"/>
         <source>Adapted by Arno Dekker</source>
         <translation>Tilpasset av Arno Dekker</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="57"/>
+        <location filename="../qml/pages/AboutPage.qml" line="70"/>
         <source>The source code is available at %1</source>
         <translation>Kildekoden er tilgjengelig på %1</translation>
     </message>
