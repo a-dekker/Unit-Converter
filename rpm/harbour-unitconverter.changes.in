@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Jul 04 2026 Arno Dekker <jack.tar@example.com> 2.26.2
+- Fixed name of  Norwegian Bokmål translation file
 * Sat Jul 04 2026 Arno Dekker <jack.tar@example.com> 2.26.1
 - Added Norwegian Bokmål translation
 * Mon Feb 02 2026 Arno Dekker <jack.tar@example.com> 2.25.1
