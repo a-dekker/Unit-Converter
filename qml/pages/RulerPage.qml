@@ -56,7 +56,7 @@ Page {
                                              lineObj.objW / main.cRatio * 0.039370079).toFixed(
                                              2) + ", " + Number(
                                              lineObj.objH / main.cRatio * 0.039370079).toFixed(
-                                             2) + " in" : ""
+                                             2) + " inch" : ""
                 font.bold: true
 
                 color: "#0066CC"

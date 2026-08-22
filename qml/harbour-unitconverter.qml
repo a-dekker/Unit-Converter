@@ -34,11 +34,16 @@ import Sailfish.Silica 1.0
 import "pages"
 import "pages/scripts/HelperVariables.js" as HV
 import "pages/scripts/UnitConververDB.js" as DB
+import Settings 1.0
 
 ApplicationWindow {
     id: main
+    MySettings {
+        id: myset
+    }
+
     property bool commaSep: Qt.locale().decimalPoint === ','
-    property real cRatio: screenPixelDensity / 25.25
+    property real cRatio: screenPixelDensity / 25.25 * myset.value("ruler_scaling_factor", 1)
     allowedOrientations: defaultAllowedOrientations
     _defaultPageOrientations: defaultAllowedOrientations
 

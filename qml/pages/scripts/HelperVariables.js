@@ -1,6 +1,6 @@
 .pragma library
 
-var UNITTYPE = null;;
+var UNITTYPE = null;
 var COVER_UNIT1 = null;
 var COVER_UNIT2 = null;
 var COVER_UNIT3 = null;

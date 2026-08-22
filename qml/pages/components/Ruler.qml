@@ -93,8 +93,8 @@ Item {
             var cxt = canvas.getContext('2d')
             var cxt2 = canvas.getContext('2d')
             cxt.globalCompositeOperation = "source-over"
-            if (Screen.width >= 1080) {
-                cxt2.font = "35px sans-serif"
+            if (Screen.width >= 1032) {
+                cxt2.font = "45px sans-serif"
             } else {
                 cxt2.font = "20px sans-serif"
             }

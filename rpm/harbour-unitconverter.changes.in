@@ -8,6 +8,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Aug 22 2026 Arno Dekker <jack.tar@example.com> 2.28.1
+- Small fixes in ruler and scalingfactor added
 * Mon Aug 10 2026 Arno Dekker <jack.tar@example.com> 2.27.1
 - Added Italian translation
 * Sat Jul 04 2026 Arno Dekker <jack.tar@example.com> 2.26.2
