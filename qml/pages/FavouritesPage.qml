@@ -154,7 +154,7 @@ Page {
         id: contextMenuComponent
         ContextMenu {
             MenuItem {
-                text: "Update favourite"
+                text: qsTr("Update favourite")
                 onClicked: pageStack.push(Qt.resolvedUrl("FavouriteDialog.qml"),
                                                         {"xmlListModel": xmlListModel,
                                                          "unittype": log[ind].unitconverter,
@@ -167,7 +167,7 @@ Page {
                                                          "isUpdate": true});
             }
             MenuItem {
-                text: "Remove"
+                text: qsTr("Remove")
                 onClicked: remorse.execute(contextMenu.parent, qsTr("Deleting favourite..."), function() {
                     DB.removeFavourite(log[ind].unitconverter, log[ind].fromUnit, log[ind].fromValue,
                                        log[ind].toUnit, log[ind].toValue)
