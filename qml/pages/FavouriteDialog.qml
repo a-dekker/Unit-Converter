@@ -356,7 +356,7 @@ Dialog {
         ComboBox {
             id: combo1
             width: parent.width
-            label: "Unit converters"
+            label: qsTr("Unit converters")
 
             anchors {
                 top: dialogHeader.bottom
@@ -410,7 +410,7 @@ Dialog {
             ComboBox {
                 id: combo2
                 width: parent.width
-                label: "Select from "
+                label: qsTr("Select from ")
 
                 menu: ContextMenu {
                     id: conMenu2
@@ -453,7 +453,7 @@ Dialog {
                 color: Theme.primaryColor
                 placeholderColor: Theme.primaryColor
                 horizontalAlignment: TextInput.AlignLeft
-                label: "Value from"
+                label:  qsTr("Value from")
                 validator: RegExpValidator {
                     regExp: /^[0-9\+\-\,a-zA-Z]*$/
                 }
@@ -510,7 +510,7 @@ Dialog {
             ComboBox {
                 id: combo3
                 width: parent.width
-                label: "Select to "
+                label: qsTr("Select to ")
 
                 menu: ContextMenu {
                     Repeater {
@@ -564,7 +564,7 @@ Dialog {
                 color: Theme.primaryColor
                 placeholderColor: Theme.primaryColor
                 horizontalAlignment: TextInput.AlignLeft
-                label: "Value to"
+                label:  qsTr("Value to")
                 validator: DoubleValidator {}
                 errorHighlight: text ? !acceptableInput : false
                 inputMethodHints: Qt.ImhDigitsOnly | Qt.ImhNoPredictiveText

@@ -33,13 +33,43 @@
         <source>The source code is available at %1</source>
         <translation>Kildekoden er tilgjengelig på %1</translation>
     </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="71"/>
+        <source>Project webpage</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavouriteDialog</name>
     <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>
+        <source>Unit converters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="413"/>
+        <source>Select from </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
         <source>Give a value...</source>
         <translation>Oppgi en verdi...</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="456"/>
+        <source>Value from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="513"/>
+        <source>Select to </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="567"/>
+        <source>Value to</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -68,6 +98,16 @@
         <location filename="../qml/pages/FavouritesPage.qml" line="66"/>
         <source>Add favourite</source>
         <translation>Legg til favoritt</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouritesPage.qml" line="157"/>
+        <source>Update favourite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouritesPage.qml" line="170"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
@@ -161,72 +201,82 @@
         <translation>tommer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="101"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="105"/>
+        <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="110"/>
+        <source>Scaling factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
         <source>Currency</source>
         <translation>Valuta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="111"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="126"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
         <translation>Du kan endre hvor ofte valutakursene oppdateres. Hvis du deaktiverer automatisk oppdatering, må du starte oppdateringen manuelt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="119"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="134"/>
         <source>Select update interval</source>
         <translation>Velg oppdateringsintervall</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="139"/>
         <source>Daily update</source>
         <translation>Daglig oppdatering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="143"/>
         <source>Weekly update</source>
         <translation>Ukentlig oppdatering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="132"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Monthly update</source>
         <translation>Månedlig oppdatering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
         <source>Always at application start</source>
         <translation>Alltid ved oppstart av appen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="140"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="155"/>
         <source>Disable automatic update</source>
         <translation>Deaktiver automatisk oppdatering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="162"/>
         <source>Update currency cache</source>
         <translation>Oppdater valutamellomlager</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="152"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
         <source>Notation</source>
         <translation>Notasjon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="157"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="172"/>
         <source>Select number notation</source>
         <translation>Velg tallnotasjon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="158"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="173"/>
         <source>Preferred number notation</source>
         <translation>Foretrukket tallnotasjon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="163"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="178"/>
         <source>standard</source>
         <translation>standard</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="182"/>
         <source>scientific</source>
         <translation>vitenskapelig</translation>
     </message>

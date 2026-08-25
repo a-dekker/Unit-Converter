@@ -57,7 +57,8 @@ TRANSLATIONS = translations/harbour-unitconverter-nl.ts \
                translations/harbour-unitconverter-zh_CN.ts \
                translations/harbour-unitconverter-nb_NO.ts \
                translations/harbour-unitconverter-it_IT.ts \
-               translations/harbour-unitconverter-ru.ts
+               translations/harbour-unitconverter-ru.ts \
+               translations/harbour-unitconverter-fi.ts
 translations.files = translations
 translations.path = $${DEPLOYMENT_PATH}
 # only include these files for translation:

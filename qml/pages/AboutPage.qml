@@ -68,7 +68,7 @@ Page {
                       version) + "<br/>" + qsTr('Created by Mikko Leppänen') + '<br/>' + qsTr(
                       'Adapted by Arno Dekker') + '<br/>'
                   + qsTr('The source code is available at %1').arg(
-                      '<br/> <a href="https://github.com/a-dekker/Unit-Converter">%1</a>').arg("Project webpage")
+                      '<br/> <a href="https://github.com/a-dekker/Unit-Converter">%1</a>').arg(qsTr("Project webpage"))
 
             onLinkActivated: {
                 Qt.openUrlExternally(link)

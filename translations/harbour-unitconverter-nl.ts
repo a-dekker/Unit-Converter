@@ -33,13 +33,43 @@
         <source>The source code is available at %1</source>
         <translation>De broncode is te vinden op %1</translation>
     </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="71"/>
+        <source>Project webpage</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavouriteDialog</name>
     <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>
+        <source>Unit converters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="413"/>
+        <source>Select from </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
         <source>Give a value...</source>
         <translation>Geeft een waarde...</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="456"/>
+        <source>Value from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="513"/>
+        <source>Select to </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouriteDialog.qml" line="567"/>
+        <source>Value to</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -68,6 +98,16 @@
         <location filename="../qml/pages/FavouritesPage.qml" line="66"/>
         <source>Add favourite</source>
         <translation>Favoriet toevoegen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouritesPage.qml" line="157"/>
+        <source>Update favourite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FavouritesPage.qml" line="170"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
@@ -161,72 +201,82 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="101"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="105"/>
+        <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="110"/>
+        <source>Scaling factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
         <source>Currency</source>
         <translation>Munteenheid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="111"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="126"/>
         <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
         <translation>Je kunt de frequentie van het bijwerken van de koersen aanpassen. Als je het automatisch bijwerken uitzet, moet je het update proces handmatig starten.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="119"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="134"/>
         <source>Select update interval</source>
         <translation>Kies een update interval</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="124"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="139"/>
         <source>Daily update</source>
         <translation>Dagelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="143"/>
         <source>Weekly update</source>
         <translation>Wekelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="132"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Monthly update</source>
         <translation>Maandelijkse update</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="136"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
         <source>Always at application start</source>
         <translation>Bij het starten van de applicatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="140"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="155"/>
         <source>Disable automatic update</source>
         <translation>Zet automatisch bijwerken uit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="147"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="162"/>
         <source>Update currency cache</source>
         <translation>Werk valuta gegevens bij</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="152"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
         <source>Notation</source>
         <translation>Notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="157"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="172"/>
         <source>Select number notation</source>
         <translation>Selecteer de numerieke notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="158"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="173"/>
         <source>Preferred number notation</source>
         <translation>Gewenste numerieke notatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="163"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="178"/>
         <source>standard</source>
         <translation>standaard</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="167"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="182"/>
         <source>scientific</source>
         <translation>wetenschappelijk</translation>
     </message>
