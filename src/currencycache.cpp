@@ -130,11 +130,11 @@ void CurrencyCache::getReply(QNetworkReply *reply)
     {
         qWarning() << "Error while downloading xml:" << reply->errorString();
         removeNotification();
-        showNotification("Error while downloading xml", "Currency update failure");
+        showNotification(tr("Error while downloading xml"), tr("Currency update failure"));
         return;
     }
     removeNotification();
-    showNotification("Currencies are updated", "Update successful");
+    showNotification(tr("Currencies are updated"), tr("Update successful"));
 
     qDebug() << "Updating xml";
 

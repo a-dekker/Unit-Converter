@@ -40,6 +40,29 @@
     </message>
 </context>
 <context>
+    <name>CurrencyCache</name>
+    <message>
+        <location filename="../src/currencycache.cpp" line="133"/>
+        <source>Error while downloading xml</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/currencycache.cpp" line="133"/>
+        <source>Currency update failure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/currencycache.cpp" line="137"/>
+        <source>Currencies are updated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/currencycache.cpp" line="137"/>
+        <source>Update successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavouriteDialog</name>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>

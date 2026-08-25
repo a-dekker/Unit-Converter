@@ -65,7 +65,9 @@ translations.path = $${DEPLOYMENT_PATH}
 lupdate_only {
     SOURCES = qml/*.qml \
               qml/pages/*.qml \
-              qml/pages/components/*.qml
+              qml/pages/components/*.qml \
+              src/currencycache.cpp
+
 }
 
 icon86.files += icons/86x86/harbour-unitconverter.png
