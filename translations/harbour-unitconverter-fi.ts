@@ -31,12 +31,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="70"/>
         <source>The source code is available at %1</source>
-        <translation>Lähdekoodi on saatavilla verkossa %1</translation>
+        <translation>Lähdekoodi on saatavilla %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Project webpage</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektin verkkosivulla</translation>
     </message>
 </context>
 <context>
@@ -44,12 +44,12 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>
         <source>Unit converters</source>
-        <translation type="unfinished"></translation>
+        <translation>Yksikkömuuntimet</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="413"/>
         <source>Select from </source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse lähtöyksikkö </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
@@ -59,17 +59,17 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="456"/>
         <source>Value from</source>
-        <translation type="unfinished"></translation>
+        <translation>Lähtöarvo</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="513"/>
         <source>Select to </source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse kohdeyksikkö </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="567"/>
         <source>Value to</source>
-        <translation type="unfinished"></translation>
+        <translation>Muunnettu arvo</translation>
     </message>
 </context>
 <context>
@@ -102,12 +102,12 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="157"/>
         <source>Update favourite</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivitä suosikki</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="170"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="105"/>
         <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jos viivoittimen mittakaava ei ole riittävän tarkka, voit muuttaa sen mittakaavakerrointa:</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Scaling factor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittakaavakerroin</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="116"/>
@@ -427,7 +427,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="450"/>
         <source>Torque</source>
-        <translation>Vääntöomentti</translation>
+        <translation>Vääntömomentti</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="461"/>
