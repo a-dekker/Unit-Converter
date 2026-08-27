@@ -36,30 +36,26 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Project webpage</source>
-        <translation type="unfinished"></translation>
+        <translation>Projectwebpagina</translation>
     </message>
 </context>
 <context>
     <name>CurrencyCache</name>
     <message>
-        <location filename="../src/currencycache.cpp" line="133"/>
         <source>Error while downloading xml</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Fout tijdens het downloaden van het XML-bestand</translation>
     </message>
     <message>
-        <location filename="../src/currencycache.cpp" line="133"/>
         <source>Currency update failure</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Mislukte valuta-update</translation>
     </message>
     <message>
-        <location filename="../src/currencycache.cpp" line="137"/>
         <source>Currencies are updated</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">De valuta&apos;s zijn bijgewerkt</translation>
     </message>
     <message>
-        <location filename="../src/currencycache.cpp" line="137"/>
         <source>Update successful</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Update succesvol</translation>
     </message>
 </context>
 <context>
@@ -67,12 +63,12 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>
         <source>Unit converters</source>
-        <translation type="unfinished"></translation>
+        <translation>Eenheidsomrekenaars</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="413"/>
         <source>Select from </source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer van </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
@@ -82,17 +78,17 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="456"/>
         <source>Value from</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarde van</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="513"/>
         <source>Select to </source>
-        <translation type="unfinished"></translation>
+        <translation>Seleteer naar </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="567"/>
         <source>Value to</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarde naar</translation>
     </message>
 </context>
 <context>
@@ -125,12 +121,12 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="157"/>
         <source>Update favourite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorieten bijwerken</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="170"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijder</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
@@ -206,32 +202,32 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="85"/>
         <source>Select ruler unit</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer liniaaleenheid</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="87"/>
         <source>Unit scale used on borders</source>
-        <translation type="unfinished"></translation>
+        <translation>Eenheidsschaal gebruikt op randen</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="91"/>
         <source>cm</source>
-        <translation type="unfinished"></translation>
+        <translation>cm</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="95"/>
         <source>inch</source>
-        <translation type="unfinished"></translation>
+        <translation>inch</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="105"/>
         <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Als de schaalverdeling van de liniaal niet nauwkeurig genoeg is, kun je de schaalfactor aanpassen:</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Scaling factor</source>
-        <translation type="unfinished"></translation>
+        <translation>Schaalfactor</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="116"/>
@@ -309,12 +305,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="20"/>
         <source>Help on Quick Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Hulp bij snel zoeken</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchHelp.qml" line="26"/>
         <source>&lt;html&gt;&lt;h2&gt;Howto&lt;/h2&gt;&lt;br&gt;You can search for a category (which will show the related units)                 or for a unit itself. The category name is a short name.&lt;br&gt;The first unit you tap will hold the &lt;b&gt;&apos;1&apos;&lt;/b&gt;                 value. Then tap on another unit, and the (quick) conversion will pop up on the screen.&lt;br&gt;&lt;p&gt;                 &lt;i&gt;Example:&lt;/i&gt;&lt;br&gt;Search for &apos;temp&apos;. All temperature units show up. First tap on &apos;celsius&apos;, followed by a                 tap on &apos;fahrenheit&apos;. Now Quick Search will tell you how much fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (degree) celsius is.                 &lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;h2&gt;Handleiding&lt;/h2&gt;&lt;br&gt;U kunt zoeken op een categorie (waarbij de bijbehorende eenheden worden weergegeven) of op een eenheid zelf. De categorienaam is een korte naam.&lt;br&gt;De eerste eenheid waarop u tikt, krijgt de waarde &lt;b&gt;&apos;1&apos;&lt;/b&gt;. Tik vervolgens op een andere eenheid en de (snelle) conversie verschijnt op het scherm.&lt;br&gt;&lt;p&gt;&lt;i&gt;Voorbeeld:&lt;/i&gt;&lt;br&gt;Zoek naar &apos;temp&apos;. Alle temperatuureenheden worden weergegeven. Tik eerst op &apos;Celsius&apos;, gevolgd door een tik op &apos;Fahrenheit&apos;. Nu vertelt Snel zoeken je hoeveel Fahrenheit &lt;b&gt;&apos;1&apos;&lt;/b&gt; (graad) Celsius is.&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -322,12 +318,12 @@
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="30"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Hulp</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="36"/>
         <source>Scroll to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Scroll naar boven</translation>
     </message>
     <message>
         <location filename="../qml/pages/QuickSearchPage.qml" line="58"/>
@@ -365,7 +361,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="261"/>
         <source>Data Transfer</source>
-        <translation type="unfinished"></translation>
+        <translation>Gegevensoverdracht</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="272"/>
