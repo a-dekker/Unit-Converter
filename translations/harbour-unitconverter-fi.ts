@@ -44,22 +44,22 @@
     <message>
         <location filename="../src/currencycache.cpp" line="133"/>
         <source>Error while downloading xml</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe ladattaessa XML-tiedostoa</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="133"/>
         <source>Currency update failure</source>
-        <translation type="unfinished"></translation>
+        <translation>Valuuttakurssien päivitys epäonnistui</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="137"/>
         <source>Currencies are updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Valuuttakurssit päivitettiin</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="137"/>
         <source>Update successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivitys onnistui</translation>
     </message>
 </context>
 <context>
@@ -420,7 +420,7 @@
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="382"/>
         <source>Numbers</source>
-        <translation>Numerot</translation>
+        <translation>Luvut</translation>
     </message>
     <message>
         <location filename="../qml/pages/UnitConvertPage.qml" line="395"/>
