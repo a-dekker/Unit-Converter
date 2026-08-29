@@ -36,7 +36,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Project webpage</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektets hemsida</translation>
     </message>
 </context>
 <context>
@@ -44,22 +44,22 @@
     <message>
         <location filename="../src/currencycache.cpp" line="133"/>
         <source>Error while downloading xml</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte ladda ner XML</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="133"/>
         <source>Currency update failure</source>
-        <translation type="unfinished"></translation>
+        <translation>Valutauppdatering misslyckades</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="137"/>
         <source>Currencies are updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Valutorna är uppdaterade</translation>
     </message>
     <message>
         <location filename="../src/currencycache.cpp" line="137"/>
         <source>Update successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatering slutförd</translation>
     </message>
 </context>
 <context>
@@ -67,12 +67,12 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="359"/>
         <source>Unit converters</source>
-        <translation type="unfinished"></translation>
+        <translation>Enhetskonverterare</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="413"/>
         <source>Select from </source>
-        <translation type="unfinished"></translation>
+        <translation>Välj från </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="449"/>
@@ -82,17 +82,17 @@
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="456"/>
         <source>Value from</source>
-        <translation type="unfinished"></translation>
+        <translation>Valuta från</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="513"/>
         <source>Select to </source>
-        <translation type="unfinished"></translation>
+        <translation>Välj till </translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouriteDialog.qml" line="567"/>
         <source>Value to</source>
-        <translation type="unfinished"></translation>
+        <translation>Värde till</translation>
     </message>
 </context>
 <context>
@@ -125,12 +125,12 @@
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="157"/>
         <source>Update favourite</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera favoriter</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="170"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../qml/pages/FavouritesPage.qml" line="171"/>
@@ -226,12 +226,12 @@
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="105"/>
         <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Om skalan på linjalen inte är tillräckligt exakt kan du ändra dess skalningsfaktor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
         <source>Scaling factor</source>
-        <translation type="unfinished"></translation>
+        <translation>Skalningsfaktor</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="116"/>
