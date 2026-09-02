@@ -98,8 +98,8 @@ Dialog {
                 }
             }
             Label {
-                x : Theme.horizontalPageMargin
-                width: parent.width - 2*x
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2 * x
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
                 text: qsTr("If the scaling of the ruler is not accurate enough, you can change its scaling factor:")
@@ -109,7 +109,9 @@ Dialog {
                 id: scalingFactorField
                 label: qsTr("Scaling factor")
                 inputMethodHints: Qt.ImhDigitsOnly
-                validator: DoubleValidator { bottom: 0.001 }
+                validator: DoubleValidator {
+                    bottom: 0.001
+                }
                 text: (1 * myset.value("ruler_scaling_factor", 1.0)).toFixed(8)
             }
             SectionHeader {

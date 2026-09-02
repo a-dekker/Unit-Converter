@@ -42,20 +42,24 @@
 <context>
     <name>CurrencyCache</name>
     <message>
+        <location filename="../src/currencycache.cpp" line="133"/>
         <source>Error while downloading xml</source>
-        <translation type="vanished">Fout tijdens het downloaden van het XML-bestand</translation>
+        <translation>Fout tijdens het downloaden van het XML-bestand</translation>
     </message>
     <message>
+        <location filename="../src/currencycache.cpp" line="133"/>
         <source>Currency update failure</source>
-        <translation type="vanished">Mislukte valuta-update</translation>
+        <translation>Mislukte valuta-update</translation>
     </message>
     <message>
+        <location filename="../src/currencycache.cpp" line="137"/>
         <source>Currencies are updated</source>
-        <translation type="vanished">De valuta&apos;s zijn bijgewerkt</translation>
+        <translation>De valuta&apos;s zijn bijgewerkt</translation>
     </message>
     <message>
+        <location filename="../src/currencycache.cpp" line="137"/>
         <source>Update successful</source>
-        <translation type="vanished">Update succesvol</translation>
+        <translation>Update succesvol</translation>
     </message>
 </context>
 <context>
@@ -221,8 +225,23 @@
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="105"/>
-        <source>If the scaling of the ruler is not accurate enough, you can change its scalingfactor:</source>
-        <translation>Als de schaalverdeling van de liniaal niet nauwkeurig genoeg is, kun je de schaalfactor aanpassen:</translation>
+        <source>If the scaling of the ruler is not accurate enough, you can change its scaling factor:</source>
+        <translation>Als de schaalverdeling van de liniaal niet nauwkeurig genoeg is, kunt je de schaalfactor aanpassen:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="128"/>
+        <source>You can change the rate at which the currency rates are updated.</source>
+        <translation>Je kunt de frequentie wijzigen waarmee de wisselkoersen worden bijgewerkt.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
+        <source>At application start</source>
+        <translation>Bij de start van de applicatie</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/OptionsPage.qml" line="155"/>
+        <source>Manual</source>
+        <translation>Handmatig</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="110"/>
@@ -230,14 +249,9 @@
         <translation>Schaalfactor</translation>
     </message>
     <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="116"/>
+        <location filename="../qml/pages/OptionsPage.qml" line="118"/>
         <source>Currency</source>
         <translation>Munteenheid</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="126"/>
-        <source>You can change the rate at which the currency rates are updated. If you disable the automatic update, you have to start the update process manually.</source>
-        <translation>Je kunt de frequentie van het bijwerken van de koersen aanpassen. Als je het automatisch bijwerken uitzet, moet je het update proces handmatig starten.</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="134"/>
@@ -258,16 +272,6 @@
         <location filename="../qml/pages/OptionsPage.qml" line="147"/>
         <source>Monthly update</source>
         <translation>Maandelijkse update</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="151"/>
-        <source>Always at application start</source>
-        <translation>Bij het starten van de applicatie</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/OptionsPage.qml" line="155"/>
-        <source>Disable automatic update</source>
-        <translation>Zet automatisch bijwerken uit</translation>
     </message>
     <message>
         <location filename="../qml/pages/OptionsPage.qml" line="162"/>
