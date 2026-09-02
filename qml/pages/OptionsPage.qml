@@ -102,7 +102,7 @@ Dialog {
                 width: parent.width - 2*x
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
-                text: qsTr("If the scaling of the ruler is not accurate enough, you can change its scalingfactor:")
+                text: qsTr("If the scaling of the ruler is not accurate enough, you can change its scaling factor:")
                 font.family: "Verdana"
             }
             TextField {
@@ -123,9 +123,7 @@ Dialog {
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 wrapMode: TextEdit.WordWrap
-                text: qsTr(
-                          "You can change the rate at which the currency rates are updated. "
-                          + "If you disable the automatic update, you have to start the update process manually.")
+                text: qsTr("You can change the rate at which the currency rates are updated.")
                 readOnly: true
             }
             ComboBox {
@@ -148,11 +146,11 @@ Dialog {
                         font.family: "Verdana"
                     }
                     MenuItem {
-                        text: qsTr("Always at application start")
+                        text: qsTr("At application start")
                         font.family: "Verdana"
                     }
                     MenuItem {
-                        text: qsTr("Disable automatic update")
+                        text: qsTr("Manual")
                         font.family: "Verdana"
                     }
                 }
